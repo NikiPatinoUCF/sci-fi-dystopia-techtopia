@@ -1,0 +1,392 @@
+// Global state
+let booksData = [];
+let currentBook = null;
+const STORAGE_KEY = 'techtopia_reading_data';
+
+// Local Storage Manager
+const StorageManager = {
+    getData() {
+        const data = localStorage.getItem(STORAGE_KEY);
+        return data ? JSON.parse(data) : {};
+    },
+
+    setData(data) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    },
+
+    getBookData(bookId) {
+        const data = this.getData();
+        return data[bookId] || { read: false, rating: 0 };
+    },
+
+    setBookData(bookId, bookData) {
+        const data = this.getData();
+        data[bookId] = bookData;
+        this.setData(data);
+    },
+
+    clearAllData() {
+        if (confirm('Are you sure you want to clear all reading data? This action cannot be undone.')) {
+            localStorage.removeItem(STORAGE_KEY);
+            location.reload();
+        }
+    }
+};
+
+// Initialize app
+async function initApp() {
+    try {
+        const response = await fetch('books.json');
+        if (!response.ok) throw new Error('Failed to load books');
+
+        booksData = await response.json();
+
+        // Merge with local storage data
+        booksData = booksData.map(book => ({
+            ...book,
+            ...StorageManager.getBookData(book.id)
+        }));
+
+        renderBooks(booksData);
+        updateStats();
+        initEventListeners();
+    } catch (error) {
+        console.error('Error loading books:', error);
+        document.getElementById('booksGrid').innerHTML = `
+            <div class="no-results">
+                <h3>ERROR: DATABASE CONNECTION FAILED</h3>
+                <p>Unable to load book database. Please check your connection and try again.</p>
+            </div>
+        `;
+    }
+}
+
+// Render books to grid
+function renderBooks(books) {
+    const grid = document.getElementById('booksGrid');
+
+    if (books.length === 0) {
+        grid.innerHTML = `
+            <div class="no-results">
+                <h3>NO RECORDS FOUND</h3>
+                <p>No books match your current filters. Try adjusting your search criteria.</p>
+            </div>
+        `;
+        document.getElementById('resultsCount').textContent = 'No Books Found';
+        return;
+    }
+
+    grid.innerHTML = books.map(book => {
+        const readStatus = book.read ? 'read' : 'unread';
+        const rating = book.rating || 0;
+
+        return `
+            <div class="book-card ${readStatus}" data-book-id="${book.id}">
+                <h3 class="book-title">${book.title}</h3>
+                <p class="book-author">by ${book.author}</p>
+                <span class="book-year">${book.year}</span>
+                <div class="book-themes">
+                    ${book.themes.slice(0, 3).map(theme =>
+                        `<span class="theme-tag">${theme}</span>`
+                    ).join('')}
+                </div>
+                <div class="book-status">
+                    <span class="read-indicator ${readStatus}">
+                        ${book.read ? '● READ' : '○ UNREAD'}
+                    </span>
+                    ${rating > 0 ? `
+                        <div class="rating-display">
+                            ${Array.from({length: 5}, (_, i) =>
+                                `<span class="rating-star ${i < rating ? '' : 'empty'}">★</span>`
+                            ).join('')}
+                        </div>
+                    ` : ''}
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    document.getElementById('resultsCount').textContent =
+        `${books.length} Book${books.length !== 1 ? 's' : ''} Found`;
+
+    // Add click handlers to book cards
+    document.querySelectorAll('.book-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const bookId = parseInt(card.dataset.bookId);
+            openBookModal(bookId);
+        });
+    });
+}
+
+// Open book modal
+function openBookModal(bookId) {
+    currentBook = booksData.find(b => b.id === bookId);
+    if (!currentBook) return;
+
+    const modal = document.getElementById('bookModal');
+
+    // Populate modal
+    document.getElementById('modalTitle').textContent = currentBook.title;
+    document.getElementById('modalAuthor').textContent = `by ${currentBook.author}`;
+    document.getElementById('modalYear').textContent = currentBook.year;
+    document.getElementById('modalLanguage').textContent = currentBook.language;
+    document.getElementById('modalDescription').textContent = currentBook.description;
+
+    // Themes
+    const themesContainer = document.getElementById('modalThemes');
+    themesContainer.innerHTML = currentBook.themes.map(theme =>
+        `<span class="theme-tag">${theme}</span>`
+    ).join('');
+
+    // Rating stars
+    updateModalStars(currentBook.rating || 0);
+
+    // Read status buttons
+    const markAsReadBtn = document.getElementById('markAsRead');
+    const markAsUnreadBtn = document.getElementById('markAsUnread');
+
+    if (currentBook.read) {
+        markAsReadBtn.style.display = 'none';
+        markAsUnreadBtn.style.display = 'block';
+    } else {
+        markAsReadBtn.style.display = 'block';
+        markAsUnreadBtn.style.display = 'none';
+    }
+
+    modal.classList.add('active');
+}
+
+// Close book modal
+function closeBookModal() {
+    document.getElementById('bookModal').classList.remove('active');
+    currentBook = null;
+}
+
+// Update modal star display
+function updateModalStars(rating) {
+    const stars = document.querySelectorAll('#modalStars .star');
+    stars.forEach((star, index) => {
+        if (index < rating) {
+            star.classList.add('active');
+            star.textContent = '★';
+        } else {
+            star.classList.remove('active');
+            star.textContent = '☆';
+        }
+    });
+}
+
+// Mark book as read/unread
+function toggleReadStatus(read) {
+    if (!currentBook) return;
+
+    currentBook.read = read;
+    StorageManager.setBookData(currentBook.id, {
+        read: currentBook.read,
+        rating: currentBook.rating || 0
+    });
+
+    // Update the book in the main array
+    const bookIndex = booksData.findIndex(b => b.id === currentBook.id);
+    if (bookIndex !== -1) {
+        booksData[bookIndex] = { ...currentBook };
+    }
+
+    // Refresh display
+    applyFiltersAndSort();
+    updateStats();
+
+    // Update modal buttons
+    const markAsReadBtn = document.getElementById('markAsRead');
+    const markAsUnreadBtn = document.getElementById('markAsUnread');
+
+    if (read) {
+        markAsReadBtn.style.display = 'none';
+        markAsUnreadBtn.style.display = 'block';
+    } else {
+        markAsReadBtn.style.display = 'block';
+        markAsUnreadBtn.style.display = 'none';
+    }
+}
+
+// Rate book
+function rateBook(rating) {
+    if (!currentBook) return;
+
+    currentBook.rating = rating;
+    currentBook.read = true; // Automatically mark as read when rating
+
+    StorageManager.setBookData(currentBook.id, {
+        read: currentBook.read,
+        rating: currentBook.rating
+    });
+
+    // Update the book in the main array
+    const bookIndex = booksData.findIndex(b => b.id === currentBook.id);
+    if (bookIndex !== -1) {
+        booksData[bookIndex] = { ...currentBook };
+    }
+
+    updateModalStars(rating);
+    applyFiltersAndSort();
+    updateStats();
+
+    // Update read status buttons
+    document.getElementById('markAsRead').style.display = 'none';
+    document.getElementById('markAsUnread').style.display = 'block';
+}
+
+// Update statistics
+function updateStats() {
+    const readBooks = booksData.filter(b => b.read);
+    const ratedBooks = readBooks.filter(b => b.rating > 0);
+
+    document.getElementById('booksRead').textContent = readBooks.length;
+    document.getElementById('totalBooks').textContent = booksData.length;
+
+    if (ratedBooks.length > 0) {
+        const avgRating = ratedBooks.reduce((sum, b) => sum + b.rating, 0) / ratedBooks.length;
+        document.getElementById('avgRating').textContent = avgRating.toFixed(1);
+    } else {
+        document.getElementById('avgRating').textContent = '0.0';
+    }
+}
+
+// Filtering and sorting
+function applyFiltersAndSort() {
+    let filtered = [...booksData];
+
+    // Search filter
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    if (searchTerm) {
+        filtered = filtered.filter(book =>
+            book.title.toLowerCase().includes(searchTerm) ||
+            book.author.toLowerCase().includes(searchTerm) ||
+            book.description.toLowerCase().includes(searchTerm) ||
+            book.themes.some(theme => theme.toLowerCase().includes(searchTerm))
+        );
+    }
+
+    // Status filter
+    const statusFilter = document.getElementById('statusFilter').value;
+    if (statusFilter === 'read') {
+        filtered = filtered.filter(b => b.read);
+    } else if (statusFilter === 'unread') {
+        filtered = filtered.filter(b => !b.read);
+    }
+
+    // Rating filter
+    const ratingFilter = document.getElementById('ratingFilter').value;
+    if (ratingFilter !== 'all') {
+        const minRating = parseInt(ratingFilter);
+        filtered = filtered.filter(b => b.rating >= minRating);
+    }
+
+    // Era filter
+    const eraFilter = document.getElementById('eraFilter').value;
+    if (eraFilter === 'classic') {
+        filtered = filtered.filter(b => b.year < 1980);
+    } else if (eraFilter === 'modern') {
+        filtered = filtered.filter(b => b.year >= 1980 && b.year < 2000);
+    } else if (eraFilter === 'contemporary') {
+        filtered = filtered.filter(b => b.year >= 2000);
+    }
+
+    // Theme filter
+    const themeFilter = document.getElementById('themeFilter').value;
+    if (themeFilter !== 'all') {
+        filtered = filtered.filter(b =>
+            b.themes.some(theme =>
+                theme.toLowerCase().includes(themeFilter.toLowerCase())
+            )
+        );
+    }
+
+    // Sorting
+    const sortBy = document.getElementById('sortBy').value;
+    filtered.sort((a, b) => {
+        switch (sortBy) {
+            case 'title':
+                return a.title.localeCompare(b.title);
+            case 'author':
+                return a.author.localeCompare(b.author);
+            case 'year-asc':
+                return a.year - b.year;
+            case 'year-desc':
+                return b.year - a.year;
+            case 'rating-desc':
+                return (b.rating || 0) - (a.rating || 0);
+            case 'rating-asc':
+                return (a.rating || 0) - (b.rating || 0);
+            default:
+                return 0;
+        }
+    });
+
+    renderBooks(filtered);
+}
+
+// Reset all filters
+function resetFilters() {
+    document.getElementById('searchInput').value = '';
+    document.getElementById('statusFilter').value = 'all';
+    document.getElementById('ratingFilter').value = 'all';
+    document.getElementById('eraFilter').value = 'all';
+    document.getElementById('themeFilter').value = 'all';
+    document.getElementById('sortBy').value = 'title';
+    applyFiltersAndSort();
+}
+
+// Initialize event listeners
+function initEventListeners() {
+    // Modal close
+    document.getElementById('closeModal').addEventListener('click', closeBookModal);
+    document.getElementById('bookModal').addEventListener('click', (e) => {
+        if (e.target.id === 'bookModal') {
+            closeBookModal();
+        }
+    });
+
+    // ESC key to close modal
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeBookModal();
+        }
+    });
+
+    // Star rating
+    document.querySelectorAll('#modalStars .star').forEach(star => {
+        star.addEventListener('click', () => {
+            const rating = parseInt(star.dataset.rating);
+            rateBook(rating);
+        });
+    });
+
+    // Read status buttons
+    document.getElementById('markAsRead').addEventListener('click', () => {
+        toggleReadStatus(true);
+    });
+
+    document.getElementById('markAsUnread').addEventListener('click', () => {
+        toggleReadStatus(false);
+    });
+
+    // Filters
+    document.getElementById('searchInput').addEventListener('input', applyFiltersAndSort);
+    document.getElementById('statusFilter').addEventListener('change', applyFiltersAndSort);
+    document.getElementById('ratingFilter').addEventListener('change', applyFiltersAndSort);
+    document.getElementById('eraFilter').addEventListener('change', applyFiltersAndSort);
+    document.getElementById('themeFilter').addEventListener('change', applyFiltersAndSort);
+    document.getElementById('sortBy').addEventListener('change', applyFiltersAndSort);
+
+    // Reset button
+    document.getElementById('resetFilters').addEventListener('click', resetFilters);
+
+    // Clear data button
+    document.getElementById('clearData').addEventListener('click', () => {
+        StorageManager.clearAllData();
+    });
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', initApp);
