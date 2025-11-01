@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your sci-fi dystopian and techtopian reading journey through 100 classic and modern titles">
+    <meta name="keywords" content="sci-fi, dystopia, techtopia, books, reading tracker">
+    <meta name="theme-color" content="#0a0e27">
+    <title>TECHTOPIA ARCHIVES | Dystopian Reading Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="scanner-line"></div>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="glitch" data-text="TECHTOPIA ARCHIVES">TECHTOPIA ARCHIVES</h1>
+                <p class="tagline">CITIZEN READING PROTOCOL //DYSTOPIAN.SURVEILLANCE.SYSTEM</p>
+            </div>
+            <div class="stats-panel">
+                <div class="stat">
+                    <span class="stat-value" id="booksRead">0</span>
+                    <span class="stat-label">READ</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="avgRating">0.0</span>
+                    <span class="stat-label">AVG RATING</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="totalBooks">100</span>
+                    <span class="stat-label">DATABASE</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="filters-panel">
+            <h2 class="panel-title">FILTER PROTOCOLS</h2>
+
+            <div class="filter-group">
+                <label for="searchInput">SEARCH DATABASE</label>
+                <input type="text" id="searchInput" placeholder="Enter title, author, or keyword...">
+            </div>
+
+            <div class="filter-group">
+                <label for="statusFilter">READ STATUS</label>
+                <select id="statusFilter">
+                    <option value="all">All Books</option>
+                    <option value="read">Read</option>
+                    <option value="unread">Not Read</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="ratingFilter">RATING</label>
+                <select id="ratingFilter">
+                    <option value="all">All Ratings</option>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4+ Stars</option>
+                    <option value="3">3+ Stars</option>
+                    <option value="2">2+ Stars</option>
+                    <option value="1">1+ Stars</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="eraFilter">ERA</label>
+                <select id="eraFilter">
+                    <option value="all">All Eras</option>
+                    <option value="classic">Classic (Pre-1980)</option>
+                    <option value="modern">Modern (1980-2000)</option>
+                    <option value="contemporary">Contemporary (2000+)</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="themeFilter">THEME</label>
+                <select id="themeFilter">
+                    <option value="all">All Themes</option>
+                    <option value="surveillance">Surveillance</option>
+                    <option value="AI">AI / Technology</option>
+                    <option value="totalitarianism">Totalitarianism</option>
+                    <option value="post-apocalyptic">Post-Apocalyptic</option>
+                    <option value="cyberpunk">Cyberpunk</option>
+                    <option value="climate-change">Climate Change</option>
+                    <option value="corporate-power">Corporate Power</option>
+                    <option value="genetic-engineering">Genetic Engineering</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="sortBy">SORT BY</label>
+                <select id="sortBy">
+                    <option value="title">Title (A-Z)</option>
+                    <option value="author">Author (A-Z)</option>
+                    <option value="year-asc">Year (Oldest First)</option>
+                    <option value="year-desc">Year (Newest First)</option>
+                    <option value="rating-desc">Rating (Highest)</option>
+                    <option value="rating-asc">Rating (Lowest)</option>
+                </select>
+            </div>
+
+            <button class="btn-reset" id="resetFilters">RESET ALL FILTERS</button>
+            <button class="btn-clear-data" id="clearData">CLEAR ALL DATA</button>
+        </aside>
+
+        <section class="books-section">
+            <div class="books-header">
+                <h2 id="resultsCount">Loading Database...</h2>
+            </div>
+
+            <div class="books-grid" id="booksGrid">
+                <!-- Books will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Book Detail Modal -->
+    <div class="modal" id="bookModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <h2 id="modalTitle" class="modal-book-title"></h2>
+                    <p id="modalAuthor" class="modal-book-author"></p>
+                </div>
+
+                <div class="modal-info">
+                    <div class="info-item">
+                        <span class="info-label">YEAR:</span>
+                        <span id="modalYear" class="info-value"></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">LANGUAGE:</span>
+                        <span id="modalLanguage" class="info-value"></span>
+                    </div>
+                </div>
+
+                <div class="modal-description">
+                    <h3>SYNOPSIS</h3>
+                    <p id="modalDescription"></p>
+                </div>
+
+                <div class="modal-themes">
+                    <h3>THEMES</h3>
+                    <div id="modalThemes" class="themes-list"></div>
+                </div>
+
+                <div class="modal-rating">
+                    <h3>YOUR RATING</h3>
+                    <div class="stars" id="modalStars">
+                        <button class="star" data-rating="1">☆</button>
+                        <button class="star" data-rating="2">☆</button>
+                        <button class="star" data-rating="3">☆</button>
+                        <button class="star" data-rating="4">☆</button>
+                        <button class="star" data-rating="5">☆</button>
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button class="btn-primary" id="markAsRead">MARK AS READ</button>
+                    <button class="btn-secondary" id="markAsUnread" style="display: none;">MARK AS UNREAD</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 TECHTOPIA ARCHIVES | SURVEILLANCE PROTOCOL ACTIVE</p>
+            <p>All reading activity monitored and stored locally on your device</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

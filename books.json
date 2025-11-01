@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 1949,
+    "language": "English",
+    "themes": ["surveillance", "totalitarianism", "thought-control", "propaganda"],
+    "description": "A chilling prophecy about the future where Big Brother watches everyone."
+  },
+  {
+    "id": 2,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "year": 1932,
+    "language": "English",
+    "themes": ["genetic-engineering", "social-control", "consumerism", "conditioning"],
+    "description": "A world where humans are genetically bred and pharmaceutically controlled."
+  },
+  {
+    "id": 3,
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "year": 1953,
+    "language": "English",
+    "themes": ["censorship", "anti-intellectualism", "media-control", "conformity"],
+    "description": "Firemen burn books in a future where reading is outlawed."
+  },
+  {
+    "id": 4,
+    "title": "The Handmaid's Tale",
+    "author": "Margaret Atwood",
+    "year": 1985,
+    "language": "English",
+    "themes": ["theocracy", "gender-oppression", "reproduction-control", "resistance"],
+    "description": "A theocratic regime subjugates women in a totalitarian society."
+  },
+  {
+    "id": 5,
+    "title": "Neuromancer",
+    "author": "William Gibson",
+    "year": 1984,
+    "language": "English",
+    "themes": ["cyberpunk", "AI", "virtual-reality", "corporate-power"],
+    "description": "A hacker and an AI navigate a dystopian cyberpunk future."
+  },
+  {
+    "id": 6,
+    "title": "Snow Crash",
+    "author": "Neal Stephenson",
+    "year": 1992,
+    "language": "English",
+    "themes": ["virtual-reality", "corporate-states", "linguistics", "hackers"],
+    "description": "A pizza delivery driver battles a digital virus in a corporate-dominated America."
+  },
+  {
+    "id": 7,
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "year": 2008,
+    "language": "English",
+    "themes": ["survival", "entertainment-as-control", "rebellion", "class-divide"],
+    "description": "Children fight to the death in a televised spectacle in a post-apocalyptic nation."
+  },
+  {
+    "id": 8,
+    "title": "Do Androids Dream of Electric Sheep?",
+    "author": "Philip K. Dick",
+    "year": 1968,
+    "language": "English",
+    "themes": ["artificial-intelligence", "identity", "empathy", "post-apocalyptic"],
+    "description": "A bounty hunter tracks down rogue androids in a devastated future Earth."
+  },
+  {
+    "id": 9,
+    "title": "The Dispossessed",
+    "author": "Ursula K. Le Guin",
+    "year": 1974,
+    "language": "English",
+    "themes": ["anarchism", "capitalism", "social-systems", "revolution"],
+    "description": "A physicist navigates between an anarchist moon colony and a capitalist planet."
+  },
+  {
+    "id": 10,
+    "title": "We",
+    "author": "Yevgeny Zamyatin",
+    "year": 1924,
+    "language": "Russian",
+    "themes": ["totalitarianism", "individualism", "surveillance", "conformity"],
+    "description": "Citizens live in glass apartments under constant surveillance in a regimented society."
+  },
+  {
+    "id": 11,
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "year": 2006,
+    "language": "English",
+    "themes": ["post-apocalyptic", "survival", "humanity", "father-son"],
+    "description": "A father and son journey through a devastated, ash-covered America."
+  },
+  {
+    "id": 12,
+    "title": "Station Eleven",
+    "author": "Emily St. John Mandel",
+    "year": 2014,
+    "language": "English",
+    "themes": ["pandemic", "civilization-collapse", "art", "memory"],
+    "description": "A traveling theater troupe performs Shakespeare in a post-pandemic world."
+  },
+  {
+    "id": 13,
+    "title": "The Circle",
+    "author": "Dave Eggers",
+    "year": 2013,
+    "language": "English",
+    "themes": ["privacy", "social-media", "surveillance", "transparency"],
+    "description": "A woman works at a powerful tech company that seeks total transparency."
+  },
+  {
+    "id": 14,
+    "title": "Ready Player One",
+    "author": "Ernest Cline",
+    "year": 2011,
+    "language": "English",
+    "themes": ["virtual-reality", "gaming", "corporate-control", "escapism"],
+    "description": "A teenager hunts for an Easter egg in a massive virtual reality universe."
+  },
+  {
+    "id": 15,
+    "title": "The Left Hand of Darkness",
+    "author": "Ursula K. Le Guin",
+    "year": 1969,
+    "language": "English",
+    "themes": ["gender", "politics", "alien-cultures", "diplomacy"],
+    "description": "An envoy visits a world where inhabitants can change gender."
+  },
+  {
+    "id": 16,
+    "title": "The Giver",
+    "author": "Lois Lowry",
+    "year": 1993,
+    "language": "English",
+    "themes": ["memory-control", "conformity", "emotion-suppression", "utopia-critique"],
+    "description": "A boy discovers the dark truth behind his seemingly perfect society."
+  },
+  {
+    "id": 17,
+    "title": "A Clockwork Orange",
+    "author": "Anthony Burgess",
+    "year": 1962,
+    "language": "English",
+    "themes": ["free-will", "violence", "psychological-conditioning", "youth-culture"],
+    "description": "A violent youth undergoes experimental behavior modification in a brutal future."
+  },
+  {
+    "id": 18,
+    "title": "The Maze Runner",
+    "author": "James Dashner",
+    "year": 2009,
+    "language": "English",
+    "themes": ["survival", "experimentation", "memory-loss", "dystopian-youth"],
+    "description": "Teenagers trapped in a maze must find a way to escape their mysterious prison."
+  },
+  {
+    "id": 19,
+    "title": "Parable of the Sower",
+    "author": "Octavia E. Butler",
+    "year": 1993,
+    "language": "English",
+    "themes": ["climate-change", "social-collapse", "religion", "survival"],
+    "description": "A young woman with empathic abilities leads survivors through a collapsing America."
+  },
+  {
+    "id": 20,
+    "title": "Oryx and Crake",
+    "author": "Margaret Atwood",
+    "year": 2003,
+    "language": "English",
+    "themes": ["genetic-engineering", "pandemic", "corporate-power", "post-human"],
+    "description": "A man may be the last human alive after a genetically engineered plague."
+  },
+  {
+    "id": 21,
+    "title": "The Windup Girl",
+    "author": "Paolo Bacigalupi",
+    "year": 2009,
+    "language": "English",
+    "themes": ["biopunk", "climate-change", "genetic-engineering", "corporate-control"],
+    "description": "In a future of scarce energy, bioengineered beings struggle for freedom."
+  },
+  {
+    "id": 22,
+    "title": "Altered Carbon",
+    "author": "Richard K. Morgan",
+    "year": 2002,
+    "language": "English",
+    "themes": ["consciousness-transfer", "immortality", "cyberpunk", "body-modification"],
+    "description": "Minds can be transferred between bodies in a noir cyberpunk future."
+  },
+  {
+    "id": 23,
+    "title": "The Children of Men",
+    "author": "P.D. James",
+    "year": 1992,
+    "language": "English",
+    "themes": ["infertility", "societal-collapse", "hope", "authoritarianism"],
+    "description": "Humanity faces extinction as no children have been born for 25 years."
+  },
+  {
+    "id": 24,
+    "title": "The Power",
+    "author": "Naomi Alderman",
+    "year": 2016,
+    "language": "English",
+    "themes": ["gender-power", "societal-upheaval", "violence", "revolution"],
+    "description": "Women develop the ability to release electrical charges, reversing gender power dynamics."
+  },
+  {
+    "id": 25,
+    "title": "Blindness",
+    "author": "José Saramago",
+    "year": 1995,
+    "language": "Portuguese",
+    "themes": ["pandemic", "civilization-collapse", "humanity", "survival"],
+    "description": "An epidemic of blindness causes society to break down."
+  },
+  {
+    "id": 26,
+    "title": "The Peripheral",
+    "author": "William Gibson",
+    "year": 2014,
+    "language": "English",
+    "themes": ["time-travel", "virtual-reality", "climate-change", "technology"],
+    "description": "A woman witnesses a murder in the future through a virtual reality connection."
+  },
+  {
+    "id": 27,
+    "title": "Divergent",
+    "author": "Veronica Roth",
+    "year": 2011,
+    "language": "English",
+    "themes": ["factions", "identity", "conformity", "rebellion"],
+    "description": "Society is divided into factions based on virtues; those who don't fit are dangerous."
+  },
+  {
+    "id": 28,
+    "title": "Never Let Me Go",
+    "author": "Kazuo Ishiguro",
+    "year": 2005,
+    "language": "English",
+    "themes": ["cloning", "bioethics", "humanity", "identity"],
+    "description": "Students at a boarding school discover they are clones raised for organ donation."
+  },
+  {
+    "id": 29,
+    "title": "The Three-Body Problem",
+    "author": "Liu Cixin",
+    "year": 2008,
+    "language": "Chinese",
+    "themes": ["first-contact", "virtual-reality", "alien-invasion", "physics"],
+    "description": "Scientists discover an alien civilization preparing to invade Earth."
+  },
+  {
+    "id": 30,
+    "title": "The Diamond Age",
+    "author": "Neal Stephenson",
+    "year": 1995,
+    "language": "English",
+    "themes": ["nanotechnology", "education", "class-divide", "AI"],
+    "description": "A young girl receives an interactive book designed to raise a neo-Victorian elite."
+  },
+  {
+    "id": 31,
+    "title": "Cloud Atlas",
+    "author": "David Mitchell",
+    "year": 2004,
+    "language": "English",
+    "themes": ["reincarnation", "interconnection", "power-structures", "rebellion"],
+    "description": "Six interconnected stories span from the 19th century to a post-apocalyptic future."
+  },
+  {
+    "id": 32,
+    "title": "The Fifth Sacred Thing",
+    "author": "Starhawk",
+    "year": 1993,
+    "language": "English",
+    "themes": ["ecotopia", "pacifism", "theocracy", "spirituality"],
+    "description": "An ecotopian San Francisco faces invasion from a militaristic regime."
+  },
+  {
+    "id": 33,
+    "title": "The Man in the High Castle",
+    "author": "Philip K. Dick",
+    "year": 1962,
+    "language": "English",
+    "themes": ["alternate-history", "occupation", "reality", "resistance"],
+    "description": "America is occupied by Nazi Germany and Japan in an alternate history."
+  },
+  {
+    "id": 34,
+    "title": "Wool",
+    "author": "Hugh Howey",
+    "year": 2011,
+    "language": "English",
+    "themes": ["underground-society", "secrets", "survival", "rebellion"],
+    "description": "Survivors live in a massive underground silo, forbidden to discuss the outside world."
+  },
+  {
+    "id": 35,
+    "title": "The Lathe of Heaven",
+    "author": "Ursula K. Le Guin",
+    "year": 1971,
+    "language": "English",
+    "themes": ["reality-manipulation", "dreams", "unintended-consequences", "power"],
+    "description": "A man's dreams can alter reality, with terrifying consequences."
+  },
+  {
+    "id": 36,
+    "title": "Kallocain",
+    "author": "Karin Boye",
+    "year": 1940,
+    "language": "Swedish",
+    "themes": ["totalitarianism", "truth-serum", "surveillance", "psychology"],
+    "description": "A chemist invents a truth serum in a totalitarian state where privacy doesn't exist."
+  },
+  {
+    "id": 37,
+    "title": "The Postman",
+    "author": "David Brin",
+    "year": 1985,
+    "language": "English",
+    "themes": ["post-apocalyptic", "hope", "civilization-rebuilding", "identity"],
+    "description": "A drifter wearing a postman's uniform becomes a symbol of hope in post-apocalyptic America."
+  },
+  {
+    "id": 38,
+    "title": "Anthem",
+    "author": "Ayn Rand",
+    "year": 1938,
+    "language": "English",
+    "themes": ["collectivism", "individualism", "technology-suppression", "discovery"],
+    "description": "In a collectivist future, a man rediscovers individualism and electricity."
+  },
+  {
+    "id": 39,
+    "title": "The Space Merchants",
+    "author": "Frederik Pohl & C.M. Kornbluth",
+    "year": 1952,
+    "language": "English",
+    "themes": ["corporate-control", "advertising", "consumerism", "overpopulation"],
+    "description": "Advertising agencies run a overpopulated Earth in this satirical dystopia."
+  },
+  {
+    "id": 40,
+    "title": "Feed",
+    "author": "M.T. Anderson",
+    "year": 2002,
+    "language": "English",
+    "themes": ["brain-implants", "consumerism", "corporate-control", "education-decline"],
+    "description": "Teenagers have internet feeds implanted directly into their brains."
+  },
+  {
+    "id": 41,
+    "title": "The Water Knife",
+    "author": "Paolo Bacigalupi",
+    "year": 2015,
+    "language": "English",
+    "themes": ["climate-change", "water-scarcity", "corporate-power", "survival"],
+    "description": "Water has become the most precious commodity in a drought-ravaged American Southwest."
+  },
+  {
+    "id": 42,
+    "title": "Ender's Game",
+    "author": "Orson Scott Card",
+    "year": 1985,
+    "language": "English",
+    "themes": ["child-soldiers", "simulation", "alien-war", "manipulation"],
+    "description": "Children are trained through games to fight an alien threat."
+  },
+  {
+    "id": 43,
+    "title": "The Drowned World",
+    "author": "J.G. Ballard",
+    "year": 1962,
+    "language": "English",
+    "themes": ["climate-change", "flooding", "evolution", "psychological-transformation"],
+    "description": "Global warming has transformed Earth into a tropical hellscape."
+  },
+  {
+    "id": 44,
+    "title": "The City & The City",
+    "author": "China Miéville",
+    "year": 2009,
+    "language": "English",
+    "themes": ["divided-society", "perception", "borders", "crime"],
+    "description": "Two cities occupy the same space, and citizens must 'unsee' the other city."
+  },
+  {
+    "id": 45,
+    "title": "Red Mars",
+    "author": "Kim Stanley Robinson",
+    "year": 1992,
+    "language": "English",
+    "themes": ["colonization", "terraforming", "politics", "corporate-power"],
+    "description": "The first 100 colonists struggle to terraform Mars and establish a new society."
+  },
+  {
+    "id": 46,
+    "title": "The Passage",
+    "author": "Justin Cronin",
+    "year": 2010,
+    "language": "English",
+    "themes": ["post-apocalyptic", "vampires", "survival", "government-experiments"],
+    "description": "A military experiment creates vampire-like creatures that destroy civilization."
+  },
+  {
+    "id": 47,
+    "title": "The Trial",
+    "author": "Franz Kafka",
+    "year": 1925,
+    "language": "German",
+    "themes": ["bureaucracy", "justice-system", "absurdism", "persecution"],
+    "description": "A man is arrested and prosecuted by an inaccessible authority for an unknown crime."
+  },
+  {
+    "id": 48,
+    "title": "Vurt",
+    "author": "Jeff Noon",
+    "year": 1993,
+    "language": "English",
+    "themes": ["virtual-reality", "drugs", "alternate-dimensions", "subculture"],
+    "description": "People access alternate realities through psychoactive feathers in a grim Manchester."
+  },
+  {
+    "id": 49,
+    "title": "The Forever War",
+    "author": "Joe Haldeman",
+    "year": 1974,
+    "language": "English",
+    "themes": ["time-dilation", "war", "alienation", "military"],
+    "description": "Soldiers fight an interstellar war while time passes differently on Earth."
+  },
+  {
+    "id": 50,
+    "title": "Metro 2033",
+    "author": "Dmitry Glukhovsky",
+    "year": 2005,
+    "language": "Russian",
+    "themes": ["post-apocalyptic", "underground-society", "survival", "mutants"],
+    "description": "Survivors live in Moscow's metro system after a nuclear war."
+  },
+  {
+    "id": 51,
+    "title": "Daemon",
+    "author": "Daniel Suarez",
+    "year": 2006,
+    "language": "English",
+    "themes": ["AI", "automation", "corporate-power", "technology-takeover"],
+    "description": "A dead game designer's AI begins executing a program to reshape society."
+  },
+  {
+    "id": 52,
+    "title": "Battle Royale",
+    "author": "Koushun Takami",
+    "year": 1999,
+    "language": "Japanese",
+    "themes": ["survival", "government-control", "violence", "youth"],
+    "description": "Students are forced to fight to the death on an island by a totalitarian government."
+  },
+  {
+    "id": 53,
+    "title": "The Handmaid's Tale",
+    "author": "Margaret Atwood",
+    "year": 1985,
+    "language": "English",
+    "themes": ["theocracy", "gender-oppression", "reproduction-control", "resistance"],
+    "description": "A theocratic regime subjugates women in a totalitarian society."
+  },
+  {
+    "id": 54,
+    "title": "V for Vendetta",
+    "author": "Alan Moore",
+    "year": 1988,
+    "language": "English",
+    "themes": ["anarchism", "fascism", "resistance", "terrorism"],
+    "description": "A masked vigilante fights against a fascist government in Britain."
+  },
+  {
+    "id": 55,
+    "title": "Little Brother",
+    "author": "Cory Doctorow",
+    "year": 2008,
+    "language": "English",
+    "themes": ["surveillance", "civil-liberties", "terrorism", "hacking"],
+    "description": "Teenagers fight back against government surveillance after a terrorist attack."
+  },
+  {
+    "id": 56,
+    "title": "Ubik",
+    "author": "Philip K. Dick",
+    "year": 1969,
+    "language": "English",
+    "themes": ["reality", "time", "death", "corporate-intrigue"],
+    "description": "Reality begins to decay for survivors of a psychic attack in this mind-bending tale."
+  },
+  {
+    "id": 57,
+    "title": "The Stars My Destination",
+    "author": "Alfred Bester",
+    "year": 1956,
+    "language": "English",
+    "themes": ["teleportation", "revenge", "social-classes", "transformation"],
+    "description": "A man gains the power to teleport and seeks revenge in a future of corporate warfare."
+  },
+  {
+    "id": 58,
+    "title": "Annihilation",
+    "author": "Jeff VanderMeer",
+    "year": 2014,
+    "language": "English",
+    "themes": ["alien-environment", "transformation", "government-secrets", "ecology"],
+    "description": "A team explores a mysterious zone where nature has become alien and dangerous."
+  },
+  {
+    "id": 59,
+    "title": "The Minority Report",
+    "author": "Philip K. Dick",
+    "year": 1956,
+    "language": "English",
+    "themes": ["precrime", "free-will", "surveillance", "prediction"],
+    "description": "Police arrest criminals before they commit crimes using precognitive mutants."
+  },
+  {
+    "id": 60,
+    "title": "Elysium",
+    "author": "Jennifer Marie Brissett",
+    "year": 2014,
+    "language": "English",
+    "themes": ["AI", "simulation", "identity", "love"],
+    "description": "A dying AI recreates simulations of its creators' lives in various scenarios."
+  },
+  {
+    "id": 61,
+    "title": "The Book of the New Sun",
+    "author": "Gene Wolfe",
+    "year": 1980,
+    "language": "English",
+    "themes": ["far-future", "dying-earth", "memory", "religion"],
+    "description": "A torturer's apprentice becomes the leader of a dying Earth in the far future."
+  },
+  {
+    "id": 62,
+    "title": "Lord of the Flies",
+    "author": "William Golding",
+    "year": 1954,
+    "language": "English",
+    "themes": ["civilization-collapse", "human-nature", "savagery", "leadership"],
+    "description": "British boys stranded on an island descend into savagery."
+  },
+  {
+    "id": 63,
+    "title": "Player Piano",
+    "author": "Kurt Vonnegut",
+    "year": 1952,
+    "language": "English",
+    "themes": ["automation", "unemployment", "class-divide", "rebellion"],
+    "description": "Machines have automated most jobs, creating a rigid class system."
+  },
+  {
+    "id": 64,
+    "title": "The Caves of Steel",
+    "author": "Isaac Asimov",
+    "year": 1954,
+    "language": "English",
+    "themes": ["robots", "overpopulation", "xenophobia", "mystery"],
+    "description": "A detective partners with a robot to solve a murder in an overcrowded Earth."
+  },
+  {
+    "id": 65,
+    "title": "The Sheep Look Up",
+    "author": "John Brunner",
+    "year": 1972,
+    "language": "English",
+    "themes": ["pollution", "environmental-collapse", "corporate-greed", "activism"],
+    "description": "Environmental pollution causes society to collapse in near-future America."
+  },
+  {
+    "id": 66,
+    "title": "Stand on Zanzibar",
+    "author": "John Brunner",
+    "year": 1968,
+    "language": "English",
+    "themes": ["overpopulation", "genetic-engineering", "social-chaos", "media"],
+    "description": "Earth struggles with extreme overpopulation and social upheaval."
+  },
+  {
+    "id": 67,
+    "title": "The Chrysalids",
+    "author": "John Wyndham",
+    "year": 1955,
+    "language": "English",
+    "themes": ["mutation", "religious-extremism", "persecution", "telepathy"],
+    "description": "Telepathic children hide their abilities in a post-apocalyptic religious society."
+  },
+  {
+    "id": 68,
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "year": 1965,
+    "language": "English",
+    "themes": ["ecology", "politics", "religion", "resource-scarcity"],
+    "description": "Noble houses fight for control of the desert planet Arrakis and its spice."
+  },
+  {
+    "id": 69,
+    "title": "A Canticle for Leibowitz",
+    "author": "Walter M. Miller Jr.",
+    "year": 1959,
+    "language": "English",
+    "themes": ["post-apocalyptic", "religion", "knowledge-preservation", "cyclical-history"],
+    "description": "Monks preserve knowledge through dark ages after nuclear war."
+  },
+  {
+    "id": 70,
+    "title": "The Time Machine",
+    "author": "H.G. Wells",
+    "year": 1895,
+    "language": "English",
+    "themes": ["time-travel", "class-divide", "evolution", "far-future"],
+    "description": "A Victorian scientist travels to a future where humanity has split into two species."
+  },
+  {
+    "id": 71,
+    "title": "Rainbows End",
+    "author": "Vernor Vinge",
+    "year": 2006,
+    "language": "English",
+    "themes": ["augmented-reality", "AI", "aging", "education"],
+    "description": "An elderly poet regains his health in a world of ubiquitous augmented reality."
+  },
+  {
+    "id": 72,
+    "title": "The Demolished Man",
+    "author": "Alfred Bester",
+    "year": 1953,
+    "language": "English",
+    "themes": ["telepathy", "murder", "corporate-power", "psychology"],
+    "description": "A businessman tries to commit murder in a world where telepathic police exist."
+  },
+  {
+    "id": 73,
+    "title": "The Iron Heel",
+    "author": "Jack London",
+    "year": 1908,
+    "language": "English",
+    "themes": ["oligarchy", "class-war", "revolution", "fascism"],
+    "description": "A corporate oligarchy crushes labor movements in early 20th century America."
+  },
+  {
+    "id": 74,
+    "title": "Snowpiercer",
+    "author": "Jacques Lob",
+    "year": 1982,
+    "language": "French",
+    "themes": ["class-divide", "survival", "climate-disaster", "revolution"],
+    "description": "Survivors live on a perpetually moving train after Earth freezes over."
+  },
+  {
+    "id": 75,
+    "title": "The Machine Stops",
+    "author": "E.M. Forster",
+    "year": 1909,
+    "language": "English",
+    "themes": ["technology-dependence", "isolation", "machine-worship", "collapse"],
+    "description": "Humanity lives underground, dependent on an omnipotent Machine."
+  },
+  {
+    "id": 76,
+    "title": "Brave New World Revisited",
+    "author": "Aldous Huxley",
+    "year": 1958,
+    "language": "English",
+    "themes": ["social-control", "propaganda", "overpopulation", "freedom"],
+    "description": "Huxley's non-fiction analysis of how his fictional dystopia is becoming real."
+  },
+  {
+    "id": 77,
+    "title": "The Penultimate Truth",
+    "author": "Philip K. Dick",
+    "year": 1964,
+    "language": "English",
+    "themes": ["deception", "underground-society", "war-propaganda", "elite-control"],
+    "description": "People live underground believing in a war that ended years ago."
+  },
+  {
+    "id": 78,
+    "title": "Mockingbird",
+    "author": "Walter Tevis",
+    "year": 1980,
+    "language": "English",
+    "themes": ["illiteracy", "robots", "human-extinction", "love"],
+    "description": "In a future where humans are illiterate and dying out, three people seek meaning."
+  },
+  {
+    "id": 79,
+    "title": "The Wanting Seed",
+    "author": "Anthony Burgess",
+    "year": 1962,
+    "language": "English",
+    "themes": ["overpopulation", "cannibalism", "government-control", "fertility"],
+    "description": "Overpopulation leads to government promotion of homosexuality and cannibalism."
+  },
+  {
+    "id": 80,
+    "title": "The Years of Rice and Salt",
+    "author": "Kim Stanley Robinson",
+    "year": 2002,
+    "language": "English",
+    "themes": ["alternate-history", "reincarnation", "civilization", "religion"],
+    "description": "An alternate history where the Black Death killed 99% of Europeans."
+  },
+  {
+    "id": 81,
+    "title": "When She Woke",
+    "author": "Hillary Jordan",
+    "year": 2011,
+    "language": "English",
+    "themes": ["theocracy", "punishment", "abortion", "surveillance"],
+    "description": "Criminals are chromatically altered as punishment in a theocratic America."
+  },
+  {
+    "id": 82,
+    "title": "The Quantum Thief",
+    "author": "Hannu Rajaniemi",
+    "year": 2010,
+    "language": "Finnish",
+    "themes": ["post-human", "memory-manipulation", "quantum-mechanics", "heist"],
+    "description": "A master thief is broken out of prison to commit the ultimate heist."
+  },
+  {
+    "id": 83,
+    "title": "Flow My Tears, the Policeman Said",
+    "author": "Philip K. Dick",
+    "year": 1974,
+    "language": "English",
+    "themes": ["identity", "police-state", "drugs", "reality"],
+    "description": "A celebrity wakes up in a world where no one remembers him."
+  },
+  {
+    "id": 84,
+    "title": "The Lifecycle of Software Objects",
+    "author": "Ted Chiang",
+    "year": 2010,
+    "language": "English",
+    "themes": ["AI", "consciousness", "parenting", "ethics"],
+    "description": "People raise digital artificial intelligences like children."
+  },
+  {
+    "id": 85,
+    "title": "The Shockwave Rider",
+    "author": "John Brunner",
+    "year": 1975,
+    "language": "English",
+    "themes": ["information-control", "identity", "hacking", "prediction"],
+    "description": "A man with multiple identities fights an authoritarian government through hacking."
+  },
+  {
+    "id": 86,
+    "title": "Zone One",
+    "author": "Colson Whitehead",
+    "year": 2011,
+    "language": "English",
+    "themes": ["zombies", "post-apocalyptic", "capitalism", "survival"],
+    "description": "Survivors clear zombies from Manhattan while rebuilding civilization."
+  },
+  {
+    "id": 87,
+    "title": "The Futurological Congress",
+    "author": "Stanisław Lem",
+    "year": 1971,
+    "language": "Polish",
+    "themes": ["drugs", "perception", "overcrowding", "reality"],
+    "description": "Psychoactive drugs create false realities masking a dystopian world."
+  },
+  {
+    "id": 88,
+    "title": "The War of the Worlds",
+    "author": "H.G. Wells",
+    "year": 1898,
+    "language": "English",
+    "themes": ["alien-invasion", "imperialism", "survival", "technology"],
+    "description": "Martians invade Earth with superior technology."
+  },
+  {
+    "id": 89,
+    "title": "Swan Song",
+    "author": "Robert McCammon",
+    "year": 1987,
+    "language": "English",
+    "themes": ["nuclear-war", "survival", "good-vs-evil", "hope"],
+    "description": "Survivors struggle in the aftermath of nuclear war."
+  },
+  {
+    "id": 90,
+    "title": "Replay",
+    "author": "Ken Grimwood",
+    "year": 1986,
+    "language": "English",
+    "themes": ["time-loop", "second-chances", "fate", "meaning"],
+    "description": "A man repeatedly dies and is reborn at age 18 with his memories intact."
+  },
+  {
+    "id": 91,
+    "title": "The Invisible Man",
+    "author": "H.G. Wells",
+    "year": 1897,
+    "language": "English",
+    "themes": ["isolation", "power-corruption", "science-ethics", "invisibility"],
+    "description": "A scientist becomes invisible and descends into madness and violence."
+  },
+  {
+    "id": 92,
+    "title": "House of Suns",
+    "author": "Alastair Reynolds",
+    "year": 2008,
+    "language": "English",
+    "themes": ["far-future", "clones", "space-opera", "extinction"],
+    "description": "Clone siblings explore the galaxy over millions of years."
+  },
+  {
+    "id": 93,
+    "title": "Cryptonomicon",
+    "author": "Neal Stephenson",
+    "year": 1999,
+    "language": "English",
+    "themes": ["cryptography", "data-havens", "technology", "history"],
+    "description": "Parallel stories of WWII codebreakers and modern tech entrepreneurs."
+  },
+  {
+    "id": 94,
+    "title": "The Book of Joan",
+    "author": "Lidia Yuknavitch",
+    "year": 2017,
+    "language": "English",
+    "themes": ["environmental-collapse", "war", "mutation", "resistance"],
+    "description": "Earth is destroyed and survivors live on a space station in this reimagining of Joan of Arc."
+  },
+  {
+    "id": 95,
+    "title": "This Perfect Day",
+    "author": "Ira Levin",
+    "year": 1970,
+    "language": "English",
+    "themes": ["computer-control", "eugenics", "conformity", "rebellion"],
+    "description": "A supercomputer controls all aspects of human life in a seemingly perfect world."
+  },
+  {
+    "id": 96,
+    "title": "The Diamond Age",
+    "author": "Neal Stephenson",
+    "year": 1995,
+    "language": "English",
+    "themes": ["nanotechnology", "education", "class-divide", "AI"],
+    "description": "A young girl receives an interactive book designed to raise a neo-Victorian elite."
+  },
+  {
+    "id": 97,
+    "title": "Midnight Robber",
+    "author": "Nalo Hopkinson",
+    "year": 2000,
+    "language": "English",
+    "themes": ["colonization", "caribbean-culture", "exile", "coming-of-age"],
+    "description": "A girl and her father are exiled to a prison planet in this Afro-Caribbean sci-fi tale."
+  },
+  {
+    "id": 98,
+    "title": "The Sparrow",
+    "author": "Mary Doria Russell",
+    "year": 1996,
+    "language": "English",
+    "themes": ["first-contact", "religion", "cultural-misunderstanding", "trauma"],
+    "description": "Jesuits make first contact with aliens with tragic consequences."
+  },
+  {
+    "id": 99,
+    "title": "Partials",
+    "author": "Dan Wells",
+    "year": 2012,
+    "language": "English",
+    "themes": ["pandemic", "artificial-beings", "survival", "bioethics"],
+    "description": "Humanity faces extinction from a plague created by their synthetic servants."
+  },
+  {
+    "id": 100,
+    "title": "The Light of Other Days",
+    "author": "Arthur C. Clarke & Stephen Baxter",
+    "year": 2000,
+    "language": "English",
+    "themes": ["surveillance", "privacy", "time-viewing", "transparency"],
+    "description": "Technology allows people to view any moment in history, ending all privacy."
+  }
+]
