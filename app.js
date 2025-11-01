@@ -33,6 +33,107 @@ const StorageManager = {
     }
 };
 
+// Recommendation Engine
+function generateRecommendations() {
+    // Get books rated 4 or 5 stars
+    const highlyRatedBooks = booksData.filter(b => b.rating >= 4);
+
+    // If no highly rated books, don't show recommendations
+    if (highlyRatedBooks.length === 0) {
+        document.getElementById('recommendationsSection').style.display = 'none';
+        return;
+    }
+
+    // Build theme weights from highly rated books
+    const themeWeights = {};
+    highlyRatedBooks.forEach(book => {
+        const weight = book.rating; // 4 or 5
+        book.themes.forEach(theme => {
+            themeWeights[theme] = (themeWeights[theme] || 0) + weight;
+        });
+    });
+
+    // Get unread books
+    const unreadBooks = booksData.filter(b => !b.read);
+
+    // Score each unread book based on theme matches
+    const scoredBooks = unreadBooks.map(book => {
+        let score = 0;
+        const matchedThemes = [];
+
+        book.themes.forEach(theme => {
+            if (themeWeights[theme]) {
+                score += themeWeights[theme];
+                matchedThemes.push(theme);
+            }
+        });
+
+        return {
+            ...book,
+            recommendationScore: score,
+            matchedThemes: matchedThemes
+        };
+    });
+
+    // Sort by score and get top 10
+    const recommendations = scoredBooks
+        .filter(b => b.recommendationScore > 0)
+        .sort((a, b) => b.recommendationScore - a.recommendationScore)
+        .slice(0, 10);
+
+    if (recommendations.length === 0) {
+        document.getElementById('recommendationsSection').style.display = 'none';
+        return;
+    }
+
+    renderRecommendations(recommendations, highlyRatedBooks);
+}
+
+// Render recommendations
+function renderRecommendations(recommendations, highlyRatedBooks) {
+    const section = document.getElementById('recommendationsSection');
+    const grid = document.getElementById('recommendationsGrid');
+
+    // Get titles of highly rated books for context
+    const likedTitles = highlyRatedBooks
+        .map(b => `"${b.title}"`)
+        .slice(0, 3)
+        .join(', ');
+
+    grid.innerHTML = recommendations.map(book => {
+        // Calculate match percentage (normalize score)
+        const maxScore = Math.max(...recommendations.map(r => r.recommendationScore));
+        const matchPercent = Math.round((book.recommendationScore / maxScore) * 100);
+
+        return `
+            <div class="recommendation-card" data-book-id="${book.id}">
+                <span class="recommendation-score">${matchPercent}% MATCH</span>
+                <h3 class="book-title">${book.title}</h3>
+                <p class="book-author">by ${book.author}</p>
+                <span class="book-year">${book.year}</span>
+                <div class="book-themes">
+                    ${book.matchedThemes.slice(0, 4).map(theme =>
+                        `<span class="theme-tag">${theme}</span>`
+                    ).join('')}
+                </div>
+                <div class="recommendation-reasons">
+                    <p>Shares ${book.matchedThemes.length} theme${book.matchedThemes.length !== 1 ? 's' : ''} with your favorites</p>
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    section.style.display = 'block';
+
+    // Add click handlers to recommendation cards
+    document.querySelectorAll('.recommendation-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const bookId = parseInt(card.dataset.bookId);
+            openBookModal(bookId);
+        });
+    });
+}
+
 // Initialize app
 async function initApp() {
     try {
@@ -49,6 +150,7 @@ async function initApp() {
 
         renderBooks(booksData);
         updateStats();
+        generateRecommendations();
         initEventListeners();
     } catch (error) {
         console.error('Error loading books:', error);
@@ -195,6 +297,7 @@ function toggleReadStatus(read) {
     // Refresh display
     applyFiltersAndSort();
     updateStats();
+    generateRecommendations();
 
     // Update modal buttons
     const markAsReadBtn = document.getElementById('markAsRead');
@@ -230,6 +333,7 @@ function rateBook(rating) {
     updateModalStars(rating);
     applyFiltersAndSort();
     updateStats();
+    generateRecommendations();
 
     // Update read status buttons
     document.getElementById('markAsRead').style.display = 'none';
