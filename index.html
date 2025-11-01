@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Track your sci-fi dystopian and techtopian reading journey through 100 classic and modern titles">
     <meta name="keywords" content="sci-fi, dystopia, techtopia, books, reading tracker">
-    <meta name="theme-color" content="#0a0e27">
-    <title>TECHTOPIA ARCHIVES | Dystopian Reading Tracker</title>
+    <meta name="theme-color" content="#2d1b4e">
+    <title>Gemstone Library | Dystopian Reading Tracker</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Dancing+Script:wght@400;500;600;700&family=Pinyon+Script&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="scanner-line"></div>
+    <div class="shimmer-overlay"></div>
 
     <header class="main-header">
         <div class="container">
             <div class="header-content">
-                <h1 class="glitch" data-text="TECHTOPIA ARCHIVES">TECHTOPIA ARCHIVES</h1>
-                <p class="tagline">CITIZEN READING PROTOCOL //DYSTOPIAN.SURVEILLANCE.SYSTEM</p>
+                <h1 class="elegant-title">Gemstone Library</h1>
+                <p class="tagline">A Curated Collection of Dystopian Tales</p>
             </div>
             <div class="stats-panel">
                 <div class="stat">
@@ -40,15 +40,15 @@
 
     <main class="container">
         <aside class="filters-panel">
-            <h2 class="panel-title">FILTER PROTOCOLS</h2>
+            <h2 class="panel-title">Filter Your Collection</h2>
 
             <div class="filter-group">
-                <label for="searchInput">SEARCH DATABASE</label>
+                <label for="searchInput">Search</label>
                 <input type="text" id="searchInput" placeholder="Enter title, author, or keyword...">
             </div>
 
             <div class="filter-group">
-                <label for="statusFilter">READ STATUS</label>
+                <label for="statusFilter">Reading Status</label>
                 <select id="statusFilter">
                     <option value="all">All Books</option>
                     <option value="read">Read</option>
@@ -57,7 +57,7 @@
             </div>
 
             <div class="filter-group">
-                <label for="ratingFilter">RATING</label>
+                <label for="ratingFilter">Rating</label>
                 <select id="ratingFilter">
                     <option value="all">All Ratings</option>
                     <option value="5">5 Stars</option>
@@ -69,7 +69,7 @@
             </div>
 
             <div class="filter-group">
-                <label for="eraFilter">ERA</label>
+                <label for="eraFilter">Era</label>
                 <select id="eraFilter">
                     <option value="all">All Eras</option>
                     <option value="classic">Classic (Pre-1980)</option>
@@ -79,7 +79,7 @@
             </div>
 
             <div class="filter-group">
-                <label for="themeFilter">THEME</label>
+                <label for="themeFilter">Theme</label>
                 <select id="themeFilter">
                     <option value="all">All Themes</option>
                     <option value="surveillance">Surveillance</option>
@@ -94,7 +94,7 @@
             </div>
 
             <div class="filter-group">
-                <label for="sortBy">SORT BY</label>
+                <label for="sortBy">Sort By</label>
                 <select id="sortBy">
                     <option value="title">Title (A-Z)</option>
                     <option value="author">Author (A-Z)</option>
@@ -105,8 +105,8 @@
                 </select>
             </div>
 
-            <button class="btn-reset" id="resetFilters">RESET ALL FILTERS</button>
-            <button class="btn-clear-data" id="clearData">CLEAR ALL DATA</button>
+            <button class="btn-reset" id="resetFilters">Reset Filters</button>
+            <button class="btn-clear-data" id="clearData">Clear All Data</button>
         </aside>
 
         <section class="books-section">
@@ -124,8 +124,8 @@
     <section class="recommendations-section" id="recommendationsSection" style="display: none;">
         <div class="container">
             <div class="recommendations-header">
-                <h2 class="section-title">AI RECOMMENDATION PROTOCOL</h2>
-                <p class="section-subtitle">Based on your reading patterns, the system suggests:</p>
+                <h2 class="section-title">Recommended for You</h2>
+                <p class="section-subtitle">Based on your reading preferences, we suggest these gems:</p>
             </div>
             <div class="recommendations-grid" id="recommendationsGrid">
                 <!-- Recommendations will be dynamically loaded here -->
@@ -145,27 +145,27 @@
 
                 <div class="modal-info">
                     <div class="info-item">
-                        <span class="info-label">YEAR:</span>
+                        <span class="info-label">Year:</span>
                         <span id="modalYear" class="info-value"></span>
                     </div>
                     <div class="info-item">
-                        <span class="info-label">LANGUAGE:</span>
+                        <span class="info-label">Language:</span>
                         <span id="modalLanguage" class="info-value"></span>
                     </div>
                 </div>
 
                 <div class="modal-description">
-                    <h3>SYNOPSIS</h3>
+                    <h3>Synopsis</h3>
                     <p id="modalDescription"></p>
                 </div>
 
                 <div class="modal-themes">
-                    <h3>THEMES</h3>
+                    <h3>Themes</h3>
                     <div id="modalThemes" class="themes-list"></div>
                 </div>
 
                 <div class="modal-rating">
-                    <h3>YOUR RATING</h3>
+                    <h3>Your Rating</h3>
                     <div class="stars" id="modalStars">
                         <button class="star" data-rating="1">☆</button>
                         <button class="star" data-rating="2">☆</button>
@@ -176,8 +176,8 @@
                 </div>
 
                 <div class="modal-actions">
-                    <button class="btn-primary" id="markAsRead">MARK AS READ</button>
-                    <button class="btn-secondary" id="markAsUnread" style="display: none;">MARK AS UNREAD</button>
+                    <button class="btn-primary" id="markAsRead">Mark as Read</button>
+                    <button class="btn-secondary" id="markAsUnread" style="display: none;">Mark as Unread</button>
                 </div>
             </div>
         </div>
@@ -185,8 +185,8 @@
 
     <footer class="main-footer">
         <div class="container">
-            <p>&copy; 2025 TECHTOPIA ARCHIVES | SURVEILLANCE PROTOCOL ACTIVE</p>
-            <p>All reading activity monitored and stored locally on your device</p>
+            <p>&copy; 2025 Gemstone Library</p>
+            <p>Your reading journey is privately stored on your device</p>
         </div>
     </footer>
 
