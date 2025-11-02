@@ -3,6 +3,51 @@ let booksData = [];
 let currentBook = null;
 const STORAGE_KEY = 'techtopia_reading_data';
 
+// Theme Icons and Colors for Visualization
+const themeVisuals = {
+    'surveillance': { icon: '👁️', color: '#e74c3c' },
+    'totalitarianism': { icon: '⚔️', color: '#c0392b' },
+    'thought-control': { icon: '🧠', color: '#8e44ad' },
+    'propaganda': { icon: '📢', color: '#d35400' },
+    'genetic-engineering': { icon: '🧬', color: '#27ae60' },
+    'social-control': { icon: '🎭', color: '#2980b9' },
+    'consumerism': { icon: '🛒', color: '#f39c12' },
+    'conditioning': { icon: '🔗', color: '#7f8c8d' },
+    'censorship': { icon: '🚫', color: '#e67e22' },
+    'anti-intellectualism': { icon: '📖', color: '#95a5a6' },
+    'media-control': { icon: '📺', color: '#34495e' },
+    'conformity': { icon: '👥', color: '#7f8c8d' },
+    'theocracy': { icon: '⛪', color: '#8e44ad' },
+    'gender-oppression': { icon: '⚥', color: '#e74c3c' },
+    'reproduction-control': { icon: '👶', color: '#c0392b' },
+    'resistance': { icon: '✊', color: '#e74c3c' },
+    'cyberpunk': { icon: '🌃', color: '#9b59b6' },
+    'AI': { icon: '🤖', color: '#3498db' },
+    'virtual-reality': { icon: '🥽', color: '#1abc9c' },
+    'corporate-power': { icon: '🏢', color: '#34495e' },
+    'post-apocalyptic': { icon: '☢️', color: '#95a5a6' },
+    'survival': { icon: '🔥', color: '#e67e22' },
+    'climate-change': { icon: '🌡️', color: '#27ae60' },
+    'pandemic': { icon: '🦠', color: '#e74c3c' },
+    'rebellion': { icon: '⚡', color: '#f39c12' },
+    'class-divide': { icon: '⚖️', color: '#95a5a6' },
+    'privacy': { icon: '🔒', color: '#3498db' },
+    'identity': { icon: '🎭', color: '#9b59b6' },
+    'revolution': { icon: '🔥', color: '#e74c3c' },
+    'mutation': { icon: '🧬', color: '#16a085' },
+    'technology': { icon: '⚙️', color: '#34495e' },
+    'empathy': { icon: '💜', color: '#9b59b6' },
+    'religion': { icon: '🕊️', color: '#3498db' },
+    'memory': { icon: '💭', color: '#8e44ad' },
+    'politics': { icon: '🏛️', color: '#2c3e50' },
+    'war': { icon: '⚔️', color: '#c0392b' }
+};
+
+// Get theme visual
+function getThemeVisual(theme) {
+    return themeVisuals[theme] || { icon: '📚', color: '#95a5a6' };
+}
+
 // Local Storage Manager
 const StorageManager = {
     getData() {
@@ -33,7 +78,18 @@ const StorageManager = {
     }
 };
 
-// Recommendation Engine
+// Writing style similarity calculator
+function calculateStyleSimilarity(style1, style2) {
+    if (!style1 || !style2) return 0;
+
+    const keywords1 = style1.toLowerCase().split(/[\s-]+/);
+    const keywords2 = style2.toLowerCase().split(/[\s-]+/);
+
+    const commonKeywords = keywords1.filter(word => keywords2.includes(word));
+    return commonKeywords.length;
+}
+
+// "One Shelf Over" Recommendation Engine
 function generateRecommendations() {
     // Get books rated 4 or 5 stars
     const highlyRatedBooks = booksData.filter(b => b.rating >= 4);
@@ -44,42 +100,68 @@ function generateRecommendations() {
         return;
     }
 
-    // Build theme weights from highly rated books
-    const themeWeights = {};
-    highlyRatedBooks.forEach(book => {
-        const weight = book.rating; // 4 or 5
-        book.themes.forEach(theme => {
-            themeWeights[theme] = (themeWeights[theme] || 0) + weight;
-        });
-    });
-
     // Get unread books
     const unreadBooks = booksData.filter(b => !b.read);
 
-    // Score each unread book based on theme matches
+    // Calculate "one shelf over" score for each unread book
     const scoredBooks = unreadBooks.map(book => {
-        let score = 0;
-        const matchedThemes = [];
+        let totalScore = 0;
+        let totalStyleMatch = 0;
+        let shelfReasons = [];
+        const matchedThemes = new Set();
 
-        book.themes.forEach(theme => {
-            if (themeWeights[theme]) {
-                score += themeWeights[theme];
-                matchedThemes.push(theme);
+        // Compare with each highly rated book
+        highlyRatedBooks.forEach(ratedBook => {
+            // Theme overlap - looking for 1-3 shared themes (not all)
+            const sharedThemes = book.themes.filter(t => ratedBook.themes.includes(t));
+            const themeOverlapRatio = sharedThemes.length / Math.max(book.themes.length, ratedBook.themes.length);
+
+            // "One shelf over" sweet spot: 1-3 shared themes (not too similar, not too different)
+            if (sharedThemes.length >= 1 && sharedThemes.length <= 3) {
+                const shelfScore = (ratedBook.rating / 5) * (30 + (sharedThemes.length * 10));
+                totalScore += shelfScore;
+                sharedThemes.forEach(t => matchedThemes.add(t));
+
+                if (sharedThemes.length === 1) {
+                    shelfReasons.push(`Adjacent shelf: shares "${sharedThemes[0]}" with "${ratedBook.title}"`);
+                } else if (sharedThemes.length === 2) {
+                    shelfReasons.push(`Nearby: echoes themes from "${ratedBook.title}"`);
+                } else {
+                    shelfReasons.push(`Similar territory to "${ratedBook.title}"`);
+                }
+            }
+
+            // Writing style similarity (major factor)
+            const styleSimilarity = calculateStyleSimilarity(book.writingStyle, ratedBook.writingStyle);
+            if (styleSimilarity > 0) {
+                totalStyleMatch += styleSimilarity * (ratedBook.rating / 5) * 15;
+                shelfReasons.push(`Writing style resonates with "${ratedBook.title}"`);
+            }
+
+            // Era proximity (minor factor)
+            const yearDiff = Math.abs(book.year - ratedBook.year);
+            if (yearDiff <= 20) {
+                totalScore += (ratedBook.rating / 5) * 8;
             }
         });
 
+        // Prefer books with moderate theme overlap (avoid exact matches)
+        const diversityBonus = matchedThemes.size >= 1 && matchedThemes.size <= 3 ? 20 : 0;
+
         return {
             ...book,
-            recommendationScore: score,
-            matchedThemes: matchedThemes
+            shelfScore: totalScore + totalStyleMatch + diversityBonus,
+            matchedThemes: Array.from(matchedThemes),
+            shelfLocation: determineShelfLocation(matchedThemes.size, totalStyleMatch),
+            recommendationReason: shelfReasons[0] || "Recommended based on your tastes"
         };
     });
 
-    // Sort by score and get top 10
+    // Sort by shelf score and get top 12
     const recommendations = scoredBooks
-        .filter(b => b.recommendationScore > 0)
-        .sort((a, b) => b.recommendationScore - a.recommendationScore)
-        .slice(0, 10);
+        .filter(b => b.shelfScore > 0)
+        .sort((a, b) => b.shelfScore - a.shelfScore)
+        .slice(0, 12);
 
     if (recommendations.length === 0) {
         document.getElementById('recommendationsSection').style.display = 'none';
@@ -89,35 +171,52 @@ function generateRecommendations() {
     renderRecommendations(recommendations, highlyRatedBooks);
 }
 
+// Determine shelf location metaphor
+function determineShelfLocation(themeCount, styleScore) {
+    if (themeCount === 1 && styleScore > 20) {
+        return "One shelf over, similar voice";
+    } else if (themeCount === 1) {
+        return "Adjacent shelf";
+    } else if (themeCount === 2 && styleScore > 15) {
+        return "Nearby shelf, kindred spirit";
+    } else if (themeCount === 2) {
+        return "Nearby shelf";
+    } else if (themeCount === 3) {
+        return "Same aisle, different perspective";
+    } else if (styleScore > 25) {
+        return "Different section, similar voice";
+    } else {
+        return "Worth exploring";
+    }
+}
+
 // Render recommendations
 function renderRecommendations(recommendations, highlyRatedBooks) {
     const section = document.getElementById('recommendationsSection');
     const grid = document.getElementById('recommendationsGrid');
 
-    // Get titles of highly rated books for context
-    const likedTitles = highlyRatedBooks
-        .map(b => `"${b.title}"`)
-        .slice(0, 3)
-        .join(', ');
-
     grid.innerHTML = recommendations.map(book => {
-        // Calculate match percentage (normalize score)
-        const maxScore = Math.max(...recommendations.map(r => r.recommendationScore));
-        const matchPercent = Math.round((book.recommendationScore / maxScore) * 100);
-
         return `
             <div class="recommendation-card" data-book-id="${book.id}">
-                <span class="recommendation-score">${matchPercent}% MATCH</span>
+                <span class="shelf-location">${book.shelfLocation}</span>
                 <h3 class="book-title">${book.title}</h3>
                 <p class="book-author">by ${book.author}</p>
                 <span class="book-year">${book.year}</span>
+                <div class="writing-style">
+                    <span class="style-icon">✍️</span>
+                    <span class="style-text">${book.writingStyle}</span>
+                </div>
                 <div class="book-themes">
-                    ${book.matchedThemes.slice(0, 4).map(theme =>
-                        `<span class="theme-tag">${theme}</span>`
-                    ).join('')}
+                    ${book.matchedThemes.slice(0, 4).map(theme => {
+                        const visual = getThemeVisual(theme);
+                        return `<span class="theme-tag-visual" style="border-color: ${visual.color}">
+                            <span class="theme-icon">${visual.icon}</span>
+                            <span class="theme-name">${theme}</span>
+                        </span>`;
+                    }).join('')}
                 </div>
                 <div class="recommendation-reasons">
-                    <p>Shares ${book.matchedThemes.length} theme${book.matchedThemes.length !== 1 ? 's' : ''} with your favorites</p>
+                    <p>${book.recommendationReason}</p>
                 </div>
             </div>
         `;
@@ -187,10 +286,17 @@ function renderBooks(books) {
                 <h3 class="book-title">${book.title}</h3>
                 <p class="book-author">by ${book.author}</p>
                 <span class="book-year">${book.year}</span>
+                <div class="writing-style-compact">
+                    <span class="style-icon">✍️</span> ${book.writingStyle}
+                </div>
                 <div class="book-themes">
-                    ${book.themes.slice(0, 3).map(theme =>
-                        `<span class="theme-tag">${theme}</span>`
-                    ).join('')}
+                    ${book.themes.slice(0, 3).map(theme => {
+                        const visual = getThemeVisual(theme);
+                        return `<span class="theme-tag-visual" style="border-color: ${visual.color}">
+                            <span class="theme-icon">${visual.icon}</span>
+                            <span class="theme-name">${theme}</span>
+                        </span>`;
+                    }).join('')}
                 </div>
                 <div class="book-status">
                     <span class="read-indicator ${readStatus}">
@@ -232,13 +338,18 @@ function openBookModal(bookId) {
     document.getElementById('modalAuthor').textContent = `by ${currentBook.author}`;
     document.getElementById('modalYear').textContent = currentBook.year;
     document.getElementById('modalLanguage').textContent = currentBook.language;
+    document.getElementById('modalWritingStyle').innerHTML = `<span class="style-icon">✍️</span> ${currentBook.writingStyle}`;
     document.getElementById('modalDescription').textContent = currentBook.description;
 
-    // Themes
+    // Themes with icons
     const themesContainer = document.getElementById('modalThemes');
-    themesContainer.innerHTML = currentBook.themes.map(theme =>
-        `<span class="theme-tag">${theme}</span>`
-    ).join('');
+    themesContainer.innerHTML = currentBook.themes.map(theme => {
+        const visual = getThemeVisual(theme);
+        return `<span class="theme-tag-visual" style="border-color: ${visual.color}">
+            <span class="theme-icon">${visual.icon}</span>
+            <span class="theme-name">${theme}</span>
+        </span>`;
+    }).join('');
 
     // Rating stars
     updateModalStars(currentBook.rating || 0);

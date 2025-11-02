@@ -342,6 +342,71 @@ main {
     font-family: 'Dancing Script', cursive;
 }
 
+/* Theme Tag with Visual Icon */
+.theme-tag-visual {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(61, 44, 92, 0.4);
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    color: var(--text-primary);
+    border: 2px solid var(--border-color);
+    font-family: 'Dancing Script', cursive;
+    transition: all 0.3s;
+}
+
+.theme-tag-visual:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(155, 89, 182, 0.3);
+}
+
+.theme-icon {
+    font-size: 1rem;
+    filter: drop-shadow(0 0 3px currentColor);
+}
+
+.theme-name {
+    font-size: 0.8rem;
+}
+
+/* Writing Style Display */
+.writing-style-compact {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 8px 0;
+    padding: 6px 10px;
+    background: rgba(155, 89, 182, 0.15);
+    border-left: 3px solid var(--accent-amethyst);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.writing-style {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+    padding: 8px 12px;
+    background: rgba(155, 89, 182, 0.2);
+    border-left: 3px solid var(--accent-amethyst);
+    border-radius: 6px;
+}
+
+.style-icon {
+    font-size: 1.1rem;
+}
+
+.style-text {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    font-style: italic;
+}
+
 .book-status {
     display: flex;
     align-items: center;
@@ -464,6 +529,20 @@ main {
     border-color: var(--accent-gold);
     box-shadow: 0 8px 35px rgba(80, 200, 120, 0.5);
     transform: translateY(-8px);
+}
+
+.shelf-location {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent-emerald), rgba(80, 200, 120, 0.8));
+    color: var(--primary-bg);
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+    font-family: 'Satisfy', cursive;
+    box-shadow: 0 4px 12px rgba(80, 200, 120, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .recommendation-score {
@@ -617,6 +696,32 @@ main {
 
 .info-value {
     color: var(--text-primary);
+}
+
+.modal-writing-style {
+    margin-bottom: 25px;
+}
+
+.modal-writing-style h3 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 1.8rem;
+    color: var(--accent-amethyst);
+    margin-bottom: 12px;
+    text-shadow: 0 0 15px rgba(155, 89, 182, 0.6);
+}
+
+.writing-style-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    background: rgba(155, 89, 182, 0.15);
+    border-left: 4px solid var(--accent-amethyst);
+    border-radius: 6px;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-style: italic;
+    line-height: 1.6;
 }
 
 .modal-description,
