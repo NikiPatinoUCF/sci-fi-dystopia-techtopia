@@ -97,97 +97,86 @@ function generateRecommendations() {
     // If no highly rated books, don't show recommendations
     if (highlyRatedBooks.length === 0) {
         document.getElementById('recommendationsSection').style.display = 'none';
+        document.getElementById('recommendationsLink').style.display = 'none';
         return;
     }
 
     // Get unread books
     const unreadBooks = booksData.filter(b => !b.read);
 
-    // Calculate "one shelf over" score for each unread book
+    // Calculate scores for each unread book
     const scoredBooks = unreadBooks.map(book => {
-        let totalScore = 0;
-        let totalStyleMatch = 0;
+        let themeScore = 0;
+        let styleScore = 0;
         let shelfReasons = [];
         const matchedThemes = new Set();
 
         // Compare with each highly rated book
         highlyRatedBooks.forEach(ratedBook => {
-            // Theme overlap - looking for 1-3 shared themes (not all)
+            // Theme overlap scoring
             const sharedThemes = book.themes.filter(t => ratedBook.themes.includes(t));
-            const themeOverlapRatio = sharedThemes.length / Math.max(book.themes.length, ratedBook.themes.length);
 
-            // "One shelf over" sweet spot: 1-3 shared themes (not too similar, not too different)
-            if (sharedThemes.length >= 1 && sharedThemes.length <= 3) {
-                const shelfScore = (ratedBook.rating / 5) * (30 + (sharedThemes.length * 10));
-                totalScore += shelfScore;
+            if (sharedThemes.length >= 1) {
+                const themeWeight = (ratedBook.rating / 5) * (30 + (sharedThemes.length * 10));
+                themeScore += themeWeight;
                 sharedThemes.forEach(t => matchedThemes.add(t));
 
                 if (sharedThemes.length === 1) {
-                    shelfReasons.push(`Adjacent shelf: shares "${sharedThemes[0]}" with "${ratedBook.title}"`);
+                    shelfReasons.push(`Shares "${sharedThemes[0]}" with "${ratedBook.title}"`);
                 } else if (sharedThemes.length === 2) {
-                    shelfReasons.push(`Nearby: echoes themes from "${ratedBook.title}"`);
+                    shelfReasons.push(`Echoes themes from "${ratedBook.title}"`);
                 } else {
-                    shelfReasons.push(`Similar territory to "${ratedBook.title}"`);
+                    shelfReasons.push(`Similar to "${ratedBook.title}"`);
                 }
             }
 
-            // Writing style similarity (major factor)
+            // Writing style similarity (separate scoring)
             const styleSimilarity = calculateStyleSimilarity(book.writingStyle, ratedBook.writingStyle);
             if (styleSimilarity > 0) {
-                totalStyleMatch += styleSimilarity * (ratedBook.rating / 5) * 15;
-                shelfReasons.push(`Writing style resonates with "${ratedBook.title}"`);
+                styleScore += styleSimilarity * (ratedBook.rating / 5) * 15;
+                if (styleSimilarity >= 2) {
+                    shelfReasons.push(`Writing style resonates with "${ratedBook.title}"`);
+                }
             }
 
-            // Era proximity (minor factor)
+            // Era proximity bonus
             const yearDiff = Math.abs(book.year - ratedBook.year);
             if (yearDiff <= 20) {
-                totalScore += (ratedBook.rating / 5) * 8;
+                themeScore += (ratedBook.rating / 5) * 5;
             }
         });
 
-        // Prefer books with moderate theme overlap (avoid exact matches)
-        const diversityBonus = matchedThemes.size >= 1 && matchedThemes.size <= 3 ? 20 : 0;
-
         return {
             ...book,
-            shelfScore: totalScore + totalStyleMatch + diversityBonus,
+            themeScore: themeScore,
+            styleScore: styleScore,
+            totalScore: themeScore + styleScore,
             matchedThemes: Array.from(matchedThemes),
-            shelfLocation: determineShelfLocation(matchedThemes.size, totalStyleMatch),
-            recommendationReason: shelfReasons[0] || "Recommended based on your tastes"
+            isOneShelfOver: styleScore > 20,
+            recommendationReason: shelfReasons[0] || "Recommended based on your preferences"
         };
     });
 
-    // Sort by shelf score and get top 12
+    // Sort by total score and get top 12
     const recommendations = scoredBooks
-        .filter(b => b.shelfScore > 0)
-        .sort((a, b) => b.shelfScore - a.shelfScore)
+        .filter(b => b.totalScore > 0)
+        .sort((a, b) => b.totalScore - a.totalScore)
         .slice(0, 12);
 
     if (recommendations.length === 0) {
         document.getElementById('recommendationsSection').style.display = 'none';
+        document.getElementById('recommendationsLink').style.display = 'none';
         return;
     }
 
-    renderRecommendations(recommendations, highlyRatedBooks);
-}
+    // Calculate percentage match for display
+    const maxThemeScore = Math.max(...recommendations.map(r => r.themeScore));
+    recommendations.forEach(book => {
+        book.matchPercent = maxThemeScore > 0 ? Math.round((book.themeScore / maxThemeScore) * 100) : 0;
+    });
 
-// Determine shelf location metaphor
-function determineShelfLocation(themeCount, styleScore) {
-    if (themeCount === 1 && styleScore > 20) {
-        return "One shelf over, similar voice";
-    } else if (themeCount === 1) {
-        return "Adjacent shelf";
-    } else if (themeCount === 2 && styleScore > 15) {
-        return "Nearby shelf, kindred spirit";
-    } else if (themeCount === 2) {
-        return "Nearby shelf";
-    } else if (themeCount === 3) {
-        return "Same aisle, different perspective";
-    } else if (styleScore > 25) {
-        return "Different section, similar voice";
-    } else {
-        return "Worth exploring";
-    }
+    renderRecommendations(recommendations, highlyRatedBooks);
+    document.getElementById('recommendationsLink').style.display = 'inline-block';
 }
 
 // Render recommendations
@@ -198,7 +187,10 @@ function renderRecommendations(recommendations, highlyRatedBooks) {
     grid.innerHTML = recommendations.map(book => {
         return `
             <div class="recommendation-card" data-book-id="${book.id}">
-                <span class="shelf-location">${book.shelfLocation}</span>
+                <div class="recommendation-badges">
+                    <span class="match-percent">${book.matchPercent}% Match</span>
+                    ${book.isOneShelfOver ? '<span class="shelf-location">📚 One Shelf Over</span>' : ''}
+                </div>
                 <h3 class="book-title">${book.title}</h3>
                 <p class="book-author">by ${book.author}</p>
                 <span class="book-year">${book.year}</span>
