@@ -343,6 +343,19 @@ main {
     font-family: 'Patrick Hand', cursive;
 }
 
+.author-bio {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    background: rgba(80, 200, 120, 0.1);
+    border-left: 3px solid var(--accent-emerald);
+    border-radius: 4px;
+    line-height: 1.5;
+    font-family: 'Caveat', cursive;
+}
+
 .book-year {
     display: inline-block;
     background: rgba(155, 89, 182, 0.3);

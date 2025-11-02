@@ -194,6 +194,7 @@ function renderRecommendations(recommendations, highlyRatedBooks) {
                 </div>
                 <h3 class="book-title">${book.title}</h3>
                 <p class="book-author">by ${book.author}</p>
+                <p class="author-bio">${book.authorBio}</p>
                 <span class="book-year">${book.year}</span>
                 <div class="writing-style">
                     <span class="style-icon">✍️</span>
