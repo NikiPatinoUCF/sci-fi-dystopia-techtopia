@@ -5,8 +5,14 @@
     "author": "George Orwell",
     "year": 1949,
     "language": "English",
-    "themes": ["surveillance", "totalitarianism", "thought-control", "propaganda"],
-    "description": "A chilling prophecy about the future where Big Brother watches everyone."
+    "themes": [
+      "surveillance",
+      "totalitarianism",
+      "thought-control",
+      "propaganda"
+    ],
+    "description": "A chilling prophecy about the future where Big Brother watches everyone.",
+    "writingStyle": "Stark and clinical"
   },
   {
     "id": 2,
@@ -14,8 +20,14 @@
     "author": "Aldous Huxley",
     "year": 1932,
     "language": "English",
-    "themes": ["genetic-engineering", "social-control", "consumerism", "conditioning"],
-    "description": "A world where humans are genetically bred and pharmaceutically controlled."
+    "themes": [
+      "genetic-engineering",
+      "social-control",
+      "consumerism",
+      "conditioning"
+    ],
+    "description": "A world where humans are genetically bred and pharmaceutically controlled.",
+    "writingStyle": "Satirical and philosophical"
   },
   {
     "id": 3,
@@ -23,8 +35,14 @@
     "author": "Ray Bradbury",
     "year": 1953,
     "language": "English",
-    "themes": ["censorship", "anti-intellectualism", "media-control", "conformity"],
-    "description": "Firemen burn books in a future where reading is outlawed."
+    "themes": [
+      "censorship",
+      "anti-intellectualism",
+      "media-control",
+      "conformity"
+    ],
+    "description": "Firemen burn books in a future where reading is outlawed.",
+    "writingStyle": "Poetic and lyrical"
   },
   {
     "id": 4,
@@ -32,8 +50,14 @@
     "author": "Margaret Atwood",
     "year": 1985,
     "language": "English",
-    "themes": ["theocracy", "gender-oppression", "reproduction-control", "resistance"],
-    "description": "A theocratic regime subjugates women in a totalitarian society."
+    "themes": [
+      "theocracy",
+      "gender-oppression",
+      "reproduction-control",
+      "resistance"
+    ],
+    "description": "A theocratic regime subjugates women in a totalitarian society.",
+    "writingStyle": "Intimate and haunting"
   },
   {
     "id": 5,
@@ -41,8 +65,14 @@
     "author": "William Gibson",
     "year": 1984,
     "language": "English",
-    "themes": ["cyberpunk", "AI", "virtual-reality", "corporate-power"],
-    "description": "A hacker and an AI navigate a dystopian cyberpunk future."
+    "themes": [
+      "cyberpunk",
+      "AI",
+      "virtual-reality",
+      "corporate-power"
+    ],
+    "description": "A hacker and an AI navigate a dystopian cyberpunk future.",
+    "writingStyle": "Dense and atmospheric"
   },
   {
     "id": 6,
@@ -50,8 +80,14 @@
     "author": "Neal Stephenson",
     "year": 1992,
     "language": "English",
-    "themes": ["virtual-reality", "corporate-states", "linguistics", "hackers"],
-    "description": "A pizza delivery driver battles a digital virus in a corporate-dominated America."
+    "themes": [
+      "virtual-reality",
+      "corporate-states",
+      "linguistics",
+      "hackers"
+    ],
+    "description": "A pizza delivery driver battles a digital virus in a corporate-dominated America.",
+    "writingStyle": "Fast-paced and satirical"
   },
   {
     "id": 7,
@@ -59,8 +95,14 @@
     "author": "Suzanne Collins",
     "year": 2008,
     "language": "English",
-    "themes": ["survival", "entertainment-as-control", "rebellion", "class-divide"],
-    "description": "Children fight to the death in a televised spectacle in a post-apocalyptic nation."
+    "themes": [
+      "survival",
+      "entertainment-as-control",
+      "rebellion",
+      "class-divide"
+    ],
+    "description": "Children fight to the death in a televised spectacle in a post-apocalyptic nation.",
+    "writingStyle": "Fast-paced and visceral"
   },
   {
     "id": 8,
@@ -68,8 +110,14 @@
     "author": "Philip K. Dick",
     "year": 1968,
     "language": "English",
-    "themes": ["artificial-intelligence", "identity", "empathy", "post-apocalyptic"],
-    "description": "A bounty hunter tracks down rogue androids in a devastated future Earth."
+    "themes": [
+      "artificial-intelligence",
+      "identity",
+      "empathy",
+      "post-apocalyptic"
+    ],
+    "description": "A bounty hunter tracks down rogue androids in a devastated future Earth.",
+    "writingStyle": "Contemplative and noir"
   },
   {
     "id": 9,
@@ -77,8 +125,14 @@
     "author": "Ursula K. Le Guin",
     "year": 1974,
     "language": "English",
-    "themes": ["anarchism", "capitalism", "social-systems", "revolution"],
-    "description": "A physicist navigates between an anarchist moon colony and a capitalist planet."
+    "themes": [
+      "anarchism",
+      "capitalism",
+      "social-systems",
+      "revolution"
+    ],
+    "description": "A physicist navigates between an anarchist moon colony and a capitalist planet.",
+    "writingStyle": "Philosophical and nuanced"
   },
   {
     "id": 10,
@@ -86,8 +140,14 @@
     "author": "Yevgeny Zamyatin",
     "year": 1924,
     "language": "Russian",
-    "themes": ["totalitarianism", "individualism", "surveillance", "conformity"],
-    "description": "Citizens live in glass apartments under constant surveillance in a regimented society."
+    "themes": [
+      "totalitarianism",
+      "individualism",
+      "surveillance",
+      "conformity"
+    ],
+    "description": "Citizens live in glass apartments under constant surveillance in a regimented society.",
+    "writingStyle": "Experimental and mathematical"
   },
   {
     "id": 11,
@@ -95,8 +155,14 @@
     "author": "Cormac McCarthy",
     "year": 2006,
     "language": "English",
-    "themes": ["post-apocalyptic", "survival", "humanity", "father-son"],
-    "description": "A father and son journey through a devastated, ash-covered America."
+    "themes": [
+      "post-apocalyptic",
+      "survival",
+      "humanity",
+      "father-son"
+    ],
+    "description": "A father and son journey through a devastated, ash-covered America.",
+    "writingStyle": "Sparse and poetic"
   },
   {
     "id": 12,
@@ -104,8 +170,14 @@
     "author": "Emily St. John Mandel",
     "year": 2014,
     "language": "English",
-    "themes": ["pandemic", "civilization-collapse", "art", "memory"],
-    "description": "A traveling theater troupe performs Shakespeare in a post-pandemic world."
+    "themes": [
+      "pandemic",
+      "civilization-collapse",
+      "art",
+      "memory"
+    ],
+    "description": "A traveling theater troupe performs Shakespeare in a post-pandemic world.",
+    "writingStyle": "Lyrical and interconnected"
   },
   {
     "id": 13,
@@ -113,8 +185,14 @@
     "author": "Dave Eggers",
     "year": 2013,
     "language": "English",
-    "themes": ["privacy", "social-media", "surveillance", "transparency"],
-    "description": "A woman works at a powerful tech company that seeks total transparency."
+    "themes": [
+      "privacy",
+      "social-media",
+      "surveillance",
+      "transparency"
+    ],
+    "description": "A woman works at a powerful tech company that seeks total transparency.",
+    "writingStyle": "Contemporary and accessible"
   },
   {
     "id": 14,
@@ -122,8 +200,14 @@
     "author": "Ernest Cline",
     "year": 2011,
     "language": "English",
-    "themes": ["virtual-reality", "gaming", "corporate-control", "escapism"],
-    "description": "A teenager hunts for an Easter egg in a massive virtual reality universe."
+    "themes": [
+      "virtual-reality",
+      "gaming",
+      "corporate-control",
+      "escapism"
+    ],
+    "description": "A teenager hunts for an Easter egg in a massive virtual reality universe.",
+    "writingStyle": "Pop-culture dense"
   },
   {
     "id": 15,
@@ -131,8 +215,14 @@
     "author": "Ursula K. Le Guin",
     "year": 1969,
     "language": "English",
-    "themes": ["gender", "politics", "alien-cultures", "diplomacy"],
-    "description": "An envoy visits a world where inhabitants can change gender."
+    "themes": [
+      "gender",
+      "politics",
+      "alien-cultures",
+      "diplomacy"
+    ],
+    "description": "An envoy visits a world where inhabitants can change gender.",
+    "writingStyle": "Thoughtful and anthropological"
   },
   {
     "id": 16,
@@ -140,8 +230,14 @@
     "author": "Lois Lowry",
     "year": 1993,
     "language": "English",
-    "themes": ["memory-control", "conformity", "emotion-suppression", "utopia-critique"],
-    "description": "A boy discovers the dark truth behind his seemingly perfect society."
+    "themes": [
+      "memory-control",
+      "conformity",
+      "emotion-suppression",
+      "utopia-critique"
+    ],
+    "description": "A boy discovers the dark truth behind his seemingly perfect society.",
+    "writingStyle": "Simple yet profound"
   },
   {
     "id": 17,
@@ -149,8 +245,14 @@
     "author": "Anthony Burgess",
     "year": 1962,
     "language": "English",
-    "themes": ["free-will", "violence", "psychological-conditioning", "youth-culture"],
-    "description": "A violent youth undergoes experimental behavior modification in a brutal future."
+    "themes": [
+      "free-will",
+      "violence",
+      "psychological-conditioning",
+      "youth-culture"
+    ],
+    "description": "A violent youth undergoes experimental behavior modification in a brutal future.",
+    "writingStyle": "Linguistically inventive"
   },
   {
     "id": 18,
@@ -158,8 +260,14 @@
     "author": "James Dashner",
     "year": 2009,
     "language": "English",
-    "themes": ["survival", "experimentation", "memory-loss", "dystopian-youth"],
-    "description": "Teenagers trapped in a maze must find a way to escape their mysterious prison."
+    "themes": [
+      "survival",
+      "experimentation",
+      "memory-loss",
+      "dystopian-youth"
+    ],
+    "description": "Teenagers trapped in a maze must find a way to escape their mysterious prison.",
+    "writingStyle": "Fast-paced and mysterious"
   },
   {
     "id": 19,
@@ -167,8 +275,14 @@
     "author": "Octavia E. Butler",
     "year": 1993,
     "language": "English",
-    "themes": ["climate-change", "social-collapse", "religion", "survival"],
-    "description": "A young woman with empathic abilities leads survivors through a collapsing America."
+    "themes": [
+      "climate-change",
+      "social-collapse",
+      "religion",
+      "survival"
+    ],
+    "description": "A young woman with empathic abilities leads survivors through a collapsing America.",
+    "writingStyle": "Powerful and prophetic"
   },
   {
     "id": 20,
@@ -176,8 +290,14 @@
     "author": "Margaret Atwood",
     "year": 2003,
     "language": "English",
-    "themes": ["genetic-engineering", "pandemic", "corporate-power", "post-human"],
-    "description": "A man may be the last human alive after a genetically engineered plague."
+    "themes": [
+      "genetic-engineering",
+      "pandemic",
+      "corporate-power",
+      "post-human"
+    ],
+    "description": "A man may be the last human alive after a genetically engineered plague.",
+    "writingStyle": "Dark and satirical"
   },
   {
     "id": 21,
@@ -185,8 +305,14 @@
     "author": "Paolo Bacigalupi",
     "year": 2009,
     "language": "English",
-    "themes": ["biopunk", "climate-change", "genetic-engineering", "corporate-control"],
-    "description": "In a future of scarce energy, bioengineered beings struggle for freedom."
+    "themes": [
+      "biopunk",
+      "climate-change",
+      "genetic-engineering",
+      "corporate-control"
+    ],
+    "description": "In a future of scarce energy, bioengineered beings struggle for freedom.",
+    "writingStyle": "Richly detailed biopunk"
   },
   {
     "id": 22,
@@ -194,8 +320,14 @@
     "author": "Richard K. Morgan",
     "year": 2002,
     "language": "English",
-    "themes": ["consciousness-transfer", "immortality", "cyberpunk", "body-modification"],
-    "description": "Minds can be transferred between bodies in a noir cyberpunk future."
+    "themes": [
+      "consciousness-transfer",
+      "immortality",
+      "cyberpunk",
+      "body-modification"
+    ],
+    "description": "Minds can be transferred between bodies in a noir cyberpunk future.",
+    "writingStyle": "Gritty noir cyberpunk"
   },
   {
     "id": 23,
@@ -203,8 +335,14 @@
     "author": "P.D. James",
     "year": 1992,
     "language": "English",
-    "themes": ["infertility", "societal-collapse", "hope", "authoritarianism"],
-    "description": "Humanity faces extinction as no children have been born for 25 years."
+    "themes": [
+      "infertility",
+      "societal-collapse",
+      "hope",
+      "authoritarianism"
+    ],
+    "description": "Humanity faces extinction as no children have been born for 25 years.",
+    "writingStyle": "Elegant and literary"
   },
   {
     "id": 24,
@@ -212,8 +350,14 @@
     "author": "Naomi Alderman",
     "year": 2016,
     "language": "English",
-    "themes": ["gender-power", "societal-upheaval", "violence", "revolution"],
-    "description": "Women develop the ability to release electrical charges, reversing gender power dynamics."
+    "themes": [
+      "gender-power",
+      "societal-upheaval",
+      "violence",
+      "revolution"
+    ],
+    "description": "Women develop the ability to release electrical charges, reversing gender power dynamics.",
+    "writingStyle": "Sharp and provocative"
   },
   {
     "id": 25,
@@ -221,8 +365,14 @@
     "author": "José Saramago",
     "year": 1995,
     "language": "Portuguese",
-    "themes": ["pandemic", "civilization-collapse", "humanity", "survival"],
-    "description": "An epidemic of blindness causes society to break down."
+    "themes": [
+      "pandemic",
+      "civilization-collapse",
+      "humanity",
+      "survival"
+    ],
+    "description": "An epidemic of blindness causes society to break down.",
+    "writingStyle": "Stream-of-consciousness"
   },
   {
     "id": 26,
@@ -230,8 +380,14 @@
     "author": "William Gibson",
     "year": 2014,
     "language": "English",
-    "themes": ["time-travel", "virtual-reality", "climate-change", "technology"],
-    "description": "A woman witnesses a murder in the future through a virtual reality connection."
+    "themes": [
+      "time-travel",
+      "virtual-reality",
+      "climate-change",
+      "technology"
+    ],
+    "description": "A woman witnesses a murder in the future through a virtual reality connection.",
+    "writingStyle": "Complex and layered"
   },
   {
     "id": 27,
@@ -239,8 +395,14 @@
     "author": "Veronica Roth",
     "year": 2011,
     "language": "English",
-    "themes": ["factions", "identity", "conformity", "rebellion"],
-    "description": "Society is divided into factions based on virtues; those who don't fit are dangerous."
+    "themes": [
+      "factions",
+      "identity",
+      "conformity",
+      "rebellion"
+    ],
+    "description": "Society is divided into factions based on virtues; those who don't fit are dangerous.",
+    "writingStyle": "Direct and action-driven"
   },
   {
     "id": 28,
@@ -248,8 +410,14 @@
     "author": "Kazuo Ishiguro",
     "year": 2005,
     "language": "English",
-    "themes": ["cloning", "bioethics", "humanity", "identity"],
-    "description": "Students at a boarding school discover they are clones raised for organ donation."
+    "themes": [
+      "cloning",
+      "bioethics",
+      "humanity",
+      "identity"
+    ],
+    "description": "Students at a boarding school discover they are clones raised for organ donation.",
+    "writingStyle": "Understated and melancholic"
   },
   {
     "id": 29,
@@ -257,8 +425,14 @@
     "author": "Liu Cixin",
     "year": 2008,
     "language": "Chinese",
-    "themes": ["first-contact", "virtual-reality", "alien-invasion", "physics"],
-    "description": "Scientists discover an alien civilization preparing to invade Earth."
+    "themes": [
+      "first-contact",
+      "virtual-reality",
+      "alien-invasion",
+      "physics"
+    ],
+    "description": "Scientists discover an alien civilization preparing to invade Earth.",
+    "writingStyle": "Scientific and epic"
   },
   {
     "id": 30,
@@ -266,8 +440,14 @@
     "author": "Neal Stephenson",
     "year": 1995,
     "language": "English",
-    "themes": ["nanotechnology", "education", "class-divide", "AI"],
-    "description": "A young girl receives an interactive book designed to raise a neo-Victorian elite."
+    "themes": [
+      "nanotechnology",
+      "education",
+      "class-divide",
+      "AI"
+    ],
+    "description": "A young girl receives an interactive book designed to raise a neo-Victorian elite.",
+    "writingStyle": "Baroque and playful"
   },
   {
     "id": 31,
@@ -275,8 +455,14 @@
     "author": "David Mitchell",
     "year": 2004,
     "language": "English",
-    "themes": ["reincarnation", "interconnection", "power-structures", "rebellion"],
-    "description": "Six interconnected stories span from the 19th century to a post-apocalyptic future."
+    "themes": [
+      "reincarnation",
+      "interconnection",
+      "power-structures",
+      "rebellion"
+    ],
+    "description": "Six interconnected stories span from the 19th century to a post-apocalyptic future.",
+    "writingStyle": "Experimental and nested"
   },
   {
     "id": 32,
@@ -284,8 +470,14 @@
     "author": "Starhawk",
     "year": 1993,
     "language": "English",
-    "themes": ["ecotopia", "pacifism", "theocracy", "spirituality"],
-    "description": "An ecotopian San Francisco faces invasion from a militaristic regime."
+    "themes": [
+      "ecotopia",
+      "pacifism",
+      "theocracy",
+      "spirituality"
+    ],
+    "description": "An ecotopian San Francisco faces invasion from a militaristic regime.",
+    "writingStyle": "Lyrical and spiritual"
   },
   {
     "id": 33,
@@ -293,8 +485,14 @@
     "author": "Philip K. Dick",
     "year": 1962,
     "language": "English",
-    "themes": ["alternate-history", "occupation", "reality", "resistance"],
-    "description": "America is occupied by Nazi Germany and Japan in an alternate history."
+    "themes": [
+      "alternate-history",
+      "occupation",
+      "reality",
+      "resistance"
+    ],
+    "description": "America is occupied by Nazi Germany and Japan in an alternate history.",
+    "writingStyle": "Paranoid and layered"
   },
   {
     "id": 34,
@@ -302,8 +500,14 @@
     "author": "Hugh Howey",
     "year": 2011,
     "language": "English",
-    "themes": ["underground-society", "secrets", "survival", "rebellion"],
-    "description": "Survivors live in a massive underground silo, forbidden to discuss the outside world."
+    "themes": [
+      "underground-society",
+      "secrets",
+      "survival",
+      "rebellion"
+    ],
+    "description": "Survivors live in a massive underground silo, forbidden to discuss the outside world.",
+    "writingStyle": "Tense and mysterious"
   },
   {
     "id": 35,
@@ -311,8 +515,14 @@
     "author": "Ursula K. Le Guin",
     "year": 1971,
     "language": "English",
-    "themes": ["reality-manipulation", "dreams", "unintended-consequences", "power"],
-    "description": "A man's dreams can alter reality, with terrifying consequences."
+    "themes": [
+      "reality-manipulation",
+      "dreams",
+      "unintended-consequences",
+      "power"
+    ],
+    "description": "A man's dreams can alter reality, with terrifying consequences.",
+    "writingStyle": "Philosophical and dreamlike"
   },
   {
     "id": 36,
@@ -320,8 +530,14 @@
     "author": "Karin Boye",
     "year": 1940,
     "language": "Swedish",
-    "themes": ["totalitarianism", "truth-serum", "surveillance", "psychology"],
-    "description": "A chemist invents a truth serum in a totalitarian state where privacy doesn't exist."
+    "themes": [
+      "totalitarianism",
+      "truth-serum",
+      "surveillance",
+      "psychology"
+    ],
+    "description": "A chemist invents a truth serum in a totalitarian state where privacy doesn't exist.",
+    "writingStyle": "Psychological and clinical"
   },
   {
     "id": 37,
@@ -329,8 +545,14 @@
     "author": "David Brin",
     "year": 1985,
     "language": "English",
-    "themes": ["post-apocalyptic", "hope", "civilization-rebuilding", "identity"],
-    "description": "A drifter wearing a postman's uniform becomes a symbol of hope in post-apocalyptic America."
+    "themes": [
+      "post-apocalyptic",
+      "hope",
+      "civilization-rebuilding",
+      "identity"
+    ],
+    "description": "A drifter wearing a postman's uniform becomes a symbol of hope in post-apocalyptic America.",
+    "writingStyle": "Hopeful and episodic"
   },
   {
     "id": 38,
@@ -338,8 +560,14 @@
     "author": "Ayn Rand",
     "year": 1938,
     "language": "English",
-    "themes": ["collectivism", "individualism", "technology-suppression", "discovery"],
-    "description": "In a collectivist future, a man rediscovers individualism and electricity."
+    "themes": [
+      "collectivism",
+      "individualism",
+      "technology-suppression",
+      "discovery"
+    ],
+    "description": "In a collectivist future, a man rediscovers individualism and electricity.",
+    "writingStyle": "Philosophical and direct"
   },
   {
     "id": 39,
@@ -347,8 +575,14 @@
     "author": "Frederik Pohl & C.M. Kornbluth",
     "year": 1952,
     "language": "English",
-    "themes": ["corporate-control", "advertising", "consumerism", "overpopulation"],
-    "description": "Advertising agencies run a overpopulated Earth in this satirical dystopia."
+    "themes": [
+      "corporate-control",
+      "advertising",
+      "consumerism",
+      "overpopulation"
+    ],
+    "description": "Advertising agencies run a overpopulated Earth in this satirical dystopia.",
+    "writingStyle": "Satirical and witty"
   },
   {
     "id": 40,
@@ -356,8 +590,14 @@
     "author": "M.T. Anderson",
     "year": 2002,
     "language": "English",
-    "themes": ["brain-implants", "consumerism", "corporate-control", "education-decline"],
-    "description": "Teenagers have internet feeds implanted directly into their brains."
+    "themes": [
+      "brain-implants",
+      "consumerism",
+      "corporate-control",
+      "education-decline"
+    ],
+    "description": "Teenagers have internet feeds implanted directly into their brains.",
+    "writingStyle": "Fragmented and modern"
   },
   {
     "id": 41,
@@ -365,8 +605,14 @@
     "author": "Paolo Bacigalupi",
     "year": 2015,
     "language": "English",
-    "themes": ["climate-change", "water-scarcity", "corporate-power", "survival"],
-    "description": "Water has become the most precious commodity in a drought-ravaged American Southwest."
+    "themes": [
+      "climate-change",
+      "water-scarcity",
+      "corporate-power",
+      "survival"
+    ],
+    "description": "Water has become the most precious commodity in a drought-ravaged American Southwest.",
+    "writingStyle": "Gritty and visceral"
   },
   {
     "id": 42,
@@ -374,8 +620,14 @@
     "author": "Orson Scott Card",
     "year": 1985,
     "language": "English",
-    "themes": ["child-soldiers", "simulation", "alien-war", "manipulation"],
-    "description": "Children are trained through games to fight an alien threat."
+    "themes": [
+      "child-soldiers",
+      "simulation",
+      "alien-war",
+      "manipulation"
+    ],
+    "description": "Children are trained through games to fight an alien threat.",
+    "writingStyle": "Strategic and psychological"
   },
   {
     "id": 43,
@@ -383,8 +635,14 @@
     "author": "J.G. Ballard",
     "year": 1962,
     "language": "English",
-    "themes": ["climate-change", "flooding", "evolution", "psychological-transformation"],
-    "description": "Global warming has transformed Earth into a tropical hellscape."
+    "themes": [
+      "climate-change",
+      "flooding",
+      "evolution",
+      "psychological-transformation"
+    ],
+    "description": "Global warming has transformed Earth into a tropical hellscape.",
+    "writingStyle": "Lush and surreal"
   },
   {
     "id": 44,
@@ -392,8 +650,14 @@
     "author": "China Miéville",
     "year": 2009,
     "language": "English",
-    "themes": ["divided-society", "perception", "borders", "crime"],
-    "description": "Two cities occupy the same space, and citizens must 'unsee' the other city."
+    "themes": [
+      "divided-society",
+      "perception",
+      "borders",
+      "crime"
+    ],
+    "description": "Two cities occupy the same space, and citizens must 'unsee' the other city.",
+    "writingStyle": "Intricate and noir"
   },
   {
     "id": 45,
@@ -401,8 +665,14 @@
     "author": "Kim Stanley Robinson",
     "year": 1992,
     "language": "English",
-    "themes": ["colonization", "terraforming", "politics", "corporate-power"],
-    "description": "The first 100 colonists struggle to terraform Mars and establish a new society."
+    "themes": [
+      "colonization",
+      "terraforming",
+      "politics",
+      "corporate-power"
+    ],
+    "description": "The first 100 colonists struggle to terraform Mars and establish a new society.",
+    "writingStyle": "Detailed and scientific"
   },
   {
     "id": 46,
@@ -410,8 +680,14 @@
     "author": "Justin Cronin",
     "year": 2010,
     "language": "English",
-    "themes": ["post-apocalyptic", "vampires", "survival", "government-experiments"],
-    "description": "A military experiment creates vampire-like creatures that destroy civilization."
+    "themes": [
+      "post-apocalyptic",
+      "vampires",
+      "survival",
+      "government-experiments"
+    ],
+    "description": "A military experiment creates vampire-like creatures that destroy civilization.",
+    "writingStyle": "Epic and atmospheric"
   },
   {
     "id": 47,
@@ -419,8 +695,14 @@
     "author": "Franz Kafka",
     "year": 1925,
     "language": "German",
-    "themes": ["bureaucracy", "justice-system", "absurdism", "persecution"],
-    "description": "A man is arrested and prosecuted by an inaccessible authority for an unknown crime."
+    "themes": [
+      "bureaucracy",
+      "justice-system",
+      "absurdism",
+      "persecution"
+    ],
+    "description": "A man is arrested and prosecuted by an inaccessible authority for an unknown crime.",
+    "writingStyle": "Absurdist and Kafkaesque"
   },
   {
     "id": 48,
@@ -428,8 +710,14 @@
     "author": "Jeff Noon",
     "year": 1993,
     "language": "English",
-    "themes": ["virtual-reality", "drugs", "alternate-dimensions", "subculture"],
-    "description": "People access alternate realities through psychoactive feathers in a grim Manchester."
+    "themes": [
+      "virtual-reality",
+      "drugs",
+      "alternate-dimensions",
+      "subculture"
+    ],
+    "description": "People access alternate realities through psychoactive feathers in a grim Manchester.",
+    "writingStyle": "Psychedelic and experimental"
   },
   {
     "id": 49,
@@ -437,8 +725,14 @@
     "author": "Joe Haldeman",
     "year": 1974,
     "language": "English",
-    "themes": ["time-dilation", "war", "alienation", "military"],
-    "description": "Soldiers fight an interstellar war while time passes differently on Earth."
+    "themes": [
+      "time-dilation",
+      "war",
+      "alienation",
+      "military"
+    ],
+    "description": "Soldiers fight an interstellar war while time passes differently on Earth.",
+    "writingStyle": "Military and contemplative"
   },
   {
     "id": 50,
@@ -446,8 +740,14 @@
     "author": "Dmitry Glukhovsky",
     "year": 2005,
     "language": "Russian",
-    "themes": ["post-apocalyptic", "underground-society", "survival", "mutants"],
-    "description": "Survivors live in Moscow's metro system after a nuclear war."
+    "themes": [
+      "post-apocalyptic",
+      "underground-society",
+      "survival",
+      "mutants"
+    ],
+    "description": "Survivors live in Moscow's metro system after a nuclear war.",
+    "writingStyle": "Dark and atmospheric"
   },
   {
     "id": 51,
@@ -455,8 +755,14 @@
     "author": "Daniel Suarez",
     "year": 2006,
     "language": "English",
-    "themes": ["AI", "automation", "corporate-power", "technology-takeover"],
-    "description": "A dead game designer's AI begins executing a program to reshape society."
+    "themes": [
+      "AI",
+      "automation",
+      "corporate-power",
+      "technology-takeover"
+    ],
+    "description": "A dead game designer's AI begins executing a program to reshape society.",
+    "writingStyle": "Technical and suspenseful"
   },
   {
     "id": 52,
@@ -464,8 +770,14 @@
     "author": "Koushun Takami",
     "year": 1999,
     "language": "Japanese",
-    "themes": ["survival", "government-control", "violence", "youth"],
-    "description": "Students are forced to fight to the death on an island by a totalitarian government."
+    "themes": [
+      "survival",
+      "government-control",
+      "violence",
+      "youth"
+    ],
+    "description": "Students are forced to fight to the death on an island by a totalitarian government.",
+    "writingStyle": "Brutal and fast-paced"
   },
   {
     "id": 53,
@@ -473,8 +785,14 @@
     "author": "Margaret Atwood",
     "year": 1985,
     "language": "English",
-    "themes": ["theocracy", "gender-oppression", "reproduction-control", "resistance"],
-    "description": "A theocratic regime subjugates women in a totalitarian society."
+    "themes": [
+      "theocracy",
+      "gender-oppression",
+      "reproduction-control",
+      "resistance"
+    ],
+    "description": "A theocratic regime subjugates women in a totalitarian society.",
+    "writingStyle": "Intimate and haunting"
   },
   {
     "id": 54,
@@ -482,8 +800,14 @@
     "author": "Alan Moore",
     "year": 1988,
     "language": "English",
-    "themes": ["anarchism", "fascism", "resistance", "terrorism"],
-    "description": "A masked vigilante fights against a fascist government in Britain."
+    "themes": [
+      "anarchism",
+      "fascism",
+      "resistance",
+      "terrorism"
+    ],
+    "description": "A masked vigilante fights against a fascist government in Britain.",
+    "writingStyle": "Graphic and symbolic"
   },
   {
     "id": 55,
@@ -491,8 +815,14 @@
     "author": "Cory Doctorow",
     "year": 2008,
     "language": "English",
-    "themes": ["surveillance", "civil-liberties", "terrorism", "hacking"],
-    "description": "Teenagers fight back against government surveillance after a terrorist attack."
+    "themes": [
+      "surveillance",
+      "civil-liberties",
+      "terrorism",
+      "hacking"
+    ],
+    "description": "Teenagers fight back against government surveillance after a terrorist attack.",
+    "writingStyle": "Technical and accessible"
   },
   {
     "id": 56,
@@ -500,8 +830,14 @@
     "author": "Philip K. Dick",
     "year": 1969,
     "language": "English",
-    "themes": ["reality", "time", "death", "corporate-intrigue"],
-    "description": "Reality begins to decay for survivors of a psychic attack in this mind-bending tale."
+    "themes": [
+      "reality",
+      "time",
+      "death",
+      "corporate-intrigue"
+    ],
+    "description": "Reality begins to decay for survivors of a psychic attack in this mind-bending tale.",
+    "writingStyle": "Mind-bending and surreal"
   },
   {
     "id": 57,
@@ -509,8 +845,14 @@
     "author": "Alfred Bester",
     "year": 1956,
     "language": "English",
-    "themes": ["teleportation", "revenge", "social-classes", "transformation"],
-    "description": "A man gains the power to teleport and seeks revenge in a future of corporate warfare."
+    "themes": [
+      "teleportation",
+      "revenge",
+      "social-classes",
+      "transformation"
+    ],
+    "description": "A man gains the power to teleport and seeks revenge in a future of corporate warfare.",
+    "writingStyle": "Pulpy and energetic"
   },
   {
     "id": 58,
@@ -518,8 +860,14 @@
     "author": "Jeff VanderMeer",
     "year": 2014,
     "language": "English",
-    "themes": ["alien-environment", "transformation", "government-secrets", "ecology"],
-    "description": "A team explores a mysterious zone where nature has become alien and dangerous."
+    "themes": [
+      "alien-environment",
+      "transformation",
+      "government-secrets",
+      "ecology"
+    ],
+    "description": "A team explores a mysterious zone where nature has become alien and dangerous.",
+    "writingStyle": "Atmospheric and mysterious"
   },
   {
     "id": 59,
@@ -527,8 +875,14 @@
     "author": "Philip K. Dick",
     "year": 1956,
     "language": "English",
-    "themes": ["precrime", "free-will", "surveillance", "prediction"],
-    "description": "Police arrest criminals before they commit crimes using precognitive mutants."
+    "themes": [
+      "precrime",
+      "free-will",
+      "surveillance",
+      "prediction"
+    ],
+    "description": "Police arrest criminals before they commit crimes using precognitive mutants.",
+    "writingStyle": "Taut and psychological"
   },
   {
     "id": 60,
@@ -536,8 +890,14 @@
     "author": "Jennifer Marie Brissett",
     "year": 2014,
     "language": "English",
-    "themes": ["AI", "simulation", "identity", "love"],
-    "description": "A dying AI recreates simulations of its creators' lives in various scenarios."
+    "themes": [
+      "AI",
+      "simulation",
+      "identity",
+      "love"
+    ],
+    "description": "A dying AI recreates simulations of its creators' lives in various scenarios.",
+    "writingStyle": "Experimental and poetic"
   },
   {
     "id": 61,
@@ -545,8 +905,14 @@
     "author": "Gene Wolfe",
     "year": 1980,
     "language": "English",
-    "themes": ["far-future", "dying-earth", "memory", "religion"],
-    "description": "A torturer's apprentice becomes the leader of a dying Earth in the far future."
+    "themes": [
+      "far-future",
+      "dying-earth",
+      "memory",
+      "religion"
+    ],
+    "description": "A torturer's apprentice becomes the leader of a dying Earth in the far future.",
+    "writingStyle": "Archaic and literary"
   },
   {
     "id": 62,
@@ -554,8 +920,14 @@
     "author": "William Golding",
     "year": 1954,
     "language": "English",
-    "themes": ["civilization-collapse", "human-nature", "savagery", "leadership"],
-    "description": "British boys stranded on an island descend into savagery."
+    "themes": [
+      "civilization-collapse",
+      "human-nature",
+      "savagery",
+      "leadership"
+    ],
+    "description": "British boys stranded on an island descend into savagery.",
+    "writingStyle": "Allegorical and tense"
   },
   {
     "id": 63,
@@ -563,8 +935,14 @@
     "author": "Kurt Vonnegut",
     "year": 1952,
     "language": "English",
-    "themes": ["automation", "unemployment", "class-divide", "rebellion"],
-    "description": "Machines have automated most jobs, creating a rigid class system."
+    "themes": [
+      "automation",
+      "unemployment",
+      "class-divide",
+      "rebellion"
+    ],
+    "description": "Machines have automated most jobs, creating a rigid class system.",
+    "writingStyle": "Satirical and dark"
   },
   {
     "id": 64,
@@ -572,8 +950,14 @@
     "author": "Isaac Asimov",
     "year": 1954,
     "language": "English",
-    "themes": ["robots", "overpopulation", "xenophobia", "mystery"],
-    "description": "A detective partners with a robot to solve a murder in an overcrowded Earth."
+    "themes": [
+      "robots",
+      "overpopulation",
+      "xenophobia",
+      "mystery"
+    ],
+    "description": "A detective partners with a robot to solve a murder in an overcrowded Earth.",
+    "writingStyle": "Methodical mystery"
   },
   {
     "id": 65,
@@ -581,8 +965,14 @@
     "author": "John Brunner",
     "year": 1972,
     "language": "English",
-    "themes": ["pollution", "environmental-collapse", "corporate-greed", "activism"],
-    "description": "Environmental pollution causes society to collapse in near-future America."
+    "themes": [
+      "pollution",
+      "environmental-collapse",
+      "corporate-greed",
+      "activism"
+    ],
+    "description": "Environmental pollution causes society to collapse in near-future America.",
+    "writingStyle": "Documentary and urgent"
   },
   {
     "id": 66,
@@ -590,8 +980,14 @@
     "author": "John Brunner",
     "year": 1968,
     "language": "English",
-    "themes": ["overpopulation", "genetic-engineering", "social-chaos", "media"],
-    "description": "Earth struggles with extreme overpopulation and social upheaval."
+    "themes": [
+      "overpopulation",
+      "genetic-engineering",
+      "social-chaos",
+      "media"
+    ],
+    "description": "Earth struggles with extreme overpopulation and social upheaval.",
+    "writingStyle": "Fragmented and kaleidoscopic"
   },
   {
     "id": 67,
@@ -599,8 +995,14 @@
     "author": "John Wyndham",
     "year": 1955,
     "language": "English",
-    "themes": ["mutation", "religious-extremism", "persecution", "telepathy"],
-    "description": "Telepathic children hide their abilities in a post-apocalyptic religious society."
+    "themes": [
+      "mutation",
+      "religious-extremism",
+      "persecution",
+      "telepathy"
+    ],
+    "description": "Telepathic children hide their abilities in a post-apocalyptic religious society.",
+    "writingStyle": "Clear and suspenseful"
   },
   {
     "id": 68,
@@ -608,8 +1010,14 @@
     "author": "Frank Herbert",
     "year": 1965,
     "language": "English",
-    "themes": ["ecology", "politics", "religion", "resource-scarcity"],
-    "description": "Noble houses fight for control of the desert planet Arrakis and its spice."
+    "themes": [
+      "ecology",
+      "politics",
+      "religion",
+      "resource-scarcity"
+    ],
+    "description": "Noble houses fight for control of the desert planet Arrakis and its spice.",
+    "writingStyle": "Epic and philosophical"
   },
   {
     "id": 69,
@@ -617,8 +1025,14 @@
     "author": "Walter M. Miller Jr.",
     "year": 1959,
     "language": "English",
-    "themes": ["post-apocalyptic", "religion", "knowledge-preservation", "cyclical-history"],
-    "description": "Monks preserve knowledge through dark ages after nuclear war."
+    "themes": [
+      "post-apocalyptic",
+      "religion",
+      "knowledge-preservation",
+      "cyclical-history"
+    ],
+    "description": "Monks preserve knowledge through dark ages after nuclear war.",
+    "writingStyle": "Meditative and cyclical"
   },
   {
     "id": 70,
@@ -626,8 +1040,14 @@
     "author": "H.G. Wells",
     "year": 1895,
     "language": "English",
-    "themes": ["time-travel", "class-divide", "evolution", "far-future"],
-    "description": "A Victorian scientist travels to a future where humanity has split into two species."
+    "themes": [
+      "time-travel",
+      "class-divide",
+      "evolution",
+      "far-future"
+    ],
+    "description": "A Victorian scientist travels to a future where humanity has split into two species.",
+    "writingStyle": "Victorian and scientific"
   },
   {
     "id": 71,
@@ -635,8 +1055,14 @@
     "author": "Vernor Vinge",
     "year": 2006,
     "language": "English",
-    "themes": ["augmented-reality", "AI", "aging", "education"],
-    "description": "An elderly poet regains his health in a world of ubiquitous augmented reality."
+    "themes": [
+      "augmented-reality",
+      "AI",
+      "aging",
+      "education"
+    ],
+    "description": "An elderly poet regains his health in a world of ubiquitous augmented reality.",
+    "writingStyle": "Technical and humorous"
   },
   {
     "id": 72,
@@ -644,8 +1070,14 @@
     "author": "Alfred Bester",
     "year": 1953,
     "language": "English",
-    "themes": ["telepathy", "murder", "corporate-power", "psychology"],
-    "description": "A businessman tries to commit murder in a world where telepathic police exist."
+    "themes": [
+      "telepathy",
+      "murder",
+      "corporate-power",
+      "psychology"
+    ],
+    "description": "A businessman tries to commit murder in a world where telepathic police exist.",
+    "writingStyle": "Psychological thriller"
   },
   {
     "id": 73,
@@ -653,8 +1085,14 @@
     "author": "Jack London",
     "year": 1908,
     "language": "English",
-    "themes": ["oligarchy", "class-war", "revolution", "fascism"],
-    "description": "A corporate oligarchy crushes labor movements in early 20th century America."
+    "themes": [
+      "oligarchy",
+      "class-war",
+      "revolution",
+      "fascism"
+    ],
+    "description": "A corporate oligarchy crushes labor movements in early 20th century America.",
+    "writingStyle": "Political and passionate"
   },
   {
     "id": 74,
@@ -662,8 +1100,14 @@
     "author": "Jacques Lob",
     "year": 1982,
     "language": "French",
-    "themes": ["class-divide", "survival", "climate-disaster", "revolution"],
-    "description": "Survivors live on a perpetually moving train after Earth freezes over."
+    "themes": [
+      "class-divide",
+      "survival",
+      "climate-disaster",
+      "revolution"
+    ],
+    "description": "Survivors live on a perpetually moving train after Earth freezes over.",
+    "writingStyle": "Visual and metaphorical"
   },
   {
     "id": 75,
@@ -671,8 +1115,14 @@
     "author": "E.M. Forster",
     "year": 1909,
     "language": "English",
-    "themes": ["technology-dependence", "isolation", "machine-worship", "collapse"],
-    "description": "Humanity lives underground, dependent on an omnipotent Machine."
+    "themes": [
+      "technology-dependence",
+      "isolation",
+      "machine-worship",
+      "collapse"
+    ],
+    "description": "Humanity lives underground, dependent on an omnipotent Machine.",
+    "writingStyle": "Prophetic and cautionary"
   },
   {
     "id": 76,
@@ -680,8 +1130,14 @@
     "author": "Aldous Huxley",
     "year": 1958,
     "language": "English",
-    "themes": ["social-control", "propaganda", "overpopulation", "freedom"],
-    "description": "Huxley's non-fiction analysis of how his fictional dystopia is becoming real."
+    "themes": [
+      "social-control",
+      "propaganda",
+      "overpopulation",
+      "freedom"
+    ],
+    "description": "Huxley's non-fiction analysis of how his fictional dystopia is becoming real.",
+    "writingStyle": "Analytical and essayistic"
   },
   {
     "id": 77,
@@ -689,8 +1145,14 @@
     "author": "Philip K. Dick",
     "year": 1964,
     "language": "English",
-    "themes": ["deception", "underground-society", "war-propaganda", "elite-control"],
-    "description": "People live underground believing in a war that ended years ago."
+    "themes": [
+      "deception",
+      "underground-society",
+      "war-propaganda",
+      "elite-control"
+    ],
+    "description": "People live underground believing in a war that ended years ago.",
+    "writingStyle": "Paranoid and complex"
   },
   {
     "id": 78,
@@ -698,8 +1160,14 @@
     "author": "Walter Tevis",
     "year": 1980,
     "language": "English",
-    "themes": ["illiteracy", "robots", "human-extinction", "love"],
-    "description": "In a future where humans are illiterate and dying out, three people seek meaning."
+    "themes": [
+      "illiteracy",
+      "robots",
+      "human-extinction",
+      "love"
+    ],
+    "description": "In a future where humans are illiterate and dying out, three people seek meaning.",
+    "writingStyle": "Melancholic and sparse"
   },
   {
     "id": 79,
@@ -707,8 +1175,14 @@
     "author": "Anthony Burgess",
     "year": 1962,
     "language": "English",
-    "themes": ["overpopulation", "cannibalism", "government-control", "fertility"],
-    "description": "Overpopulation leads to government promotion of homosexuality and cannibalism."
+    "themes": [
+      "overpopulation",
+      "cannibalism",
+      "government-control",
+      "fertility"
+    ],
+    "description": "Overpopulation leads to government promotion of homosexuality and cannibalism.",
+    "writingStyle": "Dark and satirical"
   },
   {
     "id": 80,
@@ -716,8 +1190,14 @@
     "author": "Kim Stanley Robinson",
     "year": 2002,
     "language": "English",
-    "themes": ["alternate-history", "reincarnation", "civilization", "religion"],
-    "description": "An alternate history where the Black Death killed 99% of Europeans."
+    "themes": [
+      "alternate-history",
+      "reincarnation",
+      "civilization",
+      "religion"
+    ],
+    "description": "An alternate history where the Black Death killed 99% of Europeans.",
+    "writingStyle": "Epic and contemplative"
   },
   {
     "id": 81,
@@ -725,8 +1205,14 @@
     "author": "Hillary Jordan",
     "year": 2011,
     "language": "English",
-    "themes": ["theocracy", "punishment", "abortion", "surveillance"],
-    "description": "Criminals are chromatically altered as punishment in a theocratic America."
+    "themes": [
+      "theocracy",
+      "punishment",
+      "abortion",
+      "surveillance"
+    ],
+    "description": "Criminals are chromatically altered as punishment in a theocratic America.",
+    "writingStyle": "Dystopian and visceral"
   },
   {
     "id": 82,
@@ -734,8 +1220,14 @@
     "author": "Hannu Rajaniemi",
     "year": 2010,
     "language": "Finnish",
-    "themes": ["post-human", "memory-manipulation", "quantum-mechanics", "heist"],
-    "description": "A master thief is broken out of prison to commit the ultimate heist."
+    "themes": [
+      "post-human",
+      "memory-manipulation",
+      "quantum-mechanics",
+      "heist"
+    ],
+    "description": "A master thief is broken out of prison to commit the ultimate heist.",
+    "writingStyle": "Dense and technical"
   },
   {
     "id": 83,
@@ -743,8 +1235,14 @@
     "author": "Philip K. Dick",
     "year": 1974,
     "language": "English",
-    "themes": ["identity", "police-state", "drugs", "reality"],
-    "description": "A celebrity wakes up in a world where no one remembers him."
+    "themes": [
+      "identity",
+      "police-state",
+      "drugs",
+      "reality"
+    ],
+    "description": "A celebrity wakes up in a world where no one remembers him.",
+    "writingStyle": "Drug-induced surreal"
   },
   {
     "id": 84,
@@ -752,8 +1250,14 @@
     "author": "Ted Chiang",
     "year": 2010,
     "language": "English",
-    "themes": ["AI", "consciousness", "parenting", "ethics"],
-    "description": "People raise digital artificial intelligences like children."
+    "themes": [
+      "AI",
+      "consciousness",
+      "parenting",
+      "ethics"
+    ],
+    "description": "People raise digital artificial intelligences like children.",
+    "writingStyle": "Philosophical and tender"
   },
   {
     "id": 85,
@@ -761,8 +1265,14 @@
     "author": "John Brunner",
     "year": 1975,
     "language": "English",
-    "themes": ["information-control", "identity", "hacking", "prediction"],
-    "description": "A man with multiple identities fights an authoritarian government through hacking."
+    "themes": [
+      "information-control",
+      "identity",
+      "hacking",
+      "prediction"
+    ],
+    "description": "A man with multiple identities fights an authoritarian government through hacking.",
+    "writingStyle": "Technical and fast-paced"
   },
   {
     "id": 86,
@@ -770,8 +1280,14 @@
     "author": "Colson Whitehead",
     "year": 2011,
     "language": "English",
-    "themes": ["zombies", "post-apocalyptic", "capitalism", "survival"],
-    "description": "Survivors clear zombies from Manhattan while rebuilding civilization."
+    "themes": [
+      "zombies",
+      "post-apocalyptic",
+      "capitalism",
+      "survival"
+    ],
+    "description": "Survivors clear zombies from Manhattan while rebuilding civilization.",
+    "writingStyle": "Literary and contemplative"
   },
   {
     "id": 87,
@@ -779,8 +1295,14 @@
     "author": "Stanisław Lem",
     "year": 1971,
     "language": "Polish",
-    "themes": ["drugs", "perception", "overcrowding", "reality"],
-    "description": "Psychoactive drugs create false realities masking a dystopian world."
+    "themes": [
+      "drugs",
+      "perception",
+      "overcrowding",
+      "reality"
+    ],
+    "description": "Psychoactive drugs create false realities masking a dystopian world.",
+    "writingStyle": "Absurdist and satirical"
   },
   {
     "id": 88,
@@ -788,8 +1310,14 @@
     "author": "H.G. Wells",
     "year": 1898,
     "language": "English",
-    "themes": ["alien-invasion", "imperialism", "survival", "technology"],
-    "description": "Martians invade Earth with superior technology."
+    "themes": [
+      "alien-invasion",
+      "imperialism",
+      "survival",
+      "technology"
+    ],
+    "description": "Martians invade Earth with superior technology.",
+    "writingStyle": "Victorian and dramatic"
   },
   {
     "id": 89,
@@ -797,8 +1325,14 @@
     "author": "Robert McCammon",
     "year": 1987,
     "language": "English",
-    "themes": ["nuclear-war", "survival", "good-vs-evil", "hope"],
-    "description": "Survivors struggle in the aftermath of nuclear war."
+    "themes": [
+      "nuclear-war",
+      "survival",
+      "good-vs-evil",
+      "hope"
+    ],
+    "description": "Survivors struggle in the aftermath of nuclear war.",
+    "writingStyle": "Epic and horror-tinged"
   },
   {
     "id": 90,
@@ -806,8 +1340,14 @@
     "author": "Ken Grimwood",
     "year": 1986,
     "language": "English",
-    "themes": ["time-loop", "second-chances", "fate", "meaning"],
-    "description": "A man repeatedly dies and is reborn at age 18 with his memories intact."
+    "themes": [
+      "time-loop",
+      "second-chances",
+      "fate",
+      "meaning"
+    ],
+    "description": "A man repeatedly dies and is reborn at age 18 with his memories intact.",
+    "writingStyle": "Introspective and emotional"
   },
   {
     "id": 91,
@@ -815,8 +1355,14 @@
     "author": "H.G. Wells",
     "year": 1897,
     "language": "English",
-    "themes": ["isolation", "power-corruption", "science-ethics", "invisibility"],
-    "description": "A scientist becomes invisible and descends into madness and violence."
+    "themes": [
+      "isolation",
+      "power-corruption",
+      "science-ethics",
+      "invisibility"
+    ],
+    "description": "A scientist becomes invisible and descends into madness and violence.",
+    "writingStyle": "Victorian gothic"
   },
   {
     "id": 92,
@@ -824,8 +1370,14 @@
     "author": "Alastair Reynolds",
     "year": 2008,
     "language": "English",
-    "themes": ["far-future", "clones", "space-opera", "extinction"],
-    "description": "Clone siblings explore the galaxy over millions of years."
+    "themes": [
+      "far-future",
+      "clones",
+      "space-opera",
+      "extinction"
+    ],
+    "description": "Clone siblings explore the galaxy over millions of years.",
+    "writingStyle": "Sweeping space opera"
   },
   {
     "id": 93,
@@ -833,8 +1385,14 @@
     "author": "Neal Stephenson",
     "year": 1999,
     "language": "English",
-    "themes": ["cryptography", "data-havens", "technology", "history"],
-    "description": "Parallel stories of WWII codebreakers and modern tech entrepreneurs."
+    "themes": [
+      "cryptography",
+      "data-havens",
+      "technology",
+      "history"
+    ],
+    "description": "Parallel stories of WWII codebreakers and modern tech entrepreneurs.",
+    "writingStyle": "Dense and technical"
   },
   {
     "id": 94,
@@ -842,8 +1400,14 @@
     "author": "Lidia Yuknavitch",
     "year": 2017,
     "language": "English",
-    "themes": ["environmental-collapse", "war", "mutation", "resistance"],
-    "description": "Earth is destroyed and survivors live on a space station in this reimagining of Joan of Arc."
+    "themes": [
+      "environmental-collapse",
+      "war",
+      "mutation",
+      "resistance"
+    ],
+    "description": "Earth is destroyed and survivors live on a space station in this reimagining of Joan of Arc.",
+    "writingStyle": "Poetic and experimental"
   },
   {
     "id": 95,
@@ -851,8 +1415,14 @@
     "author": "Ira Levin",
     "year": 1970,
     "language": "English",
-    "themes": ["computer-control", "eugenics", "conformity", "rebellion"],
-    "description": "A supercomputer controls all aspects of human life in a seemingly perfect world."
+    "themes": [
+      "computer-control",
+      "eugenics",
+      "conformity",
+      "rebellion"
+    ],
+    "description": "A supercomputer controls all aspects of human life in a seemingly perfect world.",
+    "writingStyle": "Methodical and chilling"
   },
   {
     "id": 96,
@@ -860,8 +1430,14 @@
     "author": "Neal Stephenson",
     "year": 1995,
     "language": "English",
-    "themes": ["nanotechnology", "education", "class-divide", "AI"],
-    "description": "A young girl receives an interactive book designed to raise a neo-Victorian elite."
+    "themes": [
+      "nanotechnology",
+      "education",
+      "class-divide",
+      "AI"
+    ],
+    "description": "A young girl receives an interactive book designed to raise a neo-Victorian elite.",
+    "writingStyle": "Baroque and playful"
   },
   {
     "id": 97,
@@ -869,8 +1445,14 @@
     "author": "Nalo Hopkinson",
     "year": 2000,
     "language": "English",
-    "themes": ["colonization", "caribbean-culture", "exile", "coming-of-age"],
-    "description": "A girl and her father are exiled to a prison planet in this Afro-Caribbean sci-fi tale."
+    "themes": [
+      "colonization",
+      "caribbean-culture",
+      "exile",
+      "coming-of-age"
+    ],
+    "description": "A girl and her father are exiled to a prison planet in this Afro-Caribbean sci-fi tale.",
+    "writingStyle": "Caribbean folklore infused"
   },
   {
     "id": 98,
@@ -878,8 +1460,14 @@
     "author": "Mary Doria Russell",
     "year": 1996,
     "language": "English",
-    "themes": ["first-contact", "religion", "cultural-misunderstanding", "trauma"],
-    "description": "Jesuits make first contact with aliens with tragic consequences."
+    "themes": [
+      "first-contact",
+      "religion",
+      "cultural-misunderstanding",
+      "trauma"
+    ],
+    "description": "Jesuits make first contact with aliens with tragic consequences.",
+    "writingStyle": "Philosophical and devastating"
   },
   {
     "id": 99,
@@ -887,8 +1475,14 @@
     "author": "Dan Wells",
     "year": 2012,
     "language": "English",
-    "themes": ["pandemic", "artificial-beings", "survival", "bioethics"],
-    "description": "Humanity faces extinction from a plague created by their synthetic servants."
+    "themes": [
+      "pandemic",
+      "artificial-beings",
+      "survival",
+      "bioethics"
+    ],
+    "description": "Humanity faces extinction from a plague created by their synthetic servants.",
+    "writingStyle": "Tense and scientific"
   },
   {
     "id": 100,
@@ -896,7 +1490,13 @@
     "author": "Arthur C. Clarke & Stephen Baxter",
     "year": 2000,
     "language": "English",
-    "themes": ["surveillance", "privacy", "time-viewing", "transparency"],
-    "description": "Technology allows people to view any moment in history, ending all privacy."
+    "themes": [
+      "surveillance",
+      "privacy",
+      "time-viewing",
+      "transparency"
+    ],
+    "description": "Technology allows people to view any moment in history, ending all privacy.",
+    "writingStyle": "Hard sci-fi speculative"
   }
 ]
