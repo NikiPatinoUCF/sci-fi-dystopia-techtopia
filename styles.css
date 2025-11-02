@@ -142,6 +142,33 @@ body {
     font-family: 'Caveat', cursive;
 }
 
+/* Recommendations Link in Header */
+.recommendations-link-container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.recommendations-link {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, var(--accent-emerald), rgba(80, 200, 120, 0.9));
+    color: var(--primary-bg);
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(80, 200, 120, 0.4);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.recommendations-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(80, 200, 120, 0.6);
+    background: linear-gradient(135deg, rgba(80, 200, 120, 0.9), var(--accent-emerald));
+}
+
 /* Main Layout */
 main {
     display: grid;
@@ -494,6 +521,22 @@ main {
     font-family: 'Patrick Hand', cursive;
 }
 
+.shelf-explanation {
+    max-width: 700px;
+    margin: 25px auto 0;
+    padding: 15px 25px;
+    background: rgba(80, 200, 120, 0.15);
+    border-left: 4px solid var(--accent-emerald);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    font-family: 'Caveat', cursive;
+}
+
+.shelf-explanation strong {
+    color: var(--accent-emerald);
+}
+
 .recommendations-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -533,6 +576,26 @@ main {
     transform: translateY(-8px);
 }
 
+.recommendation-badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.match-percent {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent-amethyst), rgba(155, 89, 182, 0.8));
+    color: var(--text-primary);
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: 'Patrick Hand', cursive;
+    box-shadow: 0 4px 12px rgba(155, 89, 182, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .shelf-location {
     display: inline-block;
     background: linear-gradient(135deg, var(--accent-emerald), rgba(80, 200, 120, 0.8));
@@ -541,7 +604,6 @@ main {
     border-radius: 8px;
     font-size: 0.95rem;
     font-weight: 600;
-    margin-bottom: 14px;
     font-family: 'Patrick Hand', cursive;
     box-shadow: 0 4px 12px rgba(80, 200, 120, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.2);
