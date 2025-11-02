@@ -589,6 +589,47 @@ main {
     transform: translateY(-8px);
 }
 
+.horizon-card {
+    border-color: #e67e22;
+    box-shadow: 0 4px 20px rgba(230, 126, 34, 0.3);
+}
+
+.horizon-card::before {
+    content: '✦ Explore New Themes ✦';
+    background: #e67e22;
+}
+
+.horizon-card:hover {
+    border-color: var(--accent-gold);
+    box-shadow: 0 8px 35px rgba(230, 126, 34, 0.5);
+}
+
+.different-card {
+    border-color: #9b59b6;
+    box-shadow: 0 4px 20px rgba(155, 89, 182, 0.3);
+}
+
+.different-card::before {
+    content: '✦ Different Style ✦';
+    background: #9b59b6;
+}
+
+.different-card:hover {
+    border-color: var(--accent-gold);
+    box-shadow: 0 8px 35px rgba(155, 89, 182, 0.5);
+}
+
+.different-section {
+    background: linear-gradient(135deg, rgba(61, 44, 92, 0.5), rgba(45, 27, 78, 0.6));
+    border-top-color: #9b59b6;
+    border-bottom-color: #9b59b6;
+}
+
+.different-section::before {
+    content: '✨ challenge yourself ✨';
+    color: #9b59b6;
+}
+
 .recommendation-badges {
     display: flex;
     gap: 10px;
@@ -619,6 +660,45 @@ main {
     font-weight: 600;
     font-family: 'Patrick Hand', cursive;
     box-shadow: 0 4px 12px rgba(80, 200, 120, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.translation-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #3498db, rgba(52, 152, 219, 0.8));
+    color: var(--text-primary);
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Patrick Hand', cursive;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.horizon-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #e67e22, rgba(230, 126, 34, 0.9));
+    color: var(--primary-bg);
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: 'Patrick Hand', cursive;
+    box-shadow: 0 4px 12px rgba(230, 126, 34, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.different-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #9b59b6, rgba(155, 89, 182, 0.9));
+    color: var(--text-primary);
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: 'Patrick Hand', cursive;
+    box-shadow: 0 4px 12px rgba(155, 89, 182, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 

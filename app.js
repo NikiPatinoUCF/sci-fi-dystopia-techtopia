@@ -176,8 +176,236 @@ function generateRecommendations() {
         book.isOneShelfOver = book.styleScore > 20 && book.matchPercent < 90;
     });
 
+    // Ensure gender diversity in recommendations
+    recommendations = ensureGenderDiversity(recommendations, scoredBooks);
+
     renderRecommendations(recommendations, highlyRatedBooks);
     document.getElementById('recommendationsLink').style.display = 'inline-block';
+}
+
+// Ensure gender diversity in recommendations
+function ensureGenderDiversity(topRecommendations, allScoredBooks) {
+    const genderCounts = topRecommendations.reduce((acc, book) => {
+        acc[book.authorGender] = (acc[book.authorGender] || 0) + 1;
+        return acc;
+    }, {});
+
+    // If we have at least 6 recommendations and less than 3 are from underrepresented genders
+    const underrepresented = (genderCounts.female || 0) + (genderCounts['non-binary'] || 0);
+
+    if (topRecommendations.length >= 6 && underrepresented < 3) {
+        // Find highly scored books from underrepresented authors
+        const diverseBooks = allScoredBooks.filter(b =>
+            (b.authorGender === 'female' || b.authorGender === 'non-binary') &&
+            b.totalScore > 0 &&
+            !topRecommendations.find(rec => rec.id === b.id)
+        ).sort((a, b) => b.totalScore - a.totalScore);
+
+        // Replace lowest scoring books with diverse authors to reach at least 3
+        const needed = 3 - underrepresented;
+        if (diverseBooks.length >= needed) {
+            const result = [...topRecommendations];
+            for (let i = 0; i < needed && i < diverseBooks.length; i++) {
+                // Replace one of the lower-scoring male-authored books
+                const replaceIndex = result.findIndex(book =>
+                    book.authorGender === 'male' &&
+                    book.totalScore < diverseBooks[i].totalScore
+                );
+                if (replaceIndex !== -1) {
+                    result[replaceIndex] = diverseBooks[i];
+                }
+            }
+            return result;
+        }
+    }
+
+    return topRecommendations;
+}
+
+// "Expand Your Horizons" - Books with deliberately different themes
+function generateExpandYourHorizons() {
+    const highlyRatedBooks = booksData.filter(b => b.rating >= 4);
+
+    if (highlyRatedBooks.length === 0) {
+        document.getElementById('expandHorizonsSection').style.display = 'none';
+        return;
+    }
+
+    const unreadBooks = booksData.filter(b => !b.read);
+
+    // Get all themes from highly rated books
+    const familiarThemes = new Set();
+    highlyRatedBooks.forEach(book => {
+        book.themes.forEach(theme => familiarThemes.add(theme));
+    });
+
+    // Score books by how DIFFERENT they are thematically
+    const scoredBooks = unreadBooks.map(book => {
+        const differentThemes = book.themes.filter(t => !familiarThemes.has(t));
+        const sharedThemes = book.themes.filter(t => familiarThemes.has(t));
+
+        // Prefer books with 1-2 shared themes (some familiarity) but mostly new themes
+        const diversityScore = (differentThemes.length * 20) + (sharedThemes.length >= 1 && sharedThemes.length <= 2 ? 15 : 0);
+
+        return {
+            ...book,
+            diversityScore: diversityScore,
+            newThemes: differentThemes
+        };
+    });
+
+    // Get top 6 most diverse books
+    const horizonBooks = scoredBooks
+        .filter(b => b.diversityScore > 0)
+        .sort((a, b) => b.diversityScore - a.diversityScore)
+        .slice(0, 6);
+
+    if (horizonBooks.length === 0) {
+        document.getElementById('expandHorizonsSection').style.display = 'none';
+        return;
+    }
+
+    renderExpandYourHorizons(horizonBooks);
+}
+
+// "Try Something Different" - Books with different writing styles
+function generateTrySomethingDifferent() {
+    const highlyRatedBooks = booksData.filter(b => b.rating >= 4);
+
+    if (highlyRatedBooks.length === 0) {
+        document.getElementById('differentStyleSection').style.display = 'none';
+        return;
+    }
+
+    const unreadBooks = booksData.filter(b => !b.read);
+
+    // Get familiar writing styles
+    const familiarStyles = highlyRatedBooks.map(b => b.writingStyle.toLowerCase());
+
+    // Score books by writing style difference
+    const scoredBooks = unreadBooks.map(book => {
+        let styleDifferenceScore = 30; // Base score for any different book
+
+        // Check if this style is totally different from what they've rated
+        const isDifferent = !familiarStyles.some(style => {
+            return calculateStyleSimilarity(style, book.writingStyle.toLowerCase()) > 0;
+        });
+
+        if (isDifferent) {
+            styleDifferenceScore += 50;
+        }
+
+        // Bonus for non-English works (translated literature)
+        if (book.language !== 'English') {
+            styleDifferenceScore += 20;
+        }
+
+        return {
+            ...book,
+            styleDifferenceScore: styleDifferenceScore,
+            isTranslated: book.language !== 'English'
+        };
+    });
+
+    // Get top 6 most different writing styles
+    const differentBooks = scoredBooks
+        .sort((a, b) => b.styleDifferenceScore - a.styleDifferenceScore)
+        .slice(0, 6);
+
+    if (differentBooks.length === 0) {
+        document.getElementById('differentStyleSection').style.display = 'none';
+        return;
+    }
+
+    renderTrySomethingDifferent(differentBooks);
+}
+
+// Render "Expand Your Horizons" recommendations
+function renderExpandYourHorizons(books) {
+    const section = document.getElementById('expandHorizonsSection');
+    const grid = document.getElementById('expandHorizonsGrid');
+
+    grid.innerHTML = books.map(book => {
+        return `
+            <div class="recommendation-card horizon-card" data-book-id="${book.id}">
+                <div class="recommendation-badges">
+                    <span class="horizon-badge">🌍 New Themes</span>
+                    ${book.language !== 'English' ? `<span class="translation-badge">🌐 ${book.language}</span>` : ''}
+                </div>
+                <h3 class="book-title">${book.title}</h3>
+                <p class="book-author">by ${book.author}</p>
+                <p class="author-bio">${book.authorBio}</p>
+                <span class="book-year">${book.year}</span>
+                <div class="writing-style">
+                    <span class="style-icon">✍️</span>
+                    <span class="style-text">${book.writingStyle}</span>
+                </div>
+                <div class="book-themes">
+                    ${book.themes.slice(0, 4).map(theme => {
+                        const visual = getThemeVisual(theme);
+                        return `<span class="theme-tag-visual" style="border-color: ${visual.color}">
+                            <span class="theme-icon">${visual.icon}</span>
+                            <span class="theme-name">${theme}</span>
+                        </span>`;
+                    }).join('')}
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    section.style.display = 'block';
+
+    // Add click handlers
+    document.querySelectorAll('.horizon-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const bookId = parseInt(card.dataset.bookId);
+            openBookModal(bookId);
+        });
+    });
+}
+
+// Render "Try Something Different" recommendations
+function renderTrySomethingDifferent(books) {
+    const section = document.getElementById('differentStyleSection');
+    const grid = document.getElementById('differentStyleGrid');
+
+    grid.innerHTML = books.map(book => {
+        return `
+            <div class="recommendation-card different-card" data-book-id="${book.id}">
+                <div class="recommendation-badges">
+                    <span class="different-badge">✨ Different Voice</span>
+                    ${book.isTranslated ? `<span class="translation-badge">🌐 Translated from ${book.language}</span>` : ''}
+                </div>
+                <h3 class="book-title">${book.title}</h3>
+                <p class="book-author">by ${book.author}</p>
+                <p class="author-bio">${book.authorBio}</p>
+                <span class="book-year">${book.year}</span>
+                <div class="writing-style">
+                    <span class="style-icon">✍️</span>
+                    <span class="style-text">${book.writingStyle}</span>
+                </div>
+                <div class="book-themes">
+                    ${book.themes.slice(0, 4).map(theme => {
+                        const visual = getThemeVisual(theme);
+                        return `<span class="theme-tag-visual" style="border-color: ${visual.color}">
+                            <span class="theme-icon">${visual.icon}</span>
+                            <span class="theme-name">${theme}</span>
+                        </span>`;
+                    }).join('')}
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    section.style.display = 'block';
+
+    // Add click handlers
+    document.querySelectorAll('.different-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const bookId = parseInt(card.dataset.bookId);
+            openBookModal(bookId);
+        });
+    });
 }
 
 // Render recommendations
@@ -191,6 +419,7 @@ function renderRecommendations(recommendations, highlyRatedBooks) {
                 <div class="recommendation-badges">
                     <span class="match-percent">${book.matchPercent}% Match</span>
                     ${book.isOneShelfOver ? '<span class="shelf-location">📚 One Shelf Over</span>' : ''}
+                    ${book.language !== 'English' ? `<span class="translation-badge">🌐 Translated from ${book.language}</span>` : ''}
                 </div>
                 <h3 class="book-title">${book.title}</h3>
                 <p class="book-author">by ${book.author}</p>
@@ -244,6 +473,8 @@ async function initApp() {
         renderBooks(booksData);
         updateStats();
         generateRecommendations();
+        generateExpandYourHorizons();
+        generateTrySomethingDifferent();
         initEventListeners();
     } catch (error) {
         console.error('Error loading books:', error);
@@ -403,6 +634,8 @@ function toggleReadStatus(read) {
     applyFiltersAndSort();
     updateStats();
     generateRecommendations();
+    generateExpandYourHorizons();
+    generateTrySomethingDifferent();
 
     // Update modal buttons
     const markAsReadBtn = document.getElementById('markAsRead');
@@ -439,6 +672,8 @@ function rateBook(rating) {
     applyFiltersAndSort();
     updateStats();
     generateRecommendations();
+    generateExpandYourHorizons();
+    generateTrySomethingDifferent();
 
     // Update read status buttons
     document.getElementById('markAsRead').style.display = 'none';
