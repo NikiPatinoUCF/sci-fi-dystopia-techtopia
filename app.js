@@ -152,7 +152,6 @@ function generateRecommendations() {
             styleScore: styleScore,
             totalScore: themeScore + styleScore,
             matchedThemes: Array.from(matchedThemes),
-            isOneShelfOver: styleScore > 20,
             recommendationReason: shelfReasons[0] || "Recommended based on your preferences"
         };
     });
@@ -173,6 +172,8 @@ function generateRecommendations() {
     const maxThemeScore = Math.max(...recommendations.map(r => r.themeScore));
     recommendations.forEach(book => {
         book.matchPercent = maxThemeScore > 0 ? Math.round((book.themeScore / maxThemeScore) * 100) : 0;
+        // Only show "One Shelf Over" for strong style matches with less than 90% thematic match
+        book.isOneShelfOver = book.styleScore > 20 && book.matchPercent < 90;
     });
 
     renderRecommendations(recommendations, highlyRatedBooks);
@@ -193,6 +194,7 @@ function renderRecommendations(recommendations, highlyRatedBooks) {
                 </div>
                 <h3 class="book-title">${book.title}</h3>
                 <p class="book-author">by ${book.author}</p>
+                <p class="author-bio">${book.authorBio}</p>
                 <span class="book-year">${book.year}</span>
                 <div class="writing-style">
                     <span class="style-icon">✍️</span>
