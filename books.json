@@ -13,7 +13,8 @@
     ],
     "description": "A chilling prophecy about the future where Big Brother watches everyone.",
     "writingStyle": "Stark and clinical",
-    "authorBio": "British novelist and essayist, known for his sharp social commentary and opposition to totalitarianism."
+    "authorBio": "British novelist and essayist, known for his sharp social commentary and opposition to totalitarianism.",
+    "authorGender": "male"
   },
   {
     "id": 2,
@@ -29,7 +30,8 @@
     ],
     "description": "A world where humans are genetically bred and pharmaceutically controlled.",
     "writingStyle": "Satirical and philosophical",
-    "authorBio": "English writer and philosopher who explored the dangers of scientific and technological progress."
+    "authorBio": "English writer and philosopher who explored the dangers of scientific and technological progress.",
+    "authorGender": "male"
   },
   {
     "id": 3,
@@ -45,7 +47,8 @@
     ],
     "description": "Firemen burn books in a future where reading is outlawed.",
     "writingStyle": "Poetic and lyrical",
-    "authorBio": "American author celebrated for his lyrical prose and imaginative exploration of technology's impact on humanity."
+    "authorBio": "American author celebrated for his lyrical prose and imaginative exploration of technology's impact on humanity.",
+    "authorGender": "male"
   },
   {
     "id": 4,
@@ -61,7 +64,8 @@
     ],
     "description": "A theocratic regime subjugates women in a totalitarian society.",
     "writingStyle": "Intimate and haunting",
-    "authorBio": "Canadian poet and novelist, acclaimed for her feminist dystopian fiction and speculative narratives."
+    "authorBio": "Canadian poet and novelist, acclaimed for her feminist dystopian fiction and speculative narratives.",
+    "authorGender": "female"
   },
   {
     "id": 5,
@@ -77,7 +81,8 @@
     ],
     "description": "A hacker and an AI navigate a dystopian cyberpunk future.",
     "writingStyle": "Dense and atmospheric",
-    "authorBio": "American-Canadian author who pioneered cyberpunk and coined the term 'cyberspace'."
+    "authorBio": "American-Canadian author who pioneered cyberpunk and coined the term 'cyberspace'.",
+    "authorGender": "male"
   },
   {
     "id": 6,
@@ -93,7 +98,8 @@
     ],
     "description": "A pizza delivery driver battles a digital virus in a corporate-dominated America.",
     "writingStyle": "Fast-paced and satirical",
-    "authorBio": "American writer known for his detailed, intellectually dense speculative fiction."
+    "authorBio": "American writer known for his detailed, intellectually dense speculative fiction.",
+    "authorGender": "male"
   },
   {
     "id": 7,
@@ -109,7 +115,8 @@
     ],
     "description": "Children fight to the death in a televised spectacle in a post-apocalyptic nation.",
     "writingStyle": "Fast-paced and visceral",
-    "authorBio": "American television writer and author, creator of the bestselling Hunger Games trilogy."
+    "authorBio": "American television writer and author, creator of the bestselling Hunger Games trilogy.",
+    "authorGender": "female"
   },
   {
     "id": 8,
@@ -125,7 +132,8 @@
     ],
     "description": "A bounty hunter tracks down rogue androids in a devastated future Earth.",
     "writingStyle": "Contemplative and noir",
-    "authorBio": "Visionary American science fiction writer who explored reality, identity, and consciousness."
+    "authorBio": "Visionary American science fiction writer who explored reality, identity, and consciousness.",
+    "authorGender": "male"
   },
   {
     "id": 9,
@@ -141,7 +149,8 @@
     ],
     "description": "A physicist navigates between an anarchist moon colony and a capitalist planet.",
     "writingStyle": "Philosophical and nuanced",
-    "authorBio": "American author renowned for her anthropological and philosophical science fiction."
+    "authorBio": "American author renowned for her anthropological and philosophical science fiction.",
+    "authorGender": "female"
   },
   {
     "id": 10,
@@ -157,7 +166,8 @@
     ],
     "description": "Citizens live in glass apartments under constant surveillance in a regimented society.",
     "writingStyle": "Experimental and mathematical",
-    "authorBio": "Russian author whose novel We influenced generations of dystopian writers."
+    "authorBio": "Russian author whose novel We influenced generations of dystopian writers.",
+    "authorGender": "male"
   },
   {
     "id": 11,
@@ -173,7 +183,8 @@
     ],
     "description": "A father and son journey through a devastated, ash-covered America.",
     "writingStyle": "Sparse and poetic",
-    "authorBio": "American novelist known for his sparse, haunting prose and dark themes."
+    "authorBio": "American novelist known for his sparse, haunting prose and dark themes.",
+    "authorGender": "male"
   },
   {
     "id": 12,
@@ -189,7 +200,8 @@
     ],
     "description": "A traveling theater troupe performs Shakespeare in a post-pandemic world.",
     "writingStyle": "Lyrical and interconnected",
-    "authorBio": "Canadian novelist known for her literary post-apocalyptic narratives."
+    "authorBio": "Canadian novelist known for her literary post-apocalyptic narratives.",
+    "authorGender": "female"
   },
   {
     "id": 13,
@@ -205,7 +217,8 @@
     ],
     "description": "A woman works at a powerful tech company that seeks total transparency.",
     "writingStyle": "Contemporary and accessible",
-    "authorBio": "American writer and editor known for his innovative narrative techniques and social commentary."
+    "authorBio": "American writer and editor known for his innovative narrative techniques and social commentary.",
+    "authorGender": "male"
   },
   {
     "id": 14,
@@ -221,7 +234,8 @@
     ],
     "description": "A teenager hunts for an Easter egg in a massive virtual reality universe.",
     "writingStyle": "Pop-culture dense",
-    "authorBio": "American science fiction novelist celebrated for his nostalgic pop culture references."
+    "authorBio": "American science fiction novelist celebrated for his nostalgic pop culture references.",
+    "authorGender": "male"
   },
   {
     "id": 15,
@@ -237,7 +251,8 @@
     ],
     "description": "An envoy visits a world where inhabitants can change gender.",
     "writingStyle": "Thoughtful and anthropological",
-    "authorBio": "American author renowned for her anthropological and philosophical science fiction."
+    "authorBio": "American author renowned for her anthropological and philosophical science fiction.",
+    "authorGender": "female"
   },
   {
     "id": 16,
@@ -253,7 +268,8 @@
     ],
     "description": "A boy discovers the dark truth behind his seemingly perfect society.",
     "writingStyle": "Simple yet profound",
-    "authorBio": "Award-winning American writer celebrated for her thoughtful young adult dystopian fiction."
+    "authorBio": "Award-winning American writer celebrated for her thoughtful young adult dystopian fiction.",
+    "authorGender": "female"
   },
   {
     "id": 17,
@@ -269,7 +285,8 @@
     ],
     "description": "A violent youth undergoes experimental behavior modification in a brutal future.",
     "writingStyle": "Linguistically inventive",
-    "authorBio": "English writer and composer known for his satirical and linguistically inventive novels."
+    "authorBio": "English writer and composer known for his satirical and linguistically inventive novels.",
+    "authorGender": "male"
   },
   {
     "id": 18,
@@ -285,7 +302,8 @@
     ],
     "description": "Teenagers trapped in a maze must find a way to escape their mysterious prison.",
     "writingStyle": "Fast-paced and mysterious",
-    "authorBio": "American writer known for his bestselling Maze Runner series."
+    "authorBio": "American writer known for his bestselling Maze Runner series.",
+    "authorGender": "male"
   },
   {
     "id": 19,
@@ -301,7 +319,8 @@
     ],
     "description": "A young woman with empathic abilities leads survivors through a collapsing America.",
     "writingStyle": "Powerful and prophetic",
-    "authorBio": "Groundbreaking African American science fiction writer exploring race, gender, and power."
+    "authorBio": "Groundbreaking African American science fiction writer exploring race, gender, and power.",
+    "authorGender": "female"
   },
   {
     "id": 20,
@@ -317,7 +336,8 @@
     ],
     "description": "A man may be the last human alive after a genetically engineered plague.",
     "writingStyle": "Dark and satirical",
-    "authorBio": "Canadian poet and novelist, acclaimed for her feminist dystopian fiction and speculative narratives."
+    "authorBio": "Canadian poet and novelist, acclaimed for her feminist dystopian fiction and speculative narratives.",
+    "authorGender": "female"
   },
   {
     "id": 21,
@@ -333,7 +353,8 @@
     ],
     "description": "In a future of scarce energy, bioengineered beings struggle for freedom.",
     "writingStyle": "Richly detailed biopunk",
-    "authorBio": "American science fiction writer exploring environmental and biotech themes."
+    "authorBio": "American science fiction writer exploring environmental and biotech themes.",
+    "authorGender": "male"
   },
   {
     "id": 22,
@@ -349,7 +370,8 @@
     ],
     "description": "Minds can be transferred between bodies in a noir cyberpunk future.",
     "writingStyle": "Gritty noir cyberpunk",
-    "authorBio": "British science fiction author known for his gritty cyberpunk narratives."
+    "authorBio": "British science fiction author known for his gritty cyberpunk narratives.",
+    "authorGender": "male"
   },
   {
     "id": 23,
@@ -365,7 +387,8 @@
     ],
     "description": "Humanity faces extinction as no children have been born for 25 years.",
     "writingStyle": "Elegant and literary",
-    "authorBio": "British crime writer who also penned the dystopian masterpiece The Children of Men."
+    "authorBio": "British crime writer who also penned the dystopian masterpiece The Children of Men.",
+    "authorGender": "female"
   },
   {
     "id": 24,
@@ -381,7 +404,8 @@
     ],
     "description": "Women develop the ability to release electrical charges, reversing gender power dynamics.",
     "writingStyle": "Sharp and provocative",
-    "authorBio": "British novelist and game designer known for her feminist speculative fiction."
+    "authorBio": "British novelist and game designer known for her feminist speculative fiction.",
+    "authorGender": "female"
   },
   {
     "id": 25,
@@ -397,7 +421,8 @@
     ],
     "description": "An epidemic of blindness causes society to break down.",
     "writingStyle": "Stream-of-consciousness",
-    "authorBio": "Portuguese Nobel laureate known for his allegorical and philosophical novels."
+    "authorBio": "Portuguese Nobel laureate known for his allegorical and philosophical novels.",
+    "authorGender": "male"
   },
   {
     "id": 26,
@@ -413,7 +438,8 @@
     ],
     "description": "A woman witnesses a murder in the future through a virtual reality connection.",
     "writingStyle": "Complex and layered",
-    "authorBio": "American-Canadian author who pioneered cyberpunk and coined the term 'cyberspace'."
+    "authorBio": "American-Canadian author who pioneered cyberpunk and coined the term 'cyberspace'.",
+    "authorGender": "male"
   },
   {
     "id": 27,
@@ -429,7 +455,8 @@
     ],
     "description": "Society is divided into factions based on virtues; those who don't fit are dangerous.",
     "writingStyle": "Direct and action-driven",
-    "authorBio": "American novelist known for her Divergent series exploring identity and social structures."
+    "authorBio": "American novelist known for her Divergent series exploring identity and social structures.",
+    "authorGender": "female"
   },
   {
     "id": 28,
@@ -445,7 +472,8 @@
     ],
     "description": "Students at a boarding school discover they are clones raised for organ donation.",
     "writingStyle": "Understated and melancholic",
-    "authorBio": "British novelist of Japanese origin, Nobel Prize winner exploring memory and mortality."
+    "authorBio": "British novelist of Japanese origin, Nobel Prize winner exploring memory and mortality.",
+    "authorGender": "male"
   },
   {
     "id": 29,
@@ -461,7 +489,8 @@
     ],
     "description": "Scientists discover an alien civilization preparing to invade Earth.",
     "writingStyle": "Scientific and epic",
-    "authorBio": "Chinese science fiction author and engineer, winner of the Hugo Award for The Three-Body Problem."
+    "authorBio": "Chinese science fiction author and engineer, winner of the Hugo Award for The Three-Body Problem.",
+    "authorGender": "male"
   },
   {
     "id": 30,
@@ -477,7 +506,8 @@
     ],
     "description": "A young girl receives an interactive book designed to raise a neo-Victorian elite.",
     "writingStyle": "Baroque and playful",
-    "authorBio": "American writer known for his detailed, intellectually dense speculative fiction."
+    "authorBio": "American writer known for his detailed, intellectually dense speculative fiction.",
+    "authorGender": "male"
   },
   {
     "id": 31,
@@ -493,7 +523,8 @@
     ],
     "description": "Six interconnected stories span from the 19th century to a post-apocalyptic future.",
     "writingStyle": "Experimental and nested",
-    "authorBio": "British novelist known for his intricate, interconnected narratives across time and space."
+    "authorBio": "British novelist known for his intricate, interconnected narratives across time and space.",
+    "authorGender": "male"
   },
   {
     "id": 32,
@@ -509,7 +540,8 @@
     ],
     "description": "An ecotopian San Francisco faces invasion from a militaristic regime.",
     "writingStyle": "Lyrical and spiritual",
-    "authorBio": "American writer and activist known for her feminist utopian and dystopian fiction."
+    "authorBio": "American writer and activist known for her feminist utopian and dystopian fiction.",
+    "authorGender": "female"
   },
   {
     "id": 33,
@@ -525,7 +557,8 @@
     ],
     "description": "America is occupied by Nazi Germany and Japan in an alternate history.",
     "writingStyle": "Paranoid and layered",
-    "authorBio": "Visionary American science fiction writer who explored reality, identity, and consciousness."
+    "authorBio": "Visionary American science fiction writer who explored reality, identity, and consciousness.",
+    "authorGender": "male"
   },
   {
     "id": 34,
@@ -541,7 +574,8 @@
     ],
     "description": "Survivors live in a massive underground silo, forbidden to discuss the outside world.",
     "writingStyle": "Tense and mysterious",
-    "authorBio": "American science fiction author known for his self-published Wool series."
+    "authorBio": "American science fiction author known for his self-published Wool series.",
+    "authorGender": "male"
   },
   {
     "id": 35,
@@ -557,7 +591,8 @@
     ],
     "description": "A man's dreams can alter reality, with terrifying consequences.",
     "writingStyle": "Philosophical and dreamlike",
-    "authorBio": "American author renowned for her anthropological and philosophical science fiction."
+    "authorBio": "American author renowned for her anthropological and philosophical science fiction.",
+    "authorGender": "female"
   },
   {
     "id": 36,
@@ -573,7 +608,8 @@
     ],
     "description": "A chemist invents a truth serum in a totalitarian state where privacy doesn't exist.",
     "writingStyle": "Psychological and clinical",
-    "authorBio": "Swedish poet and novelist, author of the dystopian classic Kallocain."
+    "authorBio": "Swedish poet and novelist, author of the dystopian classic Kallocain.",
+    "authorGender": "female"
   },
   {
     "id": 37,
@@ -589,7 +625,8 @@
     ],
     "description": "A drifter wearing a postman's uniform becomes a symbol of hope in post-apocalyptic America.",
     "writingStyle": "Hopeful and episodic",
-    "authorBio": "American scientist and science fiction author exploring uplift and technology."
+    "authorBio": "American scientist and science fiction author exploring uplift and technology.",
+    "authorGender": "male"
   },
   {
     "id": 38,
@@ -605,7 +642,8 @@
     ],
     "description": "In a collectivist future, a man rediscovers individualism and electricity.",
     "writingStyle": "Philosophical and direct",
-    "authorBio": "Russian-American writer and philosopher known for her objectivist philosophy."
+    "authorBio": "Russian-American writer and philosopher known for her objectivist philosophy.",
+    "authorGender": "female"
   },
   {
     "id": 39,
@@ -621,7 +659,8 @@
     ],
     "description": "Advertising agencies run a overpopulated Earth in this satirical dystopia.",
     "writingStyle": "Satirical and witty",
-    "authorBio": "American science fiction writing duo known for their satirical social commentary."
+    "authorBio": "American science fiction writing duo known for their satirical social commentary.",
+    "authorGender": "male"
   },
   {
     "id": 40,
@@ -637,7 +676,8 @@
     ],
     "description": "Teenagers have internet feeds implanted directly into their brains.",
     "writingStyle": "Fragmented and modern",
-    "authorBio": "American writer known for his satirical young adult dystopian fiction."
+    "authorBio": "American writer known for his satirical young adult dystopian fiction.",
+    "authorGender": "male"
   },
   {
     "id": 41,
@@ -653,7 +693,8 @@
     ],
     "description": "Water has become the most precious commodity in a drought-ravaged American Southwest.",
     "writingStyle": "Gritty and visceral",
-    "authorBio": "American science fiction writer exploring environmental and biotech themes."
+    "authorBio": "American science fiction writer exploring environmental and biotech themes.",
+    "authorGender": "male"
   },
   {
     "id": 42,
@@ -669,7 +710,8 @@
     ],
     "description": "Children are trained through games to fight an alien threat.",
     "writingStyle": "Strategic and psychological",
-    "authorBio": "American science fiction author known for his Ender's Game series exploring ethics and empathy."
+    "authorBio": "American science fiction author known for his Ender's Game series exploring ethics and empathy.",
+    "authorGender": "male"
   },
   {
     "id": 43,
@@ -685,7 +727,8 @@
     ],
     "description": "Global warming has transformed Earth into a tropical hellscape.",
     "writingStyle": "Lush and surreal",
-    "authorBio": "British novelist known for his provocative and surreal dystopian visions."
+    "authorBio": "British novelist known for his provocative and surreal dystopian visions.",
+    "authorGender": "male"
   },
   {
     "id": 44,
@@ -701,7 +744,8 @@
     ],
     "description": "Two cities occupy the same space, and citizens must 'unsee' the other city.",
     "writingStyle": "Intricate and noir",
-    "authorBio": "British author known for his genre-bending weird fiction and social commentary."
+    "authorBio": "British author known for his genre-bending weird fiction and social commentary.",
+    "authorGender": "male"
   },
   {
     "id": 45,
@@ -717,7 +761,8 @@
     ],
     "description": "The first 100 colonists struggle to terraform Mars and establish a new society.",
     "writingStyle": "Detailed and scientific",
-    "authorBio": "American science fiction writer known for his detailed ecological and social futures."
+    "authorBio": "American science fiction writer known for his detailed ecological and social futures.",
+    "authorGender": "male"
   },
   {
     "id": 46,
@@ -733,7 +778,8 @@
     ],
     "description": "A military experiment creates vampire-like creatures that destroy civilization.",
     "writingStyle": "Epic and atmospheric",
-    "authorBio": "American novelist known for his literary approach to post-apocalyptic fiction."
+    "authorBio": "American novelist known for his literary approach to post-apocalyptic fiction.",
+    "authorGender": "male"
   },
   {
     "id": 47,
@@ -749,7 +795,8 @@
     ],
     "description": "A man is arrested and prosecuted by an inaccessible authority for an unknown crime.",
     "writingStyle": "Absurdist and Kafkaesque",
-    "authorBio": "Czech writer known for his surreal, existential explorations of bureaucracy and alienation."
+    "authorBio": "Czech writer known for his surreal, existential explorations of bureaucracy and alienation.",
+    "authorGender": "male"
   },
   {
     "id": 48,
@@ -765,7 +812,8 @@
     ],
     "description": "People access alternate realities through psychoactive feathers in a grim Manchester.",
     "writingStyle": "Psychedelic and experimental",
-    "authorBio": "British novelist known for his surreal cyberpunk and linguistic experimentation."
+    "authorBio": "British novelist known for his surreal cyberpunk and linguistic experimentation.",
+    "authorGender": "male"
   },
   {
     "id": 49,
@@ -781,7 +829,8 @@
     ],
     "description": "Soldiers fight an interstellar war while time passes differently on Earth.",
     "writingStyle": "Military and contemplative",
-    "authorBio": "American science fiction author and Vietnam War veteran exploring war and time dilation."
+    "authorBio": "American science fiction author and Vietnam War veteran exploring war and time dilation.",
+    "authorGender": "male"
   },
   {
     "id": 50,
@@ -797,7 +846,8 @@
     ],
     "description": "Survivors live in Moscow's metro system after a nuclear war.",
     "writingStyle": "Dark and atmospheric",
-    "authorBio": "Russian author and journalist known for his post-apocalyptic Metro series."
+    "authorBio": "Russian author and journalist known for his post-apocalyptic Metro series.",
+    "authorGender": "male"
   },
   {
     "id": 51,
@@ -813,7 +863,8 @@
     ],
     "description": "A dead game designer's AI begins executing a program to reshape society.",
     "writingStyle": "Technical and suspenseful",
-    "authorBio": "American information technology consultant and author of high-tech thrillers."
+    "authorBio": "American information technology consultant and author of high-tech thrillers.",
+    "authorGender": "male"
   },
   {
     "id": 52,
@@ -829,7 +880,8 @@
     ],
     "description": "Students are forced to fight to the death on an island by a totalitarian government.",
     "writingStyle": "Brutal and fast-paced",
-    "authorBio": "Japanese author and journalist known for his controversial thriller Battle Royale."
+    "authorBio": "Japanese author and journalist known for his controversial thriller Battle Royale.",
+    "authorGender": "male"
   },
   {
     "id": 53,
@@ -845,7 +897,8 @@
     ],
     "description": "A theocratic regime subjugates women in a totalitarian society.",
     "writingStyle": "Intimate and haunting",
-    "authorBio": "Canadian poet and novelist, acclaimed for her feminist dystopian fiction and speculative narratives."
+    "authorBio": "Canadian poet and novelist, acclaimed for her feminist dystopian fiction and speculative narratives.",
+    "authorGender": "female"
   },
   {
     "id": 54,
@@ -861,7 +914,8 @@
     ],
     "description": "A masked vigilante fights against a fascist government in Britain.",
     "writingStyle": "Graphic and symbolic",
-    "authorBio": "British writer and graphic novelist known for his complex, politically charged narratives."
+    "authorBio": "British writer and graphic novelist known for his complex, politically charged narratives.",
+    "authorGender": "male"
   },
   {
     "id": 55,
@@ -877,7 +931,8 @@
     ],
     "description": "Teenagers fight back against government surveillance after a terrorist attack.",
     "writingStyle": "Technical and accessible",
-    "authorBio": "Canadian-British blogger and activist writing about technology, freedom, and society."
+    "authorBio": "Canadian-British blogger and activist writing about technology, freedom, and society.",
+    "authorGender": "male"
   },
   {
     "id": 56,
@@ -893,7 +948,8 @@
     ],
     "description": "Reality begins to decay for survivors of a psychic attack in this mind-bending tale.",
     "writingStyle": "Mind-bending and surreal",
-    "authorBio": "Visionary American science fiction writer who explored reality, identity, and consciousness."
+    "authorBio": "Visionary American science fiction writer who explored reality, identity, and consciousness.",
+    "authorGender": "male"
   },
   {
     "id": 57,
@@ -909,7 +965,8 @@
     ],
     "description": "A man gains the power to teleport and seeks revenge in a future of corporate warfare.",
     "writingStyle": "Pulpy and energetic",
-    "authorBio": "American science fiction author known for his innovative narrative techniques and psychological depth."
+    "authorBio": "American science fiction author known for his innovative narrative techniques and psychological depth.",
+    "authorGender": "male"
   },
   {
     "id": 58,
@@ -925,7 +982,8 @@
     ],
     "description": "A team explores a mysterious zone where nature has become alien and dangerous.",
     "writingStyle": "Atmospheric and mysterious",
-    "authorBio": "American author known for his ecological weird fiction."
+    "authorBio": "American author known for his ecological weird fiction.",
+    "authorGender": "male"
   },
   {
     "id": 59,
@@ -941,7 +999,8 @@
     ],
     "description": "Police arrest criminals before they commit crimes using precognitive mutants.",
     "writingStyle": "Taut and psychological",
-    "authorBio": "Visionary American science fiction writer who explored reality, identity, and consciousness."
+    "authorBio": "Visionary American science fiction writer who explored reality, identity, and consciousness.",
+    "authorGender": "male"
   },
   {
     "id": 60,
@@ -957,7 +1016,8 @@
     ],
     "description": "A dying AI recreates simulations of its creators' lives in various scenarios.",
     "writingStyle": "Experimental and poetic",
-    "authorBio": "American science fiction writer exploring identity, memory, and resilience."
+    "authorBio": "American science fiction writer exploring identity, memory, and resilience.",
+    "authorGender": "female"
   },
   {
     "id": 61,
@@ -973,7 +1033,8 @@
     ],
     "description": "A torturer's apprentice becomes the leader of a dying Earth in the far future.",
     "writingStyle": "Archaic and literary",
-    "authorBio": "American science fiction and fantasy writer known for his literary complexity."
+    "authorBio": "American science fiction and fantasy writer known for his literary complexity.",
+    "authorGender": "male"
   },
   {
     "id": 62,
@@ -989,7 +1050,8 @@
     ],
     "description": "British boys stranded on an island descend into savagery.",
     "writingStyle": "Allegorical and tense",
-    "authorBio": "British novelist and Nobel laureate exploring human nature and civilization."
+    "authorBio": "British novelist and Nobel laureate exploring human nature and civilization.",
+    "authorGender": "male"
   },
   {
     "id": 63,
@@ -1005,7 +1067,8 @@
     ],
     "description": "Machines have automated most jobs, creating a rigid class system.",
     "writingStyle": "Satirical and dark",
-    "authorBio": "American writer known for his satirical and darkly humorous science fiction."
+    "authorBio": "American writer known for his satirical and darkly humorous science fiction.",
+    "authorGender": "male"
   },
   {
     "id": 64,
@@ -1021,7 +1084,8 @@
     ],
     "description": "A detective partners with a robot to solve a murder in an overcrowded Earth.",
     "writingStyle": "Methodical mystery",
-    "authorBio": "Russian-American author and biochemist, prolific writer of science fiction and popular science."
+    "authorBio": "Russian-American author and biochemist, prolific writer of science fiction and popular science.",
+    "authorGender": "male"
   },
   {
     "id": 65,
@@ -1037,7 +1101,8 @@
     ],
     "description": "Environmental pollution causes society to collapse in near-future America.",
     "writingStyle": "Documentary and urgent",
-    "authorBio": "British science fiction author known for his socially conscious narratives."
+    "authorBio": "British science fiction author known for his socially conscious narratives.",
+    "authorGender": "male"
   },
   {
     "id": 66,
@@ -1053,7 +1118,8 @@
     ],
     "description": "Earth struggles with extreme overpopulation and social upheaval.",
     "writingStyle": "Fragmented and kaleidoscopic",
-    "authorBio": "British science fiction author known for his socially conscious narratives."
+    "authorBio": "British science fiction author known for his socially conscious narratives.",
+    "authorGender": "male"
   },
   {
     "id": 67,
@@ -1069,7 +1135,8 @@
     ],
     "description": "Telepathic children hide their abilities in a post-apocalyptic religious society.",
     "writingStyle": "Clear and suspenseful",
-    "authorBio": "British science fiction writer known for his cozy catastrophe narratives."
+    "authorBio": "British science fiction writer known for his cozy catastrophe narratives.",
+    "authorGender": "male"
   },
   {
     "id": 68,
@@ -1085,7 +1152,8 @@
     ],
     "description": "Noble houses fight for control of the desert planet Arrakis and its spice.",
     "writingStyle": "Epic and philosophical",
-    "authorBio": "American science fiction author known for his ecological epic Dune series."
+    "authorBio": "American science fiction author known for his ecological epic Dune series.",
+    "authorGender": "male"
   },
   {
     "id": 69,
@@ -1101,7 +1169,8 @@
     ],
     "description": "Monks preserve knowledge through dark ages after nuclear war.",
     "writingStyle": "Meditative and cyclical",
-    "authorBio": "American science fiction writer exploring religion, technology, and human survival."
+    "authorBio": "American science fiction writer exploring religion, technology, and human survival.",
+    "authorGender": "male"
   },
   {
     "id": 70,
@@ -1117,7 +1186,8 @@
     ],
     "description": "A Victorian scientist travels to a future where humanity has split into two species.",
     "writingStyle": "Victorian and scientific",
-    "authorBio": "English writer, pioneer of science fiction, exploring social and scientific themes."
+    "authorBio": "English writer, pioneer of science fiction, exploring social and scientific themes.",
+    "authorGender": "male"
   },
   {
     "id": 71,
@@ -1133,7 +1203,8 @@
     ],
     "description": "An elderly poet regains his health in a world of ubiquitous augmented reality.",
     "writingStyle": "Technical and humorous",
-    "authorBio": "American mathematician and science fiction author exploring the technological singularity."
+    "authorBio": "American mathematician and science fiction author exploring the technological singularity.",
+    "authorGender": "male"
   },
   {
     "id": 72,
@@ -1149,7 +1220,8 @@
     ],
     "description": "A businessman tries to commit murder in a world where telepathic police exist.",
     "writingStyle": "Psychological thriller",
-    "authorBio": "American science fiction author known for his innovative narrative techniques and psychological depth."
+    "authorBio": "American science fiction author known for his innovative narrative techniques and psychological depth.",
+    "authorGender": "male"
   },
   {
     "id": 73,
@@ -1165,7 +1237,8 @@
     ],
     "description": "A corporate oligarchy crushes labor movements in early 20th century America.",
     "writingStyle": "Political and passionate",
-    "authorBio": "American novelist and journalist who explored social inequality and survival."
+    "authorBio": "American novelist and journalist who explored social inequality and survival.",
+    "authorGender": "male"
   },
   {
     "id": 74,
@@ -1181,7 +1254,8 @@
     ],
     "description": "Survivors live on a perpetually moving train after Earth freezes over.",
     "writingStyle": "Visual and metaphorical",
-    "authorBio": "French comic book writer known for his post-apocalyptic graphic novel series."
+    "authorBio": "French comic book writer known for his post-apocalyptic graphic novel series.",
+    "authorGender": "male"
   },
   {
     "id": 75,
@@ -1197,7 +1271,8 @@
     ],
     "description": "Humanity lives underground, dependent on an omnipotent Machine.",
     "writingStyle": "Prophetic and cautionary",
-    "authorBio": "English novelist known for his humanistic themes and critique of mechanization."
+    "authorBio": "English novelist known for his humanistic themes and critique of mechanization.",
+    "authorGender": "male"
   },
   {
     "id": 76,
@@ -1213,7 +1288,8 @@
     ],
     "description": "Huxley's non-fiction analysis of how his fictional dystopia is becoming real.",
     "writingStyle": "Analytical and essayistic",
-    "authorBio": "English writer and philosopher who explored the dangers of scientific and technological progress."
+    "authorBio": "English writer and philosopher who explored the dangers of scientific and technological progress.",
+    "authorGender": "male"
   },
   {
     "id": 77,
@@ -1229,7 +1305,8 @@
     ],
     "description": "People live underground believing in a war that ended years ago.",
     "writingStyle": "Paranoid and complex",
-    "authorBio": "Visionary American science fiction writer who explored reality, identity, and consciousness."
+    "authorBio": "Visionary American science fiction writer who explored reality, identity, and consciousness.",
+    "authorGender": "male"
   },
   {
     "id": 78,
@@ -1245,7 +1322,8 @@
     ],
     "description": "In a future where humans are illiterate and dying out, three people seek meaning.",
     "writingStyle": "Melancholic and sparse",
-    "authorBio": "American novelist known for his character-driven science fiction and literary fiction."
+    "authorBio": "American novelist known for his character-driven science fiction and literary fiction.",
+    "authorGender": "male"
   },
   {
     "id": 79,
@@ -1261,7 +1339,8 @@
     ],
     "description": "Overpopulation leads to government promotion of homosexuality and cannibalism.",
     "writingStyle": "Dark and satirical",
-    "authorBio": "English writer and composer known for his satirical and linguistically inventive novels."
+    "authorBio": "English writer and composer known for his satirical and linguistically inventive novels.",
+    "authorGender": "male"
   },
   {
     "id": 80,
@@ -1277,7 +1356,8 @@
     ],
     "description": "An alternate history where the Black Death killed 99% of Europeans.",
     "writingStyle": "Epic and contemplative",
-    "authorBio": "American science fiction writer known for his detailed ecological and social futures."
+    "authorBio": "American science fiction writer known for his detailed ecological and social futures.",
+    "authorGender": "male"
   },
   {
     "id": 81,
@@ -1293,7 +1373,8 @@
     ],
     "description": "Criminals are chromatically altered as punishment in a theocratic America.",
     "writingStyle": "Dystopian and visceral",
-    "authorBio": "American novelist known for her literary speculative fiction exploring social justice."
+    "authorBio": "American novelist known for her literary speculative fiction exploring social justice.",
+    "authorGender": "female"
   },
   {
     "id": 82,
@@ -1309,7 +1390,8 @@
     ],
     "description": "A master thief is broken out of prison to commit the ultimate heist.",
     "writingStyle": "Dense and technical",
-    "authorBio": "Finnish science fiction author with a background in mathematics and physics."
+    "authorBio": "Finnish science fiction author with a background in mathematics and physics.",
+    "authorGender": "male"
   },
   {
     "id": 83,
@@ -1325,7 +1407,8 @@
     ],
     "description": "A celebrity wakes up in a world where no one remembers him.",
     "writingStyle": "Drug-induced surreal",
-    "authorBio": "Visionary American science fiction writer who explored reality, identity, and consciousness."
+    "authorBio": "Visionary American science fiction writer who explored reality, identity, and consciousness.",
+    "authorGender": "male"
   },
   {
     "id": 84,
@@ -1341,7 +1424,8 @@
     ],
     "description": "People raise digital artificial intelligences like children.",
     "writingStyle": "Philosophical and tender",
-    "authorBio": "American science fiction writer known for his philosophically profound short stories."
+    "authorBio": "American science fiction writer known for his philosophically profound short stories.",
+    "authorGender": "male"
   },
   {
     "id": 85,
@@ -1357,7 +1441,8 @@
     ],
     "description": "A man with multiple identities fights an authoritarian government through hacking.",
     "writingStyle": "Technical and fast-paced",
-    "authorBio": "British science fiction author known for his socially conscious narratives."
+    "authorBio": "British science fiction author known for his socially conscious narratives.",
+    "authorGender": "male"
   },
   {
     "id": 86,
@@ -1373,7 +1458,8 @@
     ],
     "description": "Survivors clear zombies from Manhattan while rebuilding civilization.",
     "writingStyle": "Literary and contemplative",
-    "authorBio": "American novelist and two-time Pulitzer Prize winner known for his genre-bending fiction."
+    "authorBio": "American novelist and two-time Pulitzer Prize winner known for his genre-bending fiction.",
+    "authorGender": "male"
   },
   {
     "id": 87,
@@ -1389,7 +1475,8 @@
     ],
     "description": "Psychoactive drugs create false realities masking a dystopian world.",
     "writingStyle": "Absurdist and satirical",
-    "authorBio": "Polish science fiction writer and philosopher exploring consciousness and communication."
+    "authorBio": "Polish science fiction writer and philosopher exploring consciousness and communication.",
+    "authorGender": "male"
   },
   {
     "id": 88,
@@ -1405,7 +1492,8 @@
     ],
     "description": "Martians invade Earth with superior technology.",
     "writingStyle": "Victorian and dramatic",
-    "authorBio": "English writer, pioneer of science fiction, exploring social and scientific themes."
+    "authorBio": "English writer, pioneer of science fiction, exploring social and scientific themes.",
+    "authorGender": "male"
   },
   {
     "id": 89,
@@ -1421,7 +1509,8 @@
     ],
     "description": "Survivors struggle in the aftermath of nuclear war.",
     "writingStyle": "Epic and horror-tinged",
-    "authorBio": "American novelist known for his horror and historical fiction with dark themes."
+    "authorBio": "American novelist known for his horror and historical fiction with dark themes.",
+    "authorGender": "male"
   },
   {
     "id": 90,
@@ -1437,7 +1526,8 @@
     ],
     "description": "A man repeatedly dies and is reborn at age 18 with his memories intact.",
     "writingStyle": "Introspective and emotional",
-    "authorBio": "American author known for his time-loop novel Replay."
+    "authorBio": "American author known for his time-loop novel Replay.",
+    "authorGender": "male"
   },
   {
     "id": 91,
@@ -1453,7 +1543,8 @@
     ],
     "description": "A scientist becomes invisible and descends into madness and violence.",
     "writingStyle": "Victorian gothic",
-    "authorBio": "English writer, pioneer of science fiction, exploring social and scientific themes."
+    "authorBio": "English writer, pioneer of science fiction, exploring social and scientific themes.",
+    "authorGender": "male"
   },
   {
     "id": 92,
@@ -1469,7 +1560,8 @@
     ],
     "description": "Clone siblings explore the galaxy over millions of years.",
     "writingStyle": "Sweeping space opera",
-    "authorBio": "Welsh science fiction author and former space scientist known for his hard SF."
+    "authorBio": "Welsh science fiction author and former space scientist known for his hard SF.",
+    "authorGender": "male"
   },
   {
     "id": 93,
@@ -1485,7 +1577,8 @@
     ],
     "description": "Parallel stories of WWII codebreakers and modern tech entrepreneurs.",
     "writingStyle": "Dense and technical",
-    "authorBio": "American writer known for his detailed, intellectually dense speculative fiction."
+    "authorBio": "American writer known for his detailed, intellectually dense speculative fiction.",
+    "authorGender": "male"
   },
   {
     "id": 94,
@@ -1501,7 +1594,8 @@
     ],
     "description": "Earth is destroyed and survivors live on a space station in this reimagining of Joan of Arc.",
     "writingStyle": "Poetic and experimental",
-    "authorBio": "American writer known for her experimental and visceral narratives."
+    "authorBio": "American writer known for her experimental and visceral narratives.",
+    "authorGender": "female"
   },
   {
     "id": 95,
@@ -1517,7 +1611,8 @@
     ],
     "description": "A supercomputer controls all aspects of human life in a seemingly perfect world.",
     "writingStyle": "Methodical and chilling",
-    "authorBio": "American novelist and playwright, master of psychological thrillers and dystopian satire."
+    "authorBio": "American novelist and playwright, master of psychological thrillers and dystopian satire.",
+    "authorGender": "male"
   },
   {
     "id": 96,
@@ -1533,7 +1628,8 @@
     ],
     "description": "A young girl receives an interactive book designed to raise a neo-Victorian elite.",
     "writingStyle": "Baroque and playful",
-    "authorBio": "American writer known for his detailed, intellectually dense speculative fiction."
+    "authorBio": "American writer known for his detailed, intellectually dense speculative fiction.",
+    "authorGender": "male"
   },
   {
     "id": 97,
@@ -1549,7 +1645,8 @@
     ],
     "description": "A girl and her father are exiled to a prison planet in this Afro-Caribbean sci-fi tale.",
     "writingStyle": "Caribbean folklore infused",
-    "authorBio": "Jamaican-Canadian science fiction writer exploring Caribbean culture and diaspora."
+    "authorBio": "Jamaican-Canadian science fiction writer exploring Caribbean culture and diaspora.",
+    "authorGender": "female"
   },
   {
     "id": 98,
@@ -1565,7 +1662,8 @@
     ],
     "description": "Jesuits make first contact with aliens with tragic consequences.",
     "writingStyle": "Philosophical and devastating",
-    "authorBio": "American novelist known for her character-driven science fiction with theological themes."
+    "authorBio": "American novelist known for her character-driven science fiction with theological themes.",
+    "authorGender": "female"
   },
   {
     "id": 99,
@@ -1581,7 +1679,8 @@
     ],
     "description": "Humanity faces extinction from a plague created by their synthetic servants.",
     "writingStyle": "Tense and scientific",
-    "authorBio": "American horror and science fiction writer known for his Partials series."
+    "authorBio": "American horror and science fiction writer known for his Partials series.",
+    "authorGender": "male"
   },
   {
     "id": 100,
@@ -1597,6 +1696,7 @@
     ],
     "description": "Technology allows people to view any moment in history, ending all privacy.",
     "writingStyle": "Hard sci-fi speculative",
-    "authorBio": "Collaboration between legendary science fiction visionary and British hard SF author."
+    "authorBio": "Collaboration between legendary science fiction visionary and British hard SF author.",
+    "authorGender": "male"
   }
 ]
