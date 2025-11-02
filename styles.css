@@ -23,12 +23,13 @@
 }
 
 body {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Caveat', cursive;
     background: linear-gradient(135deg, var(--primary-bg), #0f0820);
     color: var(--text-primary);
-    line-height: 1.8;
+    line-height: 1.9;
     overflow-x: hidden;
     position: relative;
+    font-size: 1.1rem;
 }
 
 /* Shimmer Overlay */
@@ -70,14 +71,14 @@ body {
 }
 
 .header-content h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 4rem;
-    font-weight: 400;
+    font-family: 'Amatic SC', cursive;
+    font-size: 4.5rem;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 15px;
     color: var(--accent-gold);
     text-shadow: var(--glow-gold);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 .elegant-title {
@@ -92,9 +93,9 @@ body {
 .tagline {
     text-align: center;
     color: var(--accent-amethyst);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 /* Stats Panel */
@@ -126,7 +127,8 @@ body {
 .stat-value {
     display: block;
     font-size: 2.5rem;
-    font-family: 'Pinyon Script', cursive;
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
     font-weight: 400;
     color: var(--accent-gold);
     text-shadow: var(--glow-gold);
@@ -137,7 +139,7 @@ body {
     font-size: 1rem;
     color: var(--text-secondary);
     letter-spacing: 1px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Caveat', cursive;
 }
 
 /* Main Layout */
@@ -163,7 +165,7 @@ main {
 }
 
 .panel-title {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Amatic SC', cursive;
     font-size: 2rem;
     color: var(--accent-emerald);
     margin-bottom: 25px;
@@ -182,7 +184,7 @@ main {
     color: var(--accent-amethyst);
     margin-bottom: 10px;
     letter-spacing: 0.5px;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .filter-group input,
@@ -193,7 +195,7 @@ main {
     border: 2px solid var(--border-color);
     border-radius: 8px;
     color: var(--text-primary);
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Caveat', cursive;
     font-size: 1rem;
     transition: all 0.3s;
 }
@@ -213,7 +215,7 @@ main {
     background: transparent;
     border: 2px solid var(--accent-emerald);
     color: var(--accent-emerald);
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
     font-size: 1.1rem;
     cursor: pointer;
     border-radius: 8px;
@@ -245,7 +247,7 @@ main {
 }
 
 .books-header h2 {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Amatic SC', cursive;
     font-size: 2.2rem;
     color: var(--accent-gold);
     margin-bottom: 25px;
@@ -299,19 +301,19 @@ main {
 }
 
 .book-title {
-    font-family: 'Pinyon Script', cursive;
-    font-size: 1.8rem;
-    font-weight: 400;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    font-size: 2rem;
     color: var(--accent-gold);
     margin-bottom: 10px;
-    line-height: 1.4;
+    line-height: 1.3;
 }
 
 .book-author {
     color: var(--text-secondary);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .book-year {
@@ -339,7 +341,7 @@ main {
     font-size: 0.85rem;
     color: var(--text-secondary);
     border: 1px solid var(--border-color);
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Caveat', cursive;
 }
 
 /* Theme Tag with Visual Icon */
@@ -353,7 +355,7 @@ main {
     font-size: 0.8rem;
     color: var(--text-primary);
     border: 2px solid var(--border-color);
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Caveat', cursive;
     transition: all 0.3s;
 }
 
@@ -422,7 +424,7 @@ main {
     gap: 6px;
     font-size: 0.95rem;
     color: var(--accent-emerald);
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .read-indicator.unread {
@@ -464,7 +466,7 @@ main {
     opacity: 0.6;
     letter-spacing: 1px;
     animation: sparkle 3s ease-in-out infinite;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 @keyframes sparkle {
@@ -478,7 +480,7 @@ main {
 }
 
 .section-title {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Amatic SC', cursive;
     font-size: 3rem;
     color: var(--accent-emerald);
     text-shadow: var(--glow-emerald);
@@ -489,7 +491,7 @@ main {
     color: var(--text-secondary);
     font-size: 1.3rem;
     letter-spacing: 1px;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .recommendations-grid {
@@ -522,7 +524,7 @@ main {
     font-weight: 600;
     transform: rotate(45deg);
     box-shadow: var(--glow-emerald);
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .recommendation-card:hover {
@@ -540,7 +542,7 @@ main {
     font-size: 0.95rem;
     font-weight: 600;
     margin-bottom: 14px;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
     box-shadow: 0 4px 12px rgba(80, 200, 120, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -554,7 +556,7 @@ main {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 14px;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .recommendation-card .book-title {
@@ -659,7 +661,7 @@ main {
 }
 
 .modal-book-title {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Amatic SC', cursive;
     font-size: 2.5rem;
     color: var(--accent-gold);
     margin-bottom: 12px;
@@ -669,7 +671,7 @@ main {
 .modal-book-author {
     font-size: 1.4rem;
     color: var(--text-secondary);
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .modal-info {
@@ -691,7 +693,7 @@ main {
 .info-label {
     color: var(--accent-amethyst);
     font-weight: 600;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .info-value {
@@ -703,7 +705,8 @@ main {
 }
 
 .modal-writing-style h3 {
-    font-family: 'Pinyon Script', cursive;
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
     font-size: 1.8rem;
     color: var(--accent-amethyst);
     margin-bottom: 12px;
@@ -733,7 +736,8 @@ main {
 .modal-description h3,
 .modal-themes h3,
 .modal-rating h3 {
-    font-family: 'Pinyon Script', cursive;
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
     font-size: 1.8rem;
     color: var(--accent-emerald);
     margin-bottom: 14px;
@@ -790,7 +794,7 @@ main {
 .btn-secondary {
     flex: 1;
     padding: 16px;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
     font-size: 1.2rem;
     cursor: pointer;
     border: none;
@@ -835,7 +839,7 @@ main {
     color: var(--text-secondary);
     font-size: 1.1rem;
     margin: 8px 0;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 /* Responsive Design */
@@ -926,7 +930,7 @@ main {
     padding: 45px;
     color: var(--accent-gold);
     font-size: 1.4rem;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .loading::after {
@@ -948,7 +952,7 @@ main {
 }
 
 .no-results h3 {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Amatic SC', cursive;
     font-size: 2rem;
     color: var(--accent-ruby);
     margin-bottom: 18px;
