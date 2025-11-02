@@ -152,7 +152,6 @@ function generateRecommendations() {
             styleScore: styleScore,
             totalScore: themeScore + styleScore,
             matchedThemes: Array.from(matchedThemes),
-            isOneShelfOver: styleScore > 20,
             recommendationReason: shelfReasons[0] || "Recommended based on your preferences"
         };
     });
@@ -173,6 +172,8 @@ function generateRecommendations() {
     const maxThemeScore = Math.max(...recommendations.map(r => r.themeScore));
     recommendations.forEach(book => {
         book.matchPercent = maxThemeScore > 0 ? Math.round((book.themeScore / maxThemeScore) * 100) : 0;
+        // Only show "One Shelf Over" for strong style matches with less than 90% thematic match
+        book.isOneShelfOver = book.styleScore > 20 && book.matchPercent < 90;
     });
 
     renderRecommendations(recommendations, highlyRatedBooks);
