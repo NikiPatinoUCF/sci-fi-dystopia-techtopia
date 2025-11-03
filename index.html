@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Track your sci-fi dystopian and techtopian reading journey through 100 classic and modern titles">
-    <meta name="keywords" content="sci-fi, dystopia, techtopia, books, reading tracker">
-    <meta name="theme-color" content="#2d1b4e">
-    <title>Gemstone Library | Dystopian Reading Tracker</title>
+    <meta name="description" content="Discover and track your dystopian and techtopian sci-fi reading journey with personalized recommendations">
+    <title>Gemstone Library - Dystopian & Techtopian Reading Tracker</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;500;600;700&family=Indie+Flower&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="shimmer-overlay"></div>
-
+    <!-- Header -->
     <header class="main-header">
         <div class="container">
-            <div class="header-content">
-                <h1 class="elegant-title">Gemstone Library</h1>
-                <p class="tagline">A Curated Collection of Dystopian Tales</p>
-            </div>
+            <h1 class="site-title">Gemstone Library</h1>
+            <p class="site-tagline">Your Dystopian & Techtopian Reading Companion</p>
+
+            <!-- Stats Panel -->
             <div class="stats-panel">
                 <div class="stat">
                     <span class="stat-value" id="booksRead">0</span>
-                    <span class="stat-label">READ</span>
+                    <span class="stat-label">Books Read</span>
                 </div>
                 <div class="stat">
                     <span class="stat-value" id="avgRating">0.0</span>
-                    <span class="stat-label">AVG RATING</span>
+                    <span class="stat-label">Avg Rating</span>
                 </div>
                 <div class="stat">
                     <span class="stat-value" id="totalBooks">100</span>
-                    <span class="stat-label">DATABASE</span>
+                    <span class="stat-label">Total Books</span>
                 </div>
             </div>
+
+            <!-- Recommendations Link -->
             <div class="recommendations-link-container">
                 <a href="#recommendationsSection" class="recommendations-link" id="recommendationsLink" style="display: none;">
                     ✨ View Your Recommendations
@@ -43,13 +46,15 @@
         </div>
     </header>
 
-    <main class="container">
+    <!-- Main Content -->
+    <main>
+        <!-- Filters Sidebar -->
         <aside class="filters-panel">
-            <h2 class="panel-title">Filter Your Collection</h2>
+            <h2 class="panel-title">Filters</h2>
 
             <div class="filter-group">
                 <label for="searchInput">Search</label>
-                <input type="text" id="searchInput" placeholder="Enter title, author, or keyword...">
+                <input type="text" id="searchInput" placeholder="Title, author, themes...">
             </div>
 
             <div class="filter-group">
@@ -57,12 +62,12 @@
                 <select id="statusFilter">
                     <option value="all">All Books</option>
                     <option value="read">Read</option>
-                    <option value="unread">Not Read</option>
+                    <option value="unread">Unread</option>
                 </select>
             </div>
 
             <div class="filter-group">
-                <label for="ratingFilter">Rating</label>
+                <label for="ratingFilter">Minimum Rating</label>
                 <select id="ratingFilter">
                     <option value="all">All Ratings</option>
                     <option value="5">5 Stars</option>
@@ -77,8 +82,8 @@
                 <label for="eraFilter">Era</label>
                 <select id="eraFilter">
                     <option value="all">All Eras</option>
-                    <option value="classic">Classic (Pre-1980)</option>
-                    <option value="modern">Modern (1980-2000)</option>
+                    <option value="classic">Classic (before 1980)</option>
+                    <option value="modern">Modern (1980-1999)</option>
                     <option value="contemporary">Contemporary (2000+)</option>
                 </select>
             </div>
@@ -88,13 +93,11 @@
                 <select id="themeFilter">
                     <option value="all">All Themes</option>
                     <option value="surveillance">Surveillance</option>
-                    <option value="AI">AI / Technology</option>
                     <option value="totalitarianism">Totalitarianism</option>
-                    <option value="post-apocalyptic">Post-Apocalyptic</option>
+                    <option value="AI">AI</option>
                     <option value="cyberpunk">Cyberpunk</option>
-                    <option value="climate-change">Climate Change</option>
-                    <option value="corporate-power">Corporate Power</option>
-                    <option value="genetic-engineering">Genetic Engineering</option>
+                    <option value="post-apocalyptic">Post-Apocalyptic</option>
+                    <option value="rebellion">Rebellion</option>
                 </select>
             </div>
 
@@ -103,22 +106,22 @@
                 <select id="sortBy">
                     <option value="title">Title (A-Z)</option>
                     <option value="author">Author (A-Z)</option>
-                    <option value="year-asc">Year (Oldest First)</option>
-                    <option value="year-desc">Year (Newest First)</option>
-                    <option value="rating-desc">Rating (Highest)</option>
-                    <option value="rating-asc">Rating (Lowest)</option>
+                    <option value="year-desc">Newest First</option>
+                    <option value="year-asc">Oldest First</option>
+                    <option value="rating-desc">Highest Rated</option>
+                    <option value="rating-asc">Lowest Rated</option>
                 </select>
             </div>
 
-            <button class="btn-reset" id="resetFilters">Reset Filters</button>
-            <button class="btn-clear-data" id="clearData">Clear All Data</button>
+            <button class="reset-btn" id="resetFilters">Reset Filters</button>
+            <button class="clear-data-btn" id="clearData">Clear All Data</button>
         </aside>
 
+        <!-- Books Grid -->
         <section class="books-section">
-            <div class="books-header">
-                <h2 id="resultsCount">Loading Database...</h2>
+            <div class="section-header">
+                <h2 id="resultsCount">Loading books...</h2>
             </div>
-
             <div class="books-grid" id="booksGrid">
                 <!-- Books will be dynamically loaded here -->
             </div>
@@ -130,7 +133,7 @@
         <div class="container">
             <div class="recommendations-header">
                 <h2 class="section-title">Recommended for You</h2>
-                <p class="section-subtitle">Based on your reading preferences, we suggest these gems:</p>
+                <p class="section-subtitle">Based on your reading preferences</p>
                 <div class="shelf-explanation">
                     <p><strong>📚 "One Shelf Over"</strong> means the book shares a similar writing style with your favorites - like discovering an author with a kindred voice just one shelf away in the library.</p>
                 </div>
@@ -142,11 +145,11 @@
     </section>
 
     <!-- Expand Your Horizons Section -->
-    <section class="recommendations-section" id="expandHorizonsSection" style="display: none;">
+    <section class="recommendations-section horizon-section" id="expandHorizonsSection" style="display: none;">
         <div class="container">
             <div class="recommendations-header">
                 <h2 class="section-title">Expand Your Horizons</h2>
-                <p class="section-subtitle">Venture beyond your usual themes and discover new perspectives:</p>
+                <p class="section-subtitle">Venture beyond your usual themes</p>
                 <div class="shelf-explanation">
                     <p><strong>🌍 New Themes</strong> - These books explore themes you haven't rated yet, helping you discover new dimensions of dystopian fiction.</p>
                 </div>
@@ -162,9 +165,9 @@
         <div class="container">
             <div class="recommendations-header">
                 <h2 class="section-title">Try Something Different</h2>
-                <p class="section-subtitle">Challenge yourself with writing styles outside your comfort zone:</p>
+                <p class="section-subtitle">Challenge yourself with different voices</p>
                 <div class="shelf-explanation">
-                    <p><strong>✨ Different Voice</strong> - These authors use narrative techniques and styles distinct from your favorites. <strong>🌐 Translated works</strong> offer unique cultural perspectives from around the world.</p>
+                    <p><strong>✨ Different Voice</strong> - These authors use narrative techniques distinct from your favorites. <strong>🌐 Translated works</strong> offer unique cultural perspectives from around the world.</p>
                 </div>
             </div>
             <div class="recommendations-grid" id="differentStyleGrid">
@@ -181,6 +184,7 @@
                 <div class="modal-header">
                     <h2 id="modalTitle" class="modal-book-title"></h2>
                     <p id="modalAuthor" class="modal-book-author"></p>
+                    <p id="modalAuthorBio" class="modal-author-bio"></p>
                 </div>
 
                 <div class="modal-info">
@@ -212,29 +216,23 @@
                 <div class="modal-rating">
                     <h3>Your Rating</h3>
                     <div class="stars" id="modalStars">
-                        <button class="star" data-rating="1">☆</button>
-                        <button class="star" data-rating="2">☆</button>
-                        <button class="star" data-rating="3">☆</button>
-                        <button class="star" data-rating="4">☆</button>
-                        <button class="star" data-rating="5">☆</button>
+                        <span class="star" data-rating="1">☆</span>
+                        <span class="star" data-rating="2">☆</span>
+                        <span class="star" data-rating="3">☆</span>
+                        <span class="star" data-rating="4">☆</span>
+                        <span class="star" data-rating="5">☆</span>
                     </div>
                 </div>
 
                 <div class="modal-actions">
-                    <button class="btn-primary" id="markAsRead">Mark as Read</button>
-                    <button class="btn-secondary" id="markAsUnread" style="display: none;">Mark as Unread</button>
+                    <button class="btn btn-read" id="markAsRead">Mark as Read</button>
+                    <button class="btn btn-unread" id="markAsUnread" style="display: none;">Mark as Unread</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2025 Gemstone Library</p>
-            <p>Your reading journey is privately stored on your device</p>
-        </div>
-    </footer>
-
+    <!-- JavaScript -->
     <script src="app.js"></script>
 </body>
 </html>
